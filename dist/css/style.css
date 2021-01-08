@@ -1611,6 +1611,11 @@ button,input,select,textarea,label {
 	.cta-cta .button {
 		display: flex
 	}
+
+	.feature-list {
+		margin-left: 0;
+		text-align: left;
+	}
 }
 
 @media (min-width: 641px) {
