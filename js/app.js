@@ -257,7 +257,6 @@ $('.steps-title').click(function(){
 })
 
 // Language
-
 if (!localStorage.getItem('locale')) {
     localStorage.setItem('locale', window.navigator.language.toLowerCase() || 'en');
 }
