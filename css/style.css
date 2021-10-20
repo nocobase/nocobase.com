@@ -5203,7 +5203,10 @@ a {
 }
 .home-heading {
     margin: 15vh 0 35vh;
-  }
+}
+.cn .home-heading {
+    margin: 25vh 0 35vh;
+}
 .section-demo {
   padding: 0;
 }
@@ -5225,7 +5228,7 @@ a {
     display: none;
   }
   .home-heading {
-    margin: 5vh 0 4vh;
+    margin: 5vh 0 4vh!important;
   }
 }
 #feature .nav-pills .nav-link.active {
