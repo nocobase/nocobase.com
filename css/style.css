@@ -5230,6 +5230,9 @@ a {
   .home-heading {
     margin: 5vh 0 4vh!important;
   }
+  .cn .home-heading {
+    margin: 15vh 0 20vh!important;
+  }
 }
 #feature .nav-pills .nav-link.active {
   background:  #f8f9fc!important;
