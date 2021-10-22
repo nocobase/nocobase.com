@@ -5456,8 +5456,15 @@ a {
   left: 46%;
   top: 45%;
 }
-
 .demo_tooltip {
   --balloon-color: #fa541c;
   --balloon-font-size: 12px;
 }
+#how-it-works {
+  position: relative; 
+  top:-68px;
+}
+.demo-entrance {
+  margin: 60px 0;
+}
+
