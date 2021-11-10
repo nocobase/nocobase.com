@@ -257,20 +257,20 @@ $('.steps-title').click(function(){
 })
 
 // Language
-if (!localStorage.getItem('locale')) {
-    localStorage.setItem('locale', window.navigator.language.toLowerCase() || 'en');
-}
+// if (!localStorage.getItem('locale')) {
+//     localStorage.setItem('locale', window.navigator.language.toLowerCase() || 'en');
+// }
 
-if (window.location.search.startsWith('?locale=zh')) {
-    localStorage.setItem('locale', 'zh-cn');
-} else if (window.location.search.startsWith('?locale=en')) {
-    localStorage.setItem('locale', 'en-us');
-}
+// if (window.location.search.startsWith('?locale=zh')) {
+//     localStorage.setItem('locale', 'zh-cn');
+// } else if (window.location.search.startsWith('?locale=en')) {
+//     localStorage.setItem('locale', 'en-us');
+// }
 
-var language = localStorage.getItem('locale');
+// var language = localStorage.getItem('locale');
 
-if (location.pathname !== '/cn/' && language.startsWith('zh')) {
-    window.location = 'https://www.nocobase.com/cn/'
-} else if (location.pathname !== '/' && !language.startsWith('zh')) {
-    window.location = 'https://www.nocobase.com/'
-}
+// if (location.pathname !== '/cn/' && language.startsWith('zh')) {
+//     window.location = 'https://www.nocobase.com/cn/'
+// } else if (location.pathname !== '/' && !language.startsWith('zh')) {
+//     window.location = 'https://www.nocobase.com/'
+// }
