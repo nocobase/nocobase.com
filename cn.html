@@ -20,9 +20,9 @@
         <link href="./css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
         <!-- Balloon css -->
-        <link href="./css/balloon.min.css" rel="stylesheet" type="text/css" />
+        <link href="./css/balloon.min.css?v2.2.10" rel="stylesheet" type="text/css" />
         <!-- Main Css -->
-        <link href="./css/style.css?v2.1.10" rel="stylesheet" type="text/css" id="theme-opt" />
+        <link href="./css/style.css?v2.2.10" rel="stylesheet" type="text/css" id="theme-opt" />
         <link href="./css/colors/default.css" rel="stylesheet" id="color-opt">
 
         <!-- Baidu Analytics -->
@@ -89,7 +89,7 @@
                     <ul class="navigation-menu">
                         <li><a href="https://demo-cn.nocobase.com/new" target="_blank" class="sub-menu-item">在线体验</a></li>
                         <li><a href="https://docs.nocobase.com/zh-CN/guide" class="sub-menu-item" target="_blank">开发文档</a></li>
-                        <li><a href="https://github.com/nocobase/nocobase" class="sub-menu-item" target="_blank">GitHub</a></li>
+                        <li><a href="https://github.com/nocobase/nocobase" class="sub-menu-item" target="_blank">GitHub <img alt="GitHub stars" src="https://img.shields.io/github/stars/nocobase/nocobase?style=social"></a></li>
                         <li><a href="https://gitee.com/nocobase/nocobase" class="sub-menu-item" target="_blank">Gitee</a></li>
                     </ul><!--end navigation menu-->
                     <div class="lang d-none">
@@ -139,13 +139,13 @@
                     <div class="col-12 text-center">
                         <div id="steps-guide">
                             <div class="section-title">
-                                <h4 class="title mb-4">3 步创建一个 <span class="text-primary typewrite" data-period="1500" data-type='[ "订单", "会员", "任务", "活动" ]'> <span class="wrap"></span> </span> 管理系统</span></h4>
+                                <h2 class="title mb-4">3 步创建一个 <span class="text-primary typewrite" data-period="1500" data-type='[ "订单", "会员", "任务", "活动" ]'> <span class="wrap"></span> </span> 管理系统</span></h2>
                             </div>
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="card features feature-clean work-process bg-transparent process-arrow border-0 text-center">
                                         <div class="card-body steps-title guide1" id="guide1">
-                                            <h6 class="text-dark"><span class="h3 fw-bold step">01. </span>创建数据表和字段</h6>
+                                            <h6 class="text-dark"><span class="h2 fw-bold step">01. </span>创建数据表和字段</h6>
                                         </div>
                                     </div>
                                 </div><!--end col-->
@@ -153,7 +153,7 @@
                                 <div class="col-md-4">
                                     <div class="card features feature-clean work-process bg-transparent process-arrow border-0 text-center">
                                         <div class="card-body steps-title guide2" id="guide2">
-                                            <h6 class="text-dark"><span class="h3 fw-bold step">02. </span>配置菜单和页面</h6>
+                                            <h6 class="text-dark"><span class="h2 fw-bold step">02. </span>配置菜单和页面</h6>
                                         </div>
                                     </div>
                                 </div><!--end col-->
@@ -161,7 +161,7 @@
                                 <div class="col-md-4">
                                     <div class="card features feature-clean work-process bg-transparent d-none-arrow border-0 text-center">
                                         <div class="card-body steps-title guide3" id="guide3">
-                                            <h6 class="text-dark"><span class="h3 fw-bold step">03. </span>在页面内布置区块</h6>
+                                            <h6 class="text-dark"><span class="h2 fw-bold step">03. </span>在页面内布置区块</h6>
                                         </div>
                                     </div>
                                 </div><!--end col-->
@@ -535,288 +535,34 @@
             </div><!--end container-->
         </section>
 
-        <section class="section" id="feature">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 text-center">
-                        <div class="section-title mb-4 pb-2">
-                            <h4 class="title mb-4">Features</h4>
-                            <p class="text-muted para-desc mx-auto mb-0">快速开始和灵活扩展所需的重要功能</p>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-
-                <div class="row">
-                    <div class="col-md-4 col-12 mt-5">
-                        <div class="features feature-primary text-center">
-                            <div class="image position-relative d-inline-block">
-                                <i class="uil uil-database h2 text-primary"></i>
-                            </div>
-
-                            <div class="content mt-4">
-                                <h5>数据模型</h5>
-                                <p class="text-muted mb-0">文本、附件、选项等数十种字段类型，以及一对一、多对多等多种关联关系</p>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-                    
-                    <div class="col-md-4 col-12 mt-5">
-                        <div class="features feature-primary text-center">
-                            <div class="image position-relative d-inline-block">
-                                <i class="uil uil-list-ui-alt h2 text-primary"></i>
-                            </div>
-
-                            <div class="content mt-4">
-                                <h5>菜单</h5>
-                                <p class="text-muted mb-0">分组、页面、链接自由组合成菜单，支持无限级子菜单</p>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-                    
-                    <div class="col-md-4 col-12 mt-5">
-                        <div class="features feature-primary text-center">
-                            <div class="image position-relative d-inline-block">
-                                <i class="uil uil-wall h2 text-primary"></i>
-                            </div>
-
-                            <div class="content mt-4">
-                                <h5>区块</h5>
-                                <p class="text-muted mb-0">表格、看板、日历、表单等丰富的区块类型在页面内自由组合，来展示和操作数据</p>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-
-                    <div class="col-md-4 col-12 mt-5">
-                        <div class="features feature-primary text-center">
-                            <div class="image position-relative d-inline-block">
-                                <i class="uil uil-setting h2 text-primary"></i>
-                            </div>
-
-                            <div class="content mt-4">
-                                <h5>操作</h5>
-                                <p class="text-muted mb-0">配置筛选、导出、添加、删除、修改、查看等操作对数据进行处理</p>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-                    
-                    <div class="col-md-4 col-12 mt-5">
-                        <div class="features feature-primary text-center">
-                            <div class="image position-relative d-inline-block">
-                                <i class="uil uil-sliders-v h2 text-primary"></i>
-                            </div>
-
-                            <div class="content mt-4">
-                                <h5>权限</h5>
-                                <p class="text-muted mb-0">基于角色控制用户的操作权限和菜单访问权限</p>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-                    
-                    <div class="col-md-4 col-12 mt-5">
-                        <div class="features feature-primary text-center">
-                            <div class="image position-relative d-inline-block">
-                                <i class="uil uil-robot h2 text-primary"></i>
-                            </div>
-
-                            <div class="content mt-4">
-                                <h5>工作流</h5>
-                                <p class="text-muted mb-0">实现重复性的任务由自动化代替，减少人工操作， 提高效率</p>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-            </div><!--end container-->
-
-            <div class="container mt-100">
-                <div class="row justify-content-center">
-                    <div class="col-12">
-                        <div class="section-title text-center mb-4 pb-2">
-                            <h4 class="title mb-4">一切皆插件，为<span class="text-primary">扩展开发</span>而生</h4>
-                            <p class="text-muted para-desc mb-0 mx-auto">无代码无法解决所有问题，NocoBase 具备非常简单和方便的扩展开发架构</p>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-
+        <!-- No Code Feature Start -->
+        <section class="section">
+            <div class="container mt-100 mt-60">
                 <div class="row align-items-center">
-                    <div class="col-md-5 mt-4 pt-2 order-2 order-md-1">
-                        <ul class="nav nav-pills bg-white nav-justified flex-column mb-0" id="pills-tab" role="tablist">
-                            <li class="nav-item bg-light rounded-md">
-                                <a class="nav-link rounded-md at-left active" id="f4" data-bs-toggle="pill" href="#f-4" role="tab" aria-controls="f-4" aria-selected="false">
-                                    <div class="p-3 text-start">
-                                        <h6 class="title">采用 Apache-2.0 协议开源</h6>
-                                        <p class="text-muted tab-para mb-0">采用 Apache-2.0 许可协议，拥有全部代码，不限制商业使用</p>
-                                    </div>
-                                </a><!--end nav link-->
-                            </li><!--end nav item-->
-                            
-                            <li class="nav-item bg-light rounded-md mt-4">
-                                <a class="nav-link rounded-md at-left" id="f5" data-bs-toggle="pill" href="#f-5" role="tab" aria-controls="f-5" aria-selected="false">
-                                    <div class="p-3 text-start">
-                                        <h6 class="title">微内核，插件化</h6>
-                                        <p class="text-muted tab-para mb-0">NocoBase 采用微内核架构，框架只保留核心，各类功能以插件形式扩展</p>
-                                    </div>
-                                </a><!--end nav link-->
-                            </li><!--end nav item-->
-                            
-                            <li class="nav-item bg-light rounded-md mt-4">
-                                <a class="nav-link rounded-md at-left" id="f6" data-bs-toggle="pill" href="#f-6" role="tab" aria-controls="f-6" aria-selected="false">
-                                    <div class="p-3 text-start">
-                                        <h6 class="title">使用主流框架和技术</h6>
-                                        <p class="text-muted tab-para mb-0">基于 Node.js，使用主流框架和技术，包括 Koa、Sequelize、React、Formily、Ant Design 等</p>
-                                    </div>
-                                </a><!--end nav link-->
-                            </li><!--end nav item-->
-                        </ul><!--end nav pills-->
+                    <div class="col-lg-8 col-md-6 order-2 order-md-1 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <div class="section-title me-lg-5">
+                            <h4 class="title mb-4">使用丰富的字段类型和表关系创建数据模型</h4>
+                            <p class="text-muted">使用文本、日期、数字、附件、选项、图标等数十种字段类型，以及一对一、一对多、多对多等各种关联关系，创建独立的数据模型。</p>
+                        </div>
                     </div><!--end col-->
 
-                    <div class="col-md-7 col-12 mt-4 pt-2 order-1 order-md-2">
-                        <div class="tab-content ms-lg-4" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="f-4" role="tabpanel" aria-labelledby="f4">
-                                <img src="./images/feature/4.png" class="img-fluid mx-auto rounded-md shadow d-block" alt="">
-                            </div><!--end teb pane-->
-                            
-                            <div class="tab-pane fade" id="f-5" role="tabpanel" aria-labelledby="f5">
-                                <img src="./images/feature/5.png" class="img-fluid mx-auto rounded-md shadow d-block" alt="">
-                            </div><!--end teb pane-->
-
-                            <div class="tab-pane fade" id="f-6" role="tabpanel" aria-labelledby="f6">
-                                <img src="./images/feature/6.png" class="img-fluid mx-auto rounded-md shadow d-block" alt="">
-                            </div><!--end teb pane-->
-                        </div><!--end tab content-->
+                    <div class="col-lg-4 col-md-6 order-1 order-md-2">
+                        <img src="images/feature/fields.gif" class="img-fluid" alt="">
                     </div><!--end col-->
                 </div><!--end row-->
             </div><!--end container-->
-        </section><!--end section-->
-        <!-- End -->
 
-        <!-- Shape Start -->
-        <div class="position-relative">
-            <div class="shape overflow-hidden text-light">
-                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
-                </svg>
-            </div>
-        </div>
-        <!--Shape End-->
-
-        <!-- Milestone Start -->
-        <section class="section bg-light">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 text-center">
-                        <div class="section-title">
-                            <h4 class="title mb-2">发布计划</span></h4>
-                        </div>
+            <div class="container mt-100 mt-60">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 col-md-6">
+                        <img src="images/feature/blocks.gif" class="img-fluid" alt="">
                     </div><!--end col-->
-                </div><!--end row-->
 
-                <div class="row justify-content-center">
-                    <div class="col-lg-9">
-                        <div class="main-icon rounded-pill text-primary text-center mt-4 pt-2">
-                            <i data-feather="star" class="fea icon-md-sm"></i>
+                    <div class="col-lg-5 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <div class="section-title ms-lg-5">
+                            <h4 class="title mb-4">在页面内自由组合区块</h4>
+                            <p class="text-muted">使用表格、表单、看板、日历、详情等区块类型在页面内自由组合，来展示和操作数据。</p>
                         </div>
-                        <div class="timeline-page pt-2 position-relative">
-                            <div class="timeline-item mt-4">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <div class="duration date-label-left border rounded p-2 px-4 position-relative shadow">2020 年第三季度</div>
-                                    </div><!--end col-->
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <div class="card event event-description-right rounded shadow border-0 overflow-hidden float-start">
-                                            <div class="card-body">
-                                                <h6 class="mb-0 text-capitalize">启动</h6>
-                                                <p class="mt-3 mb-0 text-muted">
-                                                    <i class="uil uil-check uil-done"></i>我们计划用不少于 6 年的时间做一个有趣的产品<br>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div><!--end col-->
-                                </div><!--end row-->
-                            </div><!--end timeline item-->
-
-                            <div class="timeline-item mt-4">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <div class="duration date-label-left border rounded p-2 px-4 position-relative shadow">2021 年第三季度</div>
-                                    </div><!--end col-->
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <div class="card event event-description-right rounded shadow border-0 overflow-hidden float-start">
-                                            <div class="card-body">
-                                                <h6 class="mb-0 text-capitalize">V0.5 预览</h6>
-                                                <p class="mt-3 mb-0 text-muted">
-                                                    <i class="uil uil-check uil-done"></i>基本的微内核架构<br>
-                                                    <i class="uil uil-check uil-done"></i>界面所见即所得配置<br>
-                                                    <i class="uil uil-check uil-done"></i>初步的插件化支持<br>
-                                                    <i class="uil uil-check uil-done"></i>支持多语言
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div><!--end col-->
-                                </div><!--end row-->
-                            </div><!--end timeline item-->
-
-                            <div class="timeline-item mt-4">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <div class="duration date-label-left border rounded p-2 px-4 position-relative shadow">2022 年第二季度</div>
-                                    </div><!--end col-->
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <div class="card event event-description-right rounded shadow border-0 overflow-hidden float-start">
-                                            <div class="card-body">
-                                                <h6 class="mb-0 text-capitalize">V0.7 内测</h6>
-                                                <p class="mt-3 mb-0 text-muted">
-                                                    <i class="uil uil-check uil-done"></i>更完整的服务端测试用例<br>
-                                                    <i class="uil uil-check uil-done"></i>更完善的客户端<br>
-                                                    <i class="uil uil-check uil-done"></i>修复主要已知问题<br>
-                                                    <i class="uil uil-check uil-done"></i>支持插件化开发
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div><!--end col-->
-                                </div><!--end row-->
-                            </div><!--end timeline item-->
-
-                            <div class="timeline-item mt-4">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <div class="duration date-label-left border rounded p-2 px-4 position-relative shadow">2022 年第四季度</div>
-                                    </div><!--end col-->
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <div class="card event event-description-right rounded shadow border-0 overflow-hidden float-start">
-                                            <div class="card-body">
-                                                <h6 class="mb-0 text-capitalize">V0.7 插件管理器 & 公测</h6>
-                                                <p class="mt-3 mb-0 text-muted">
-                                                    <i class="uil uil-arrow-right"></i>支持完整的插件流程<br>
-                                                    <i class="uil uil-arrow-right"></i>可视化插件管理器<br>
-                                                    <i class="uil uil-arrow-right"></i>提供完善的文档和例子<br>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div><!--end col-->
-                                </div><!--end row-->
-                            </div><!--end timeline item-->
-
-                            <div class="timeline-item mt-4">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <div class="duration date-label-left border rounded p-2 px-4 position-relative shadow">2023 年</div>
-                                    </div><!--end col-->
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <div class="card event event-description-right rounded shadow border-0 overflow-hidden float-start">
-                                            <div class="card-body">
-                                                <h6 class="mb-0 text-capitalize">插件市场</h6>
-                                                <p class="mt-3 mb-0 text-muted">
-                                                    <i class="uil uil-arrow-right"></i>更多有用的插件<br>
-                                                    <i class="uil uil-arrow-right"></i>更友好的扩展开发体验<br>
-                                                    <i class="uil uil-arrow-right"></i>插件市场<br>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div><!--end col-->
-                                </div><!--end row-->
-                            </div><!--end timeline item-->
-                        </div><!--end timeline page-->
-                        <!-- TIMELINE END -->
                     </div><!--end col-->
                 </div><!--end row-->
             </div><!--end container-->
@@ -825,20 +571,20 @@
                 <div class="row">
                     <div class="col-md-6 col-12">
                         <div class="d-flex">
-                            <i data-feather="help-circle" class="fea icon-ex-md text-primary me-2 mt-1"></i>
+                            <i data-feather="award" class="fea icon-ex-md text-primary me-2 mt-1"></i>
                             <div class="flex-1">
-                                <h5 class="mt-0">NocoBase 是否可以用于生产环境？</h5>
-                                <p class="answer text-muted mb-0">NocoBase 仍在早期快速开发阶段。如果你精通开发，或者需要我们提供技术支持，那可以尝试用于生产环境。</p>
+                                <h5 class="mt-0">基于角色的访问权限控制</h5>
+                                <p class="answer text-muted mb-0">基于角色控制用户的系统配置权限、数据操作权限和菜单访问权限。</p>
                             </div>
                         </div>
                     </div><!--end col-->
                     
                     <div class="col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
                         <div class="d-flex">
-                            <i data-feather="help-circle" class="fea icon-ex-md text-primary me-2 mt-1"></i>
+                            <i data-feather="award" class="fea icon-ex-md text-primary me-2 mt-1"></i>
                             <div class="flex-1">
-                                <h5 class="mt-0">NocoBase 是否支持多语言？</h5>
-                                <p class="answer text-muted mb-0">NocoBase 已支持多语言，目前有英文和中文版本，其他语言正在准备中。</p>
+                                <h5 class="mt-0">工作流和自动化</h5>
+                                <p class="answer text-muted mb-0">重复性的任务由自动化代替，减少人工操作， 提高效率。重要的事情需经过人工审批。</p>
                             </div>
                         </div>
                     </div><!--end col-->
@@ -847,27 +593,58 @@
                 <div class="row">
                     <div class="col-md-6 col-12 mt-4 pt-4">
                         <div class="d-flex">
-                            <i data-feather="help-circle" class="fea icon-ex-md text-primary me-2 mt-1"></i>
+                            <i data-feather="award" class="fea icon-ex-md text-primary me-2 mt-1"></i>
                             <div class="flex-1">
-                                <h5 class="mt-0">现在是否可以为 NocoBase 开发插件？</h5>
-                                <p class="answer text-muted mb-0">当然可以。我们正在提供更多的文档和例子，让插件开发更简单上手。</p>
+                                <h5 class="mt-0">无限级菜单</h5>
+                                <p class="answer text-muted mb-0">可以对菜单分组，支持添加页面和链接，支持无限级子菜单。</p>
                             </div>
                         </div>
                     </div><!--end col-->
                     
                     <div class="col-md-6 col-12 mt-4 pt-4">
                         <div class="d-flex">
-                            <i data-feather="help-circle" class="fea icon-ex-md text-primary me-2 mt-1"></i>
+                            <i data-feather="award" class="fea icon-ex-md text-primary me-2 mt-1"></i>
                             <div class="flex-1">
-                                <h5 class="mt-0">不懂编程，是否可以自己部署 NocoBase？</h5>
-                                <p class="answer text-muted mb-0">完全可以。请根据 <a href="https://github.com/nocobase/nocobase" target="_blank">GitHub</a> 上的步骤来部署；也可以体验我们的<a href="https://demo-cn.nocobase.com/new" target="_blank">在线版本</a>。</p>
+                                <h5 class="mt-0">丰富的和可扩展的操作</h5>
+                                <p class="answer text-muted mb-0">支持筛选、导出、添加、删除、修改、查看等操作对数据进行处理，可以扩展更多类型。</p>
                             </div>
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
             </div><!--end container-->
+
         </section>
-        <!-- Milestone End -->
+
+        <section class="section" id="feature">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="section-title text-center mb-4 pb-2">
+                            <h2 class="title mb-4">一切皆<span class="text-primary">插件</span>，为<span class="text-primary">扩展</span>开发而生</h2>
+                            <p class="text-muted para-desc mb-0 mx-auto">无代码无法解决所有问题，NocoBase 具备非常简单和方便的扩展开发架构</p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6">
+                        <img src="images/feature/5.png" class="img-fluid" alt="">
+                    </div><!--end col-->
+
+                    <div class="col-lg-6 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <div class="section-title ms-lg-5">                            
+                            <h5><i class="uil uil-arrow-circle-right text-primary me-1"></i> 微内核，插件化</h5>
+                            <p class="text-muted para-desc ms-4 ps-2">NocoBase 采用微内核架构，框架只保留核心，各类功能以插件形式扩展</p>
+                            <h5><i class="uil uil-arrow-circle-right text-primary me-1"></i> 使用主流框架和技术</h5>
+                            <p class="text-muted para-desc ms-4 ps-2">基于 Node.js，使用主流框架和技术，包括 Koa、Sequelize、React、Formily、Ant Design 等</p>
+                            <h5><i class="uil uil-arrow-circle-right text-primary me-1"></i> 开源免费</h5>
+                            <p class="text-muted para-desc ms-4 ps-2">采用 Apache-2.0 许可协议，拥有全部代码，不限制商业使用</p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+            </div><!--end container-->
+        </section>
 
         <!-- Try Start -->
         <section class="section">
@@ -876,12 +653,14 @@
                     <div class="col-12 text-center">
                         <div class="section-title">
                             <h4 class="title mb-4">加入我们</h4>
-                            <p class="text-muted para-desc mx-auto mb-0">如果你是一名开发者，对无代码开发领域以及 NocoBase 有强烈的兴趣，<br>可以全职或兼职参与开发，欢迎加入我们。 请通过邮件联系：<br>Email：hello@nocobase.com</p>
+                            <p class="text-muted para-desc mx-auto mb-0">你可以通过 <a href="https://github.com/nocobase/nocobase/issues" target="_blank">GitHub Issues</a> 反馈 bug 和 feature, 或者在 <a href="https://github.com/nocobase/nocobase/discussions" target="_blank">GitHub Discussions</a> 发起讨论.
+                             如果你对无代码/低代码领域以及 NocoBase 非常感兴趣，欢迎加入我们，请给我们发邮件：<br>hello@nocobase.com</p>
                         
                             <div class="mt-4">
-                                <a href="https://demo-cn.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 me-2">在线体验</a>
-                                <a href="https://github.com/nocobase/nocobase" class="btn btn-outline-primary mt-2" target="_blank">获取源代码</a>
+                                <a href="https://github.com/nocobase/nocobase" class="btn btn-primary mt-2 me-2" target="_blank">获取源代码</a>
+                                <a href="https://demo-cn.nocobase.com/new" target="_blank" class="btn btn-outline-primary mt-2 ">在线体验</a>
                             </div>
+                           
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
@@ -921,7 +700,7 @@
                     <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
                         <h5 class="text-light footer-head">欢迎参与</h5>
                         <p class="mt-4">欢迎参与 NocoBase 的成长过程，你可以在 GitHub 和 Gitee 反馈 Bug、讨论需求、提交 PR。</p>
-                        <p>如果你希望探讨 NocoBase 未来发展，或者需要提供 NocoBase 使用上的帮助，欢迎添加我们的微信：</p>
+                        <p>如果你希望探讨 NocoBase 未来发展，或者需要提供商业服务，欢迎添加我们的微信：</p>
                         <img width="100" height="100" src="./images/wechat.png">
                     </div><!--end col-->
                 </div><!--end row-->
