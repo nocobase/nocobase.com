@@ -1860,12 +1860,15 @@ button:not(:disabled) {
 body {
   font-family: "HanHei SC", "PingHei", "PingFang SC", "STHeitiSC-Light", "Microsoft YaHei", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   overflow-x: hidden !important;
-  font-size: 15px;
+  font-size: 16px;
   color: #161c2d;
 }
 
+.en {
+  font-size: 16px;
+}
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Nunito", sans-serif;
   line-height: 1.5;
   font-weight: 600;
 }
@@ -1924,7 +1927,7 @@ p {
 }
 
 .title-heading .heading {
-  font-size: 60px !important;
+  font-size: 80px !important;
   letter-spacing: 1px;
 }
 
@@ -1943,7 +1946,7 @@ p {
 
 .section-title .title {
   letter-spacing: 0.5px;
-  font-size: 30px !important;
+  /*font-size: 30px !important;*/
 }
 
 @media (max-width: 768px) {
@@ -2333,12 +2336,11 @@ p {
 #topnav .navigation-menu > li > a {
   display: block;
   color: #3c4858;
-  font-size: 13px;
+  font-size: 16px;
   background-color: transparent !important;
   font-weight: 700;
   letter-spacing: 1px;
   line-height: 24px;
-  text-transform: uppercase;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   font-family: "Nunito", sans-serif;
@@ -5205,11 +5207,11 @@ a {
   }
 }
 .home-heading {
-    margin: 15vh 0 35vh;
+    margin: 15vh 0 25vh;
 }
-.cn .home-heading {
+/*.cn .home-heading {
     margin: 25vh 0 35vh;
-}
+}*/
 .section-demo {
   padding: 0;
 }
@@ -5239,7 +5241,7 @@ a {
 }
 #feature .nav-pills .nav-link.active {
   background:  #f8f9fc!important;
-  color: #40a9ff !important;
+  color: #1890ff!important;
   /*box-shadow: 0 10px 25px rgb(60 72 88 / 15%) !important;*/
 }
 #feature .nav-pills .nav-link.active .tab-para {
@@ -5250,23 +5252,23 @@ a {
   border-right: 3px solid #f8f9fc;
 }
 #feature .nav-pills .nav-link:hover {
-  color: #40a9ff !important;
+  color: #1890ff !important;
 }
 #feature .nav-pills .nav-link.active.at-right {
-  border-right: 3px solid #40a9ff !important;
+  border-right: 3px solid #1890ff !important;
 }
 #feature .nav-pills .nav-link.active.at-left {
-  border-left: 3px solid #40a9ff !important;
+  border-left: 3px solid #1890ff !important;
 }
 .para-desc {
-  max-width: 680px!important;
+  max-width: 720px!important;
 }
 .timeline-item .uil-done {
   color: #40a9ff;
 }
 /* Demo */
 #steps-guide {
-  margin-top: 40px;
+  margin-top: 100px;
 }
 #steps-guide .active h6{
   color: #1890ff!important;
@@ -5464,11 +5466,10 @@ a {
 }
 .demo_tooltip {
   --balloon-color: #fa541c;
-  --balloon-font-size: 12px;
+  --balloon-font-size: 14px;
 }
 #how-it-works {
   position: relative; 
-  top:-68px;
 }
 .demo-entrance {
   margin: 60px 0;
