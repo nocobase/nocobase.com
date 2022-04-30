@@ -1931,8 +1931,16 @@ p {
   letter-spacing: 1px;
 }
 
+.en .title-heading .heading {
+  font-size: 60px !important;
+  letter-spacing: 1px;
+}
+
 @media (max-width: 768px) {
   .title-heading .heading {
+    font-size: 36px !important;
+  }
+  .en .title-heading .heading {
     font-size: 36px !important;
   }
   .home-heading .btn {
