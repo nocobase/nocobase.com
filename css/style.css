@@ -5302,7 +5302,7 @@ a {
   position: absolute;
   left: 0;
   top: 0;
-  background: url("../images/demo/step-bg.png") center center repeat;
+  background: url("../images/step-bg.png") center center repeat;
   z-index: 999;
 }
 .steps-group-name {
