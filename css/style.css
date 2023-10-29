@@ -1927,7 +1927,7 @@ p {
 }
 
 .title-heading .heading {
-  font-size: 80px !important;
+  font-size: 60px !important;
   letter-spacing: 1px;
 }
 
@@ -5347,28 +5347,28 @@ a {
   top: 45%;
 }
 #button2 {
-  right: 10%;
-  top: 10%;
+  right: 12%;
+  top: 6%;
 }
 #button3 {
-  right: 3%;
-  top: 7%;
+  right: 13%;
+  top: 22%;
 }
 #button4 {
-  right: 7%;
-  top: 20%;
+  right: 17%;
+  top: 52%;
 }
 #button5 {
-  right: 5%;
-  top: 20%;
+  right: 10%;
+  top: 30%;
 }
 #button6 {
-  right: 50%;
+  right: 70%;
   top: 30%;
 }
 #button7 {
-  right: 10%;
-  top: 7%;
+  right: 15%;
+  top: 2%;
 }
 #button8 {
   left: 16%;
@@ -5391,12 +5391,12 @@ a {
   top: 7%;
 }
 #button13 {
-  right: 5%;
+  right: 50%;
   top: 17%;
 }
 #button14 {
   right: 12%;
-  top: 20%;
+  top: 16%;
 }
 #button15 {
   left: 20%;
@@ -5404,7 +5404,7 @@ a {
 }
 #button16 {
   right: 4%;
-  top: 12%;
+  top: 6%;
 }
 #button17 {
   right: 30%;
@@ -5412,34 +5412,34 @@ a {
 }
 #button18 {
   right: 5%;
-  top: 40%;
+  top: 30%;
 }
 #button19 {
   right: 37%;
   top: 10%;
 }
 #button20 {
-  right: 30%;
+  right: 50%;
   top: 20%;
 }
 #button21 {
-  left: 40%;
-  top: 40%;
+  right: 10%;
+  top: 34%;
 }
 #button22 {
-  left: 27%;
-  top: 20%;
+  right: 7%;
+  top: 36%;
 }
 #button23 {
-  left: 45%;
-  top: 45%;
+  right: 35%;
+  top: 35%;
 }
 #button24 {
-  left: 27%;
-  top: 20%;
+  right: 18%;
+  top: 2%;
 }
 #button25 {
-  left: 45%;
+  left: 46%;
   top: 45%;
 }
 #button26 {
