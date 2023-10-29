@@ -3,11 +3,11 @@
 <html lang="en">
 
     <head>
-        <base href="/">
+        <!-- <base href="/"> -->
         <meta charset="utf-8" />
-        <title>NocoBase —— Open source and free no-code & low-code development platform</title>
+        <title>NocoBase —— Open source and self-hosted no-code & low-code development platform</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="NocoBase —— Open source and free no-code & low-code development platform" />
+        <meta name="description" content="NocoBase —— Open source and self-hosted no-code & low-code development platform" />
         <meta name="keywords" content="no-code,low-code,open-source" />
         <!-- favicon -->
         <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
@@ -20,10 +20,12 @@
         <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
         <!-- Balloon css -->
-        <link href="css/balloon.min.css?v2.2.20" rel="stylesheet" type="text/css" />
+        <link href="css/balloon.min.css?v3" rel="stylesheet" type="text/css" />
+        <!-- Slider -->               
+        <link rel="stylesheet" href="./css/tiny-slider.css"/> 
         <!-- Main Css -->
-        <link href="css/style.css?v2.2.10" rel="stylesheet" type="text/css" id="theme-opt" />
-        <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+        <link href="./css/style.css?v3" rel="stylesheet" type="text/css" id="theme-opt" />
+        <link href="./css/colors/default.css" rel="stylesheet" id="color-opt">
         
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-237XXSVYHE"></script>
@@ -67,7 +69,7 @@
                     <img src="images/logo.png" height="24" class="logo-light-mode" alt="">
                 </a>
                 <div class="lang">
-                    <a href="https://www.nocobase.com/" class="text-reset">EN</a> | <a href="https://cn.nocobase.com/" class="text-reset">中文</a> | <a href="https://tr.nocobase.com/" class="text-reset">Türkçe</a>
+                    <a href="https://www.nocobase.com/" class="text-reset">EN</a> | <a href="https://cn.nocobase.com/" class="text-reset">中文</a>
                 </div>
                 <!-- End Logo container-->
                 <div class="menu-extras">
@@ -88,12 +90,14 @@
                     <!-- Navigation Menu-->   
                     <ul class="navigation-menu">
                         <li><a href="https://demo.nocobase.com/new" target="_blank" class="sub-menu-item">Demo</a></li>
+                        <li><a href="https://blog.nocobase.com" class="sub-menu-item" target="_blank">Blog</a></li>
                         <li><a href="https://docs.nocobase.com/" class="sub-menu-item" target="_blank">Docs</a></li>
-                        <li><a href="https://github.com/nocobase/nocobase" class="sub-menu-item" target="_blank">GitHub <img alt="GitHub stars" src="https://img.shields.io/github/stars/nocobase/nocobase?style=social"></a></li>
+                        <li><a href="https://nocobase.com/pricing.html" class="sub-menu-item">Pricing</a></li>
+                        <li><a href="https://github.com/nocobase/nocobase" class="sub-menu-item" target="_blank">GitHub</a></li>
                         <li><a href="https://gitee.com/nocobase/nocobase" class="sub-menu-item" target="_blank">Gitee</a></li>
                     </ul><!--end navigation menu-->
                     <div class="lang d-none">
-                        <a href="https://www.nocobase.com/" class="text-reset">EN</a> | <a href="https://cn.nocobase.com/" class="text-reset">中文</a>  | <a href="https://tr.nocobase.com/" class="text-reset">Türkçe</a>
+                        <a href="https://www.nocobase.com/" class="text-reset">EN</a> | <a href="https://cn.nocobase.com/" class="text-reset">中文</a>
                     </div>
                 </div><!--end navigation-->
             </div><!--end container-->
@@ -106,8 +110,8 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-12 text-center mt-0 mt-md-5 pt-0 pt-md-5">
                         <div class="title-heading home-heading">
-                            <h1 class="heading fw-bold mb-3">Scalability-first<br>open-source<br>no-code platform</h1>
-                            <p class="para-desc mx-auto text-muted">No programming required, build your own collaboration platform, management system with NocoBase in minutes.</p>
+                            <h1 class="heading fw-bold mb-3">Your private<br>no-code platform</h1>
+                            <p class="para-desc mx-auto text-muted">Instead of investing years of time and millions of dollars in research and development, deploy NocoBase in a few minutes and you'll have a private, controllable, and extremely scalable no-code development platform!</p>
                             <div class="mt-4 pt-2">
                                 <a href="#how-it-works" class="btn btn-primary me-2">See how it works<i class="uil uil-arrow-down"></i></a>
                                 <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-outline-primary">Online demo<i class="uil uil-angle-right-b"></i></a>
@@ -139,7 +143,7 @@
                     <div class="col-12 text-center">
                         <div id="steps-guide">
                             <div class="section-title">
-                                <h2 class="title mb-4">3 steps to create <span class="text-primary typewrite" data-period="1500" data-type='[ "an order", "a membership", "a task", "an event" ]'> <span class="wrap"></span> </span> management system</span></h2>
+                                <h2 class="title mb-4">3 steps to create <span class="text-primary typewrite" data-period="1500" data-type='[ "an order", "a membership", "a property", "a ticket" ]'> <span class="wrap"></span> </span> management system</span></h2>
                             </div>
                             <div class="row">
                                 <div class="col-md-4">
@@ -161,7 +165,7 @@
                                 <div class="col-md-4">
                                     <div class="card features feature-clean work-process bg-transparent d-none-arrow border-0 text-center">
                                         <div class="card-body steps-title guide3" id="guide3">
-                                            <h6 class="text-dark"><span class="h2 fw-bold step">03. </span>Layout of blocks</h6>
+                                            <h6 class="text-dark"><span class="h2 fw-bold step">03. </span>Blocks & actions</h6>
                                         </div>
                                     </div>
                                 </div><!--end col-->
@@ -169,72 +173,12 @@
                         </div>
 
                         <div class=""  id="demo-wrap">
-                            <img src="images/en/demo/30.png" alt="" class="img-fluid rounded-md shadow-lg" style="z-index: 0;">
+                            <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/home-steps/1.png" alt="" class="img-fluid rounded-md shadow-lg" style="z-index: 0;">
 
                             <div id="steps-wrap">
-                                <div id="step32" class="demo_step">
-                                    <img src="images/en/demo/30.png">
-                                    <div class="button button32 demo_tooltip" id="button32" aria-label="Now, let's get started with NocoBase" data-balloon-length="medium" data-balloon-pos="down">
-                                        <svg width="80" height="80" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c" aria-label="audio-loading">
-                                            <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
-                                                <circle cx="22" cy="22" r="6" stroke-opacity="0"><animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"></animate></circle>
-                                                <circle cx="22" cy="22" r="8"><animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite"></animate></circle>
-                                            </g>
-                                        </svg>
-                                    </div>
-                                </div>
-
-                                <div id="step31" class="demo_step">
-                                    <img src="images/en/demo/29.png">
-                                    <div class="button demo_tooltip" id="button31" aria-label="Okay, let's exit configuration mode" data-balloon-length="medium" data-balloon-pos="left">
-                                        <svg width="80" height="80" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c" aria-label="audio-loading">
-                                            <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
-                                                <circle cx="22" cy="22" r="6" stroke-opacity="0"><animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"></animate></circle>
-                                                <circle cx="22" cy="22" r="8"><animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite"></animate></circle>
-                                            </g>
-                                        </svg>
-                                    </div>
-                                </div>
-
-                                <div id="step28" class="demo_step">
-                                    <img src="images/en/demo/28.png">
-                                    <div class="button demo_tooltip" id="button28" aria-label="Each block and even each element can be individually configured" data-balloon-length="medium" data-balloon-pos="left">
-                                        <svg width="80" height="80" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c" aria-label="audio-loading">
-                                            <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
-                                                <circle cx="22" cy="22" r="6" stroke-opacity="0"><animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"></animate></circle>
-                                                <circle cx="22" cy="22" r="8"><animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite"></animate></circle>
-                                            </g>
-                                        </svg>
-                                    </div>
-                                </div>
-
-                                <div id="step27" class="demo_step">
-                                    <img src="images/en/demo/27.png">
-                                    <div class="button demo_tooltip" id="button27" aria-label="Drag and drop these blocks to adjust the layout" data-balloon-length="medium" data-balloon-pos="left">
-                                        <svg width="80" height="80" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c" aria-label="audio-loading">
-                                            <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
-                                                <circle cx="22" cy="22" r="6" stroke-opacity="0"><animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"></animate></circle>
-                                                <circle cx="22" cy="22" r="8"><animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite"></animate></circle>
-                                            </g>
-                                        </svg>
-                                    </div>
-                                </div>
-
-                                <div id="step26" class="demo_step">
-                                    <img src="images/en/demo/26.png">
-                                    <div class="button demo_tooltip" id="button26" aria-label="It is also possible to add many blocks to a page" data-balloon-length="medium" data-balloon-pos="right">
-                                        <svg width="80" height="80" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c" aria-label="audio-loading">
-                                            <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
-                                                <circle cx="22" cy="22" r="6" stroke-opacity="0"><animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"></animate></circle>
-                                                <circle cx="22" cy="22" r="8"><animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite"></animate></circle>
-                                            </g>
-                                        </svg>
-                                    </div>
-                                </div>
-
                                 <div id="step25" class="demo_step">
-                                    <img src="images/en/demo/24.png">
-                                    <div class="button demo_tooltip" id="button25" aria-label="Continue" data-balloon-length="medium" data-balloon-pos="down">
+                                    <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/home-steps/1.png">
+                                    <div class="button demo_tooltip" id="button25" aria-label="Now, let's get started with NocoBase!" data-balloon-length="medium" data-balloon-pos="down">
                                         <svg width="80" height="80" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c" aria-label="audio-loading">
                                             <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
                                                 <circle cx="22" cy="22" r="6" stroke-opacity="0"><animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"></animate></circle>
@@ -245,8 +189,8 @@
                                 </div>
 
                                 <div id="step24" class="demo_step">
-                                    <img src="images/en/demo/23.png">
-                                    <div class="button demo_tooltip" id="button24" aria-label="We can also add a calendar block to view tasks in the calendar" data-balloon-length="medium" data-balloon-pos="right">
+                                    <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/home-steps/21.png">
+                                    <div class="button demo_tooltip" id="button24" aria-label="Okay, let's exit UI Editor mode" data-balloon-length="medium" data-balloon-pos="left">
                                         <svg width="80" height="80" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c" aria-label="audio-loading">
                                             <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
                                                 <circle cx="22" cy="22" r="6" stroke-opacity="0"><animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"></animate></circle>
@@ -257,8 +201,8 @@
                                 </div>
 
                                 <div id="step23" class="demo_step">
-                                    <img src="images/en/demo/22.png">
-                                    <div class="button demo_tooltip" id="button23" aria-label="Continue" data-balloon-length="medium" data-balloon-pos="down">
+                                    <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/home-steps/20.png">
+                                    <div class="button demo_tooltip" id="button23" aria-label="Each block and even each element can be configured" data-balloon-length="medium" data-balloon-pos="right">
                                         <svg width="80" height="80" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c" aria-label="audio-loading">
                                             <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
                                                 <circle cx="22" cy="22" r="6" stroke-opacity="0"><animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"></animate></circle>
@@ -269,8 +213,8 @@
                                 </div>
 
                                 <div id="step22" class="demo_step">
-                                    <img src="images/en/demo/21.png">
-                                    <div class="button demo_tooltip" id="button22" aria-label="Now, let's go to the new page and add a Kanban block to manage our tasks" data-balloon-length="medium" data-balloon-pos="right">
+                                    <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/home-steps/19.png">
+                                    <div class="button demo_tooltip" id="button22" aria-label="Drag and drop these blocks to adjust the layout" data-balloon-length="medium" data-balloon-pos="left">
                                         <svg width="80" height="80" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c" aria-label="audio-loading">
                                             <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
                                                 <circle cx="22" cy="22" r="6" stroke-opacity="0"><animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"></animate></circle>
@@ -281,8 +225,8 @@
                                 </div>
 
                                 <div id="step21" class="demo_step">
-                                    <img src="images/en/demo/19.png">
-                                    <div class="button demo_tooltip" id="button21" aria-label="Continue" data-balloon-length="medium" data-balloon-pos="down">
+                                    <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/home-steps/18.png">
+                                    <div class="button demo_tooltip" id="button21" aria-label="We can add as many blocks as we want within a page" data-balloon-length="medium" data-balloon-pos="left">
                                         <svg width="80" height="80" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c" aria-label="audio-loading">
                                             <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
                                                 <circle cx="22" cy="22" r="6" stroke-opacity="0"><animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"></animate></circle>
@@ -293,8 +237,8 @@
                                 </div>
 
                                 <div id="step20" class="demo_step">
-                                    <img src="images/en/demo/18.png">
-                                    <div class="button demo_tooltip" id="button20" aria-label="Add a relevant data block here to easily view this customer's order" data-balloon-length="medium" data-balloon-pos="down">
+                                    <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/home-steps/17.png">
+                                    <div class="button demo_tooltip" id="button20" aria-label="Continue" data-balloon-length="medium" data-balloon-pos="down">
                                         <svg width="80" height="80" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c" aria-label="audio-loading">
                                             <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
                                                 <circle cx="22" cy="22" r="6" stroke-opacity="0"><animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"></animate></circle>
@@ -305,8 +249,8 @@
                                 </div>
 
                                 <div id="step19" class="demo_step">
-                                    <img src="images/en/demo/20.png">
-                                    <div class="button demo_tooltip" id="button19" aria-label="Go to the next tab to continue" data-balloon-length="medium" data-balloon-pos="down">
+                                    <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/home-steps/16.png">
+                                    <div class="button demo_tooltip" id="button19" aria-label="Go to the next tab and add a block of association data to make it easy to view this customer's orders" data-balloon-length="medium" data-balloon-pos="right">
                                         <svg width="80" height="80" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c" aria-label="audio-loading">
                                             <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
                                                 <circle cx="22" cy="22" r="6" stroke-opacity="0"><animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"></animate></circle>
@@ -317,8 +261,8 @@
                                 </div>
 
                                 <div id="step18" class="demo_step">
-                                    <img src="images/en/demo/17.png">
-                                    <div class="button demo_tooltip" id="button18" aria-label="We can drag and drop to combine fields and adjust the layout" data-balloon-length="medium" data-balloon-pos="left">
+                                    <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/home-steps/15.png">
+                                    <div class="button demo_tooltip" id="button18" aria-label="Drag and drop combination fields to adjust the layout" data-balloon-length="medium" data-balloon-pos="left">
                                         <svg width="80" height="80" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c" aria-label="audio-loading">
                                             <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
                                                 <circle cx="22" cy="22" r="6" stroke-opacity="0"><animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"></animate></circle>
@@ -329,7 +273,7 @@
                                 </div>
 
                                 <div id="step17" class="demo_step">
-                                    <img src="images/en/demo/16.png">
+                                    <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/home-steps/14.png">
                                     <div class="button demo_tooltip" id="button17" aria-label="Rich blocks can be added in each tab. Let's add a details block" data-balloon-length="medium" data-balloon-pos="down">
                                         <svg width="80" height="80" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c" aria-label="audio-loading">
                                             <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
@@ -341,7 +285,7 @@
                                 </div>
 
                                 <div id="step16" class="demo_step">
-                                    <img src="images/en/demo/15.png">
+                                    <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/home-steps/13.png">
                                     <div class="button demo_tooltip" id="button16" aria-label="We can add some tabs" data-balloon-length="medium" data-balloon-pos="left">
                                         <svg width="80" height="80" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c" aria-label="audio-loading">
                                             <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
@@ -353,8 +297,8 @@
                                 </div>
 
                                 <div id="step15" class="demo_step">
-                                    <img src="images/en/demo/12.png">
-                                    <div class="button demo_tooltip" id="button15" aria-label="Click on 'View' and we will go to configure the details page for each data item" data-balloon-length="medium" data-balloon-pos="right">
+                                    <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/home-steps/12-3.png">
+                                    <div class="button demo_tooltip" id="button15" aria-label="Click 'View' and we go to configure the details page for each record" data-balloon-length="medium" data-balloon-pos="right">
                                         <svg width="80" height="80" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c" aria-label="audio-loading">
                                             <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
                                                 <circle cx="22" cy="22" r="6" stroke-opacity="0"><animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"></animate></circle>
@@ -365,8 +309,8 @@
                                 </div>
 
                                 <div id="step14" class="demo_step">
-                                    <img src="images/en/demo/14.png">
-                                    <div class="button demo_tooltip" id="button14" aria-label="We can also decide which columns to display" data-balloon-length="medium" data-balloon-pos="left">
+                                    <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/home-steps/12-2.png">
+                                    <div class="button demo_tooltip" id="button14" aria-label="We can also decide which actions to enable" data-balloon-length="medium" data-balloon-pos="left">
                                         <svg width="80" height="80" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c" aria-label="audio-loading">
                                             <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
                                                 <circle cx="22" cy="22" r="6" stroke-opacity="0"><animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"></animate></circle>
@@ -377,8 +321,8 @@
                                 </div>
 
                                 <div id="step13" class="demo_step">
-                                    <img src="images/en/demo/13.png">
-                                    <div class="button demo_tooltip" id="button13" aria-label="For this table block, we can decide which operations to enable" data-balloon-length="medium" data-balloon-pos="left">
+                                    <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/home-steps/12-1.png">
+                                    <div class="button demo_tooltip" id="button13" aria-label="We can decide which fields to display" data-balloon-length="medium" data-balloon-pos="left">
                                         <svg width="80" height="80" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c" aria-label="audio-loading">
                                             <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
                                                 <circle cx="22" cy="22" r="6" stroke-opacity="0"><animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"></animate></circle>
@@ -389,8 +333,8 @@
                                 </div>
 
                                 <div id="step11" class="demo_step">
-                                    <img src="images/en/demo/11.png">
-                                    <div class="button demo_tooltip" id="button11" aria-label="We add a table block to display the customer's data" data-balloon-length="medium" data-balloon-pos="down">
+                                    <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/home-steps/11.png">
+                                    <div class="button demo_tooltip" id="button11" aria-label="We add a table block to display companies data" data-balloon-length="medium" data-balloon-pos="down">
                                         <svg width="80" height="80" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c" aria-label="audio-loading">
                                             <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
                                                 <circle cx="22" cy="22" r="6" stroke-opacity="0"><animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"></animate></circle>
@@ -399,13 +343,13 @@
                                         </svg>
                                     </div>
                                     <div class="steps-groups">
-                                        <div class="steps-group-name"><span>03</span><br>Layout of blocks within the page</div>
+                                        <div class="steps-group-name"><span>03</span><br>Lay out blocks within a page</div>
                                     </div>
                                 </div>
 
                                 <div id="step10" class="demo_step">
-                                    <img src="images/en/demo/10.png">
-                                    <div class="button button10 demo_tooltip" id="button10" aria-label="Now, let's add some blocks within the page" data-balloon-length="medium" data-balloon-pos="right">
+                                    <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/home-steps/10.png">
+                                    <div class="button button10 demo_tooltip" id="button10" aria-label="Now, it's time to add blocks within the page" data-balloon-length="medium" data-balloon-pos="right">
                                         <svg width="80" height="80" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c" aria-label="audio-loading">
                                             <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
                                                 <circle cx="22" cy="22" r="6" stroke-opacity="0"><animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"></animate></circle>
@@ -416,8 +360,8 @@
                                 </div>
 
                                 <div id="step9" class="demo_step">
-                                    <img src="images/en/demo/9.png">
-                                    <div class="button demo_tooltip" id="button9" aria-label="It is also possible to add submenus of unlimited levels" data-balloon-length="medium" data-balloon-pos="right">
+                                    <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/home-steps/9.png">
+                                    <div class="button demo_tooltip" id="button9" aria-label="It is also possible to add unlimited levels of submenus" data-balloon-length="medium" data-balloon-pos="right">
                                         <svg width="80" height="80" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c" aria-label="audio-loading">
                                             <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
                                                 <circle cx="22" cy="22" r="6" stroke-opacity="0"><animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"></animate></circle>
@@ -428,8 +372,8 @@
                                 </div>
 
                                 <div id="step8" class="demo_step">
-                                    <img src="images/en/demo/8.png">
-                                    <div class="button demo_tooltip" id="button8" aria-label="Now, the configuration button appears on the interface. Let's add some menus" data-balloon-length="medium" data-balloon-pos="right">
+                                    <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/home-steps/8.png">
+                                    <div class="button demo_tooltip" id="button8" aria-label="Now, the configure buttons appears on the interface. Let's add some menus" data-balloon-length="medium" data-balloon-pos="right">
                                         <svg width="80" height="80" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c" aria-label="audio-loading">
                                             <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
                                                 <circle cx="22" cy="22" r="6" stroke-opacity="0"><animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"></animate></circle>
@@ -440,8 +384,8 @@
                                 </div>
 
                                 <div id="step7" class="demo_step">
-                                    <img src="images/en/demo/7.png">
-                                    <div class="button demo_tooltip" id="button7" aria-label="Back to the blank canvas, let's enter the interface configuration mode" data-balloon-length="medium" data-balloon-pos="left">
+                                    <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/home-steps/7.png">
+                                    <div class="button demo_tooltip" id="button7" aria-label="Back to the blank canvas, let's go into UI Editor mode" data-balloon-length="medium" data-balloon-pos="left">
                                         <svg width="80" height="80" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c" aria-label="audio-loading">
                                             <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
                                                 <circle cx="22" cy="22" r="6" stroke-opacity="0"><animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"></animate></circle>
@@ -455,8 +399,8 @@
                                 </div>
 
                                 <div id="step6" class="demo_step">
-                                    <img src="images/en/demo/6.png">
-                                    <div class="button button6 demo_tooltip" id="button6" aria-label="Create and exit the data table configuration screen" data-balloon-length="medium" data-balloon-pos="down">
+                                    <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/home-steps/6.png">
+                                    <div class="button button6 demo_tooltip" id="button6" aria-label="Complete, exit the collection manager page" data-balloon-length="medium" data-balloon-pos="down">
                                         <svg width="80" height="80" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c" aria-label="audio-loading">
                                             <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
                                                 <circle cx="22" cy="22" r="6" stroke-opacity="0"><animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"></animate></circle>
@@ -467,8 +411,8 @@
                                 </div>
 
                                 <div id="step5" class="demo_step">
-                                    <img src="images/en/demo/5.png">
-                                    <div class="button demo_tooltip" id="button5" aria-label="Choose from dozens of field types and create as needed" data-balloon-length="medium" data-balloon-pos="left">
+                                    <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/home-steps/5.png">
+                                    <div class="button demo_tooltip" id="button5" aria-label="Choose from dozens of field types as needed" data-balloon-length="medium" data-balloon-pos="left">
                                         <svg width="80" height="80" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c" aria-label="audio-loading">
                                             <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
                                                 <circle cx="22" cy="22" r="6" stroke-opacity="0"><animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"></animate></circle>
@@ -479,8 +423,8 @@
                                 </div>
 
                                 <div id="step4" class="demo_step">
-                                    <img src="images/en/demo/4.png">
-                                    <div class="button demo_tooltip" id="button4" aria-label="Next, we add some fields to the data table" data-balloon-length="medium" data-balloon-pos="left">
+                                    <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/home-steps/4.png">
+                                    <div class="button demo_tooltip" id="button4" aria-label="Next, we add some fields to the collection" data-balloon-length="medium" data-balloon-pos="left">
                                         <svg width="80" height="80" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c" aria-label="audio-loading">
                                             <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
                                                 <circle cx="22" cy="22" r="6" stroke-opacity="0"><animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"></animate></circle>
@@ -491,8 +435,8 @@
                                 </div>
 
                                 <div id="step3" class="demo_step">
-                                    <img src="images/en/demo/3.png">
-                                    <div class="button demo_tooltip" id="button3" aria-label="Let's create data tables for customers, orders, and tasks" data-balloon-length="medium" data-balloon-pos="left">
+                                    <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/home-steps/3.png">
+                                    <div class="button demo_tooltip" id="button3" aria-label="Let's create the Companies, Orders collections" data-balloon-length="medium" data-balloon-pos="left">
                                         <svg width="80" height="80" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c" aria-label="audio-loading">
                                             <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
                                                 <circle cx="22" cy="22" r="6" stroke-opacity="0"><animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"></animate></circle>
@@ -503,8 +447,8 @@
                                 </div>
 
                                 <div id="step2" class="demo_step">
-                                    <img src="images/en/demo/2.png">
-                                    <div class="button demo_tooltip" id="button2" aria-label="Go to the data sheet configuration screen" data-balloon-length="medium" data-balloon-pos="left">
+                                    <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/home-steps/2.png">
+                                    <div class="button demo_tooltip" id="button2" aria-label="Enter the collection manager screen" data-balloon-length="medium" data-balloon-pos="left">
                                         <svg width="80" height="80" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c" aria-label="audio-loading">
                                             <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
                                                 <circle cx="22" cy="22" r="6" stroke-opacity="0"><animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"></animate></circle>
@@ -513,12 +457,12 @@
                                         </svg>
                                     </div>
                                     <div class="steps-groups">
-                                        <div class="steps-group-name"><span>01</span><br>Create data tables and fields</div>
+                                        <div class="steps-group-name"><span>01</span><br>Create collections and fields</div>
                                     </div>
                                 </div>
 
                                 <div id="step1" class="demo_step demo_step_start">
-                                    <img src="images/en/demo/30.png">
+                                    <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/home-steps/1.png">
                                     <div class="button button1 demo_tooltip" id="button1" aria-label="Click, 3 steps to create a management system" data-balloon-length="medium" data-balloon-pos="up">
                                         <svg width="80" height="80" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c" aria-label="audio-loading">
                                             <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
@@ -535,46 +479,79 @@
             </div><!--end container-->
         </section>
 
-        <!-- No Code Feature Start -->
+        <!-- Features Start -->
         <section class="section">
             <div class="container mt-100 mt-60">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="section-title text-center mb-4 pb-4">
+                            <h2 class="title mb-4"><span class="text-primary">Distinctive</span> features</h2>
+                            <p class="text-muted para-desc mb-0 mx-auto">No-code development of NocoBase is flexible, friendly, <br>and has the power of near-native development.<br>At the same time, NocoBase also has a plugin architecture that is extremely easy to extend.</p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
                 <div class="row align-items-center">
-                    <div class="col-lg-8 col-md-6 order-2 order-md-1 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <div class="col-lg-5 col-md-6 order-2 order-md-1 mt-4 mt-sm-0 pt-2 pt-sm-0">
                         <div class="section-title me-lg-5">
-                            <h4 class="title mb-4">Create data models with rich field types and table relationships</h4>
-                            <p class="text-muted">Create independent data models using dozens of field types such as text, date, number, attachment, option, icon, etc., and various association relationships such as one-to-one, one-to-many, many-to-many, etc.</p>
+                            <h4 class="title mb-4">Model-driven<br>Separate "user interface" from "data structure"</h4>
+                            <p class="text-muted">NocoBase adopts the design idea of separating the user interface from the data structure, which allows you to create an arbitrary number of blocks (data views) of any type for the data, and define different actions, styles and texts in each block. This balances the simplicity of no-code operation with the flexibility of native development.</p>
                         </div>
                     </div><!--end col-->
 
-                    <div class="col-lg-4 col-md-6 order-1 order-md-2">
-                        <img src="images/feature/fields.gif" class="img-fluid" alt="">
+                    <div class="col-lg-7 col-md-6 order-1 order-md-2">
+                        <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/model.gif" class="img-fluid" alt="">
                     </div><!--end col-->
                 </div><!--end row-->
-            </div><!--end container-->
 
-            <div class="container mt-100 mt-60">
-                <div class="row align-items-center">
+                <div class="row align-items-center mt-100 mt-60">
                     <div class="col-lg-7 col-md-6">
-                        <img src="images/feature/blocks.gif" class="img-fluid" alt="">
+                        <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/blocks.gif" class="img-fluid" alt="">
                     </div><!--end col-->
 
                     <div class="col-lg-5 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
                         <div class="section-title ms-lg-5">
-                            <h4 class="title mb-4">Combine blocks within a page freely</h4>
-                            <p class="text-muted">Display and manipulate data within a page using a free combination of block types such as tables, forms, kanban, calendars, details, etc.</p>
+                            <h4 class="title mb-4">What you see is what you get</h4>
+                            <p class="text-muted">NocoBase enables the development of complex and distinctive business systems, but this does not mean that complex and specialized operations are required. With a single click, configuration options are displayed on the usage interface, and administrators with system configuration privileges can directly configure the user interface in a WYSIWYG manner.</p>
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
-            </div><!--end container-->
 
-            <div class="container mt-100 mt-60">
+                <div class="row align-items-center mt-100 mt-60">
+                    <div class="col-lg-5 col-md-6 order-2 order-md-1 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <div class="section-title me-lg-5">
+                            <h4 class="title mb-4">Functions as plugins</h4>
+                            <p class="text-muted">NocoBase adopts plugin architecture, all new functions can be realized by developing and installing plugins, and expanding the functions is as easy as installing an APP on your phone.</p>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-7 col-md-6 order-1 order-md-2">
+                        <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/plugins.png" class="img-fluid" alt="">
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section>
+        <!-- Features End -->
+        
+        <!-- Why Start -->
+        <section class="section">
+            <div class="container mt-60">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="section-title text-center mb-4 pb-4">
+                            <h2 class="title mb-4"><span class="text-primary">Why</span> NocoBase</h2>
+                            <p class="text-muted para-desc mb-0 mx-auto">We are committed to helping companies upgrade their R&D model to make digitalization faster, easier and cheaper.</p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
                 <div class="row">
                     <div class="col-md-6 col-12">
                         <div class="d-flex">
                             <i data-feather="award" class="fea icon-ex-md text-primary me-2 mt-1"></i>
                             <div class="flex-1">
-                                <h5 class="mt-0">Role-based access control</h5>
-                                <p class="answer text-muted mb-0">Role-based control of user's system configuration rights, data action rights and menu access rights.</p>
+                                <h5 class="mt-0">Open source, autonomous and controllable</h5>
+                                <p class="answer text-muted mb-0">NocoBase is open source under the Apache-2.0 & AGPL-3.0 licenses, and can be used free of charge as long as you follow the licenses. Advanced features are provided through the commercial version, which also provides full source code and is privately deployed to keep data private and secure.</p>
                             </div>
                         </div>
                     </div><!--end col-->
@@ -583,8 +560,8 @@
                         <div class="d-flex">
                             <i data-feather="award" class="fea icon-ex-md text-primary me-2 mt-1"></i>
                             <div class="flex-1">
-                                <h5 class="mt-0">Workflow & automation</h5>
-                                <p class="answer text-muted mb-0">Repetitive tasks are replaced by automation to increase efficiency. Manual approval is required for important matters.</p>
+                                <h5 class="mt-0">Strong no-code capability</h5>
+                                <p class="answer text-muted mb-0">NocoBase has three core concepts: collection, block, and action. By defining the data collections, to abstract the business; through the block to present the data; through the action to send the user's instructions to the server to complete the data interaction or change.</p>
                             </div>
                         </div>
                     </div><!--end col-->
@@ -595,8 +572,8 @@
                         <div class="d-flex">
                             <i data-feather="award" class="fea icon-ex-md text-primary me-2 mt-1"></i>
                             <div class="flex-1">
-                                <h5 class="mt-0">Unlimited level menu</h5>
-                                <p class="answer text-muted mb-0">You can group menus, support adding pages and links, and support unlimited submenus.</p>
+                                <h5 class="mt-0">High scalability</h5>
+                                <p class="answer text-muted mb-0">In the actual business, the ideal situation is to use no-code to meet 80% of the needs, the rest usually need to extend the development. NocoBase adopts the microkernel architecture, with a sound plugin system, all kinds of functions are extended in the form of plugins. NocoBase is based on Node.js and uses mainstream frameworks and technologies, including Koa, Sequelize, React and so on, which makes it extremely easy to expand.</p>
                             </div>
                         </div>
                     </div><!--end col-->
@@ -605,67 +582,107 @@
                         <div class="d-flex">
                             <i data-feather="award" class="fea icon-ex-md text-primary me-2 mt-1"></i>
                             <div class="flex-1">
-                                <h5 class="mt-0">Rich and extensible actions</h5>
-                                <p class="answer text-muted mb-0">Support filtering, exporting, adding, deleting, modifying, viewing and other operations to process data, which can be extended to more types</p>
+                                <h5 class="mt-0">Integrate with existing systems</h5>
+                                <p class="answer text-muted mb-0">Organizations usually have various systems and databases already in place, and NocoBase supports using third-party databases or APIs as data sources, as well as embedding NocoBase into third-party systems or embedding third-party systems into NocoBase.</p>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row">
+                    <div class="col-md-6 col-12 mt-4 pt-4">
+                        <div class="d-flex">
+                            <i data-feather="award" class="fea icon-ex-md text-primary me-2 mt-1"></i>
+                            <div class="flex-1">
+                                <h5 class="mt-0">Extremely simple and lightweight</h5>
+                                <p class="answer text-muted mb-0">NocoBase uses JavaScript/TypeScript technology stack, one person can complete the front-end and back-end development. It has low server requirements and can be deployed on a single low-configuration server.</p>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-md-6 col-12 mt-4 pt-4">
+                        <div class="d-flex">
+                            <i data-feather="award" class="fea icon-ex-md text-primary me-2 mt-1"></i>
+                            <div class="flex-1">
+                                <h5 class="mt-0">Pay once, use forever</h5>
+                                <p class="answer text-muted mb-0">NocoBase only charges for premium features. For a one-time fee, you get access to the full source code and 1 year of upgrade rights and technical support. After the expiration date, if you do not renew your subscription, you can stay in the current version and use it for free forever.</p>
                             </div>
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
             </div><!--end container-->
-
         </section>
+        <!-- Why End -->
 
-        <section class="section" id="feature">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12">
-                        <div class="section-title text-center mb-4 pb-2">
-                            <h2 class="title mb-4">Everything is a <span class="text-primary">plugin</span>,<br/>built for <span class="text-primary">extended</span> development</h2>
-                            <p class="text-muted para-desc mb-0 mx-auto">No-code can not solve all problems, NocoBase has a very simple and easy architecture to extend</p>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-6">
-                        <img src="images/feature/5.png" class="img-fluid" alt="">
-                    </div><!--end col-->
-
-                    <div class="col-lg-6 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                        <div class="section-title ms-lg-5">                            
-                            <h5><i class="uil uil-arrow-circle-right text-primary me-1"></i> Microkernel，pluggable</h5>
-                            <p class="text-muted para-desc ms-4 ps-2">NocoBase uses a micro-core architecture, various functions are extended with plugins.</p>
-                            <h5><i class="uil uil-arrow-circle-right text-primary me-1"></i> Mainstream tech stack</h5>
-                            <p class="text-muted para-desc ms-4 ps-2">Based on Node.js, using mainstream frameworks and technologies, including Koa, Sequelize, React, Formily, Ant Design, etc.</p>
-                            <h5><i class="uil uil-arrow-circle-right text-primary me-1"></i> Open source</h5>
-                            <p class="text-muted para-desc ms-4 ps-2">Full code ownership under the Apache-2.0 & AGPL-3.0 license.</p>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-
-            </div><!--end container-->
-        </section>
-
-        <!-- Try Start -->
+        <!-- Feedback Start -->
         <section class="section">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 text-center">
                         <div class="section-title">
-                            <h2 class="title mb-4">Get NocoBase & Join us</h2>
-                            <p class="text-muted para-desc mx-auto mb-0">You can get NocoBase from <a href="https://github.com/nocobase/nocobase" target="_blank">GitHub</a>.<br>Please feedback bugs and features by <a href="https://github.com/nocobase/nocobase/issues" target="_blank">GitHub Issues</a>, or start a discussion by <a href="https://github.com/nocobase/nocobase/discussions" target="_blank">GitHub Discussions</a>.<br>
-                             If you are very interested in the field of no-code/low-code and NocoBase, welcome to join us.<br>Please contact via email:<br>hello@nocobase.com</p>
+                            <h2 class="title mb-4">What <span class="text-primary">Users</span> Say</h2>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-9 mt-4 pt-2 text-center">
+                        <div class="tiny-single-item">
+                            
+                            
+                            <div class="tiny-slide client-testi text-center">
+                                <p class="text-muted h6 fst-italic">" I cannot emphasize enough the great experience I've had with NocoBase as a low-code platform. It stands out as exceptionally user-friendly, making my development process both smooth and efficient. What impressed me most was how easy it was to work on development of the user experience once the data model was in place. This streamlined approach allowed me to develop a full-fledged system, designed to be used by several hundred organizations, in just a matter of weeks. NocoBase has effectively shattered the common misconception that powerful systems require months or even years of work. I highly recommend it for any organization looking to fast-track their development cycle without sacrificing quality. "</p>
+                                <a href="https://sambruk.se/" target="_blank"><img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/Sambruk.png" class="mt-4 mb-4" width="160" alt=""></a>
+                                <h6 class="text-primary"> Thomas Wennersten <small class="text-muted">CTO</small></h6>
+                            </div>
+
+                            <!-- <div class="tiny-slide client-testi text-center">
+                                <p class="text-muted h6 fst-italic">
+                                    " "
+                                </p>
+                                <a href="https://www.mi.com/" target="_blank"><img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/Xiaomi.png" class="mt-4 mb-4" width="160" alt=""></a>
+                                <h6 class="text-primary"> Dong Tao <small class="text-muted">Senior engineer</small></h6>
+                            </div>
+
+                            <div class="tiny-slide client-testi text-center">
+                                <p class="text-muted h6 fst-italic">"  "</p>
+                                <a href="http://www.thfund.com.cn/" target="_blank"><img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/tianhong.png" class="mt-4 mb-4" width="120" alt=""></a>
+                                <h6 class="text-primary"> Zhao Changhu <small class="text-muted">Senior engineer</small></h6>
+                            </div>
+
+                            <div class="tiny-slide client-testi text-center">
+                                <p class="text-muted h6 fst-italic">"  "</p>
+                                <a href="https://www.cppu.edu.cn/" target="_blank"><img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/cppu.png" class="mt-4 mb-4" width="200" alt=""></a>
+                                <h6 class="text-primary"> Liu Ran <small class="text-muted">Senior engineer</small></h6>
+                            </div> -->
+                        </div><!--end owl carousel-->
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section>
+        <!-- Feedback End -->
+
+        <!-- Get Start -->
+        <section class="section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h2 class="title mb-4">Get NocoBase</h2>
+                            <p class="text-muted para-desc mx-auto">You can get the source code for the basic version of NocoBase from <a href="https://github.com/nocobase/nocobase" target="_blank">GitHub</a> or <a href="https://gitee.com/nocobase/nocobase" target="_blank">Gitee</a>.<br>Please report bugs via <a href="https://github.com/nocobase/nocobase/issues" target="_blank">GitHub Issues</a>, or start a discussion on <a href="https://github.com/nocobase/nocobase/discussions" target="_blank">GitHub Discussions</a>.</p>
+                            <p class="text-muted para-desc mx-auto mb-0">If you need advanced features or services, check out the <a href="/pricing-cn.html" target="_blank">commercial version</a> page for details.</p>
                         
                             <div class="mt-4">
                                 <a href="https://github.com/nocobase/nocobase" class="btn btn-primary mt-2 me-2" target="_blank">GitHub</a>
-                                <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-outline-primary mt-2 ">Online demo</a>
+                                <a href="https://demo-cn.nocobase.com/new" target="_blank" class="btn btn-outline-primary mt-2 ">Live Demo</a>
                             </div>
+                           
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
             </div><!--end container-->
         </section>
-        <!-- Try End -->
+        <!-- Get End -->
 
 
         <!-- Footer Start -->
@@ -674,9 +691,9 @@
                 <div class="row">
                     <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
                         <a href="https://nocobase.com" class="logo-footer">
-                            <img src="images/logo-white.png" height="24" alt="">
+                            <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/logo-white.png" height="24" alt="">
                         </a>
-                        <p class="mt-4">No programming required, build your own collaboration platform, management system with NocoBase in minutes.</p>
+                        <p class="mt-4">Self-hosted and extremely scalable open source no-code and low-code development platform to make digitalization faster, easier and cheaper.</p>
                         <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4">
                             <li class="list-inline-item"><a href="https://github.com/nocobase/nocobase" class="rounded" target="_blank"><i data-feather="github" class="fea icon-sm fea-social"></i></a></li>
                             <li class="list-inline-item"><a href="mailto:hello@nocobase.com" class="rounded" target="_blank"><i data-feather="mail" class="fea icon-sm fea-social"></i></a></li>
@@ -689,16 +706,19 @@
                     <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
                         <!-- <h5 class="text-light footer-head">Usefull Links</h5> -->
                         <ul class="list-unstyled footer-list mt-4">
-                            <li><a href="https://docs.nocobase.com/" class="text-foot" target="_blank"><i class="uil uil-angle-right-b me-1"></i> Docs</a></li>
+                            <li><a href="https://demo-cn.nocobase.com/new" target="_blank" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Demo</a></li>
+                            <li><a href="https://blog-cn.nocobase.com" target="_blank" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Blog</a></li>
+                            <li><a href="https://docs-cn.nocobase.com/" class="text-foot" target="_blank"><i class="uil uil-angle-right-b me-1"></i> Docs</a></li>
+                            <li><a href="https://nocobase.com/pricing-cn.html" class="text-foot" target="_blank"><i class="uil uil-angle-right-b me-1"></i> Commercial version</a></li>
                             <li><a href="https://github.com/nocobase/nocobase" class="text-foot" target="_blank"><i class="uil uil-angle-right-b me-1"></i> GitHub</a></li>
                             <li><a href="https://gitee.com/nocobase/nocobase" class="text-foot" target="_blank"><i class="uil uil-angle-right-b me-1"></i> Gitee</a></li>
-                            <li><a href="https://demo.nocobase.com/new" target="_blank" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Demo</a></li>
                         </ul>
                     </div><!--end col-->
 
                     <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                        <h5 class="text-light footer-head">Welcome to participate</h5>
-                        <p class="mt-4">If you need commercial version and commercial services, please feel free to contact us by email: hello@nocobase.com</p>
+                        <h5 class="text-light footer-head">Follow Us</h5>
+                        <p class="mt-4">Please follow our WeChat to get timely updates:</p>
+                        <img width="100" height="100" src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/wechat.png">
                     </div><!--end col-->
                 </div><!--end row-->
             </div><!--end container-->
@@ -723,12 +743,14 @@
         
 
         <!-- javascript -->
-        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <!-- SLIDER -->
+        <script src="./js/tiny-slider.js "></script>
         <!-- Icons -->
-        <script src="js/feather.min.js"></script>
+        <script src="./js/feather.min.js"></script>
         <!-- Main Js -->
-        <script src="js/plugins.init.js"></script><!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
-        <script src="js/jquery-3.6.0.min.js"></script>
-        <script src="js/app.js?v2.1.7"></script><!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+        <script src="./js/plugins.init.js?v3"></script><!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
+        <script src="./js/jquery-3.6.0.min.js"></script>
+        <script src="./js/app.js?v3"></script><!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
     </body>
 </html>

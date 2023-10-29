@@ -1,0 +1,860 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+    <head>
+        <!-- <base href="/"> -->
+        <meta charset="utf-8" />
+        <title>NocoBase —— 开源、私有部署的无代码和低代码开发平台</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="NocoBase —— 开源、私有部署的无代码和低代码开发平台" />
+        <meta name="keywords" content="no-code,low-code,open-source,低代码,无代码,私有部署,开源" />
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="./images/favicon/site.webmanifest">
+        <!-- Bootstrap -->
+        <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- Icons -->
+        <link href="./css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+        <!-- Balloon css -->
+        <link href="./css/balloon.min.css?v3" rel="stylesheet" type="text/css" />
+        <!-- Main Css -->
+        <link href="./css/style.css?v3" rel="stylesheet" type="text/css" id="theme-opt" />
+        <link href="./css/colors/default.css" rel="stylesheet" id="color-opt">
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-237XXSVYHE"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-237XXSVYHE');
+        </script>
+        
+        <!-- Baidu Analytics -->
+        <script>
+            var _hmt = _hmt || [];
+            (function() {
+              var hm = document.createElement("script");
+              hm.src = "https://hm.baidu.com/hm.js?acfb678ac7bbc9df89e1aa4327e47907";
+              var s = document.getElementsByTagName("script")[0]; 
+              s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    </head>
+
+    <body class="en">
+        <!-- Loader -->
+        <!-- <div id="preloader">
+            <div id="status">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Loader -->
+        
+        <!-- Navbar Start -->
+        <header id="topnav" class="defaultscroll sticky">
+            <div class="container">
+                <!-- Logo container-->
+                <a class="logo" href="https://www.nocobase.com">
+                    <img src="images/logo.png" height="24" class="logo-light-mode" alt="">
+                </a>
+                <div class="lang">
+                    <a href="https://www.nocobase.com/" class="text-reset">EN</a> | <a href="https://cn.nocobase.com/" class="text-reset">中文</a>
+                </div>
+                <!-- End Logo container-->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </div>
+                </div>
+        
+                <div id="navigation">
+                    <!-- Navigation Menu-->   
+                    <ul class="navigation-menu">
+                        <li><a href="https://demo-cn.nocobase.com/new" target="_blank" class="sub-menu-item">Demo</a></li>
+                        <li><a href="https://blog-cn.nocobase.com" class="sub-menu-item" target="_blank">博客</a></li>
+                        <li><a href="https://docs-cn.nocobase.com/" class="sub-menu-item" target="_blank">文档</a></li>
+                        <li><a href="https://nocobase.com/pricing" class="sub-menu-item" target="_blank">商业版</a></li>
+                        <li><a href="https://github.com/nocobase/nocobase" class="sub-menu-item" target="_blank">GitHub</a></li>
+                        <li><a href="https://gitee.com/nocobase/nocobase" class="sub-menu-item" target="_blank">Gitee</a></li>
+                    </ul><!--end navigation menu-->
+                    <div class="lang d-none">
+                        <a href="https://www.nocobase.com/" class="text-reset">EN</a> | <a href="https://cn.nocobase.com/" class="text-reset">中文</a>
+                    </div>
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </header><!--end header-->
+        <!-- Navbar End -->
+        
+        <!-- Hero Start -->
+        <section class="bg-half bg-light d-table w-100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 text-center">
+                        <div class="page-next-level">
+                            <h2 class="title">商业版本</h2>
+                            <p class="para-desc mx-auto text-muted">与开源版本一样，商业版本也提供完整的源代码。NocoBase 的目标是为你提供一个<br>完全自主的无代码开发平台。</p>
+                        </div>
+                    </div>  <!--end col-->
+                </div><!--end row-->
+            </div> <!--end container-->
+        </section><!--end section-->
+        <!-- Hero End -->
+
+        <!-- Shape Start -->
+        <div class="position-relative">
+            <div class="shape overflow-hidden text-white">
+                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+                </svg>
+            </div>
+        </div>
+        <!--Shape End-->
+
+        <!-- Features Comparison Start -->
+        <section class="section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Table Start -->
+                    <div class="col mt-4 pt-2" id="tables">
+                        <div class="component-wrapper">
+
+                            <div class="p-4">
+                                <div class="table-responsive bg-white">
+                                    <table class="table mb-0 table-center">
+                                        <thead class="table-light">
+                                            <tr>
+                                            <th scope="col" class="border-bottom pt-4 pb-4">功能和插件</th>
+                                            <th scope="col" class="border-bottom col-sm-2">开源免费</th>
+                                            <th scope="col" class="border-bottom col-sm-2">Business</th>
+                                            <th scope="col" class="border-bottom col-sm-2">Enterprise</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>Collections</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>General collection</th>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>File collection</th>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Calendar collection</th>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tree collection</th>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Expression collection</th>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>SQL collection</th>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Connect to database view</th>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Connect to third-party database</th>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Connect to third-party API</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Data blocks</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Table</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Form</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Details</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>List</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Grid card</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Calendar</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Kanban</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Gantt</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Charts</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Map</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Filter blocks</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Form</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Collapse</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tree</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Other blocks</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Markdown</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Iframe</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Actions</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Filter</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Add new</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Delete</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Refresh</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Update record</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Export</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Import</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bulk update</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bulk edit</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Duplicate</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Print</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Custom request</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Workflow</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-muted"><i>Event</i></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Collection event</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Schedule event</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Form event</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Approval</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-muted"><i>Node</i></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Query record</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Create record</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Update record</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Delete record</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Caculation</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Condition</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Parallel branch</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Delay</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Aggregate</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Manual</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Approval</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Loop</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>HTTP request</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>SQL action</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Data Visualization</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Basic charts</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Multi-source data</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <th>SSO</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>CAS auth</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>OIDC auth</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>SAML auth</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <th>More plugins</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Access control list</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Authentication</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Collection manager</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Error handler</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>File manager</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>System settings</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>UI routes storage</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>UI schema storage</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Users</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>WEB client</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>China region</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Data import</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Data export</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mobile client</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Verification</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>SMS auth</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Map</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Formula field</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sequence field</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Theme editor</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>App backup & restore</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Multi-app manager</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>API keys</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>API documentation</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Audit logs</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Graph collection manager</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Localization management</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Snapshot field</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Embedding NocoBase pages into third-party systems</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Embedding third-party pages into NocoBase</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Support Xinchuang DB</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>√</td>
+                                            </tr>
+                                            <tr>
+                                                <td><br></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>适用场景</th>
+                                                <td>基础使用</td>
+                                                <td>复杂场景<br>较少的扩展开发</td>
+                                                <td>复杂场景<br>大量扩展和第三方集成</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    <!-- Table End -->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- Features comparison End -->
+
+        <!-- Contact Us Start -->
+        <section class="section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h2 class="title mb-4">获取商业版本和服务的详细信息</h2>
+                            <p class="text-muted para-desc mx-auto">如果你需要商业版本和服务, 请通过邮件联系我们: <br><a href="mailto:hello@nocobase.com">hello@nocobase.com</a></p>
+                            <p class="text-muted para-desc mx-auto mb-0">或者添加我们的微信:<br><img width="100" height="100" src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/wechat.png"></p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section>
+        <!-- Contact Us End -->
+
+        <!-- Footer Start -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                        <a href="https://nocobase.com" class="logo-footer">
+                            <img src="images/logo-white.png" height="24" alt="">
+                        </a>
+                        <p class="mt-4">No programming required, build your own collaboration platform, management system with NocoBase in minutes.</p>
+                        <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4">
+                            <li class="list-inline-item"><a href="https://github.com/nocobase/nocobase" class="rounded" target="_blank"><i data-feather="github" class="fea icon-sm fea-social"></i></a></li>
+                            <li class="list-inline-item"><a href="mailto:hello@nocobase.com" class="rounded" target="_blank"><i data-feather="mail" class="fea icon-sm fea-social"></i></a></li>
+                        </ul><!--end icon-->
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-2 col-md-4 col-12">
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <!-- <h5 class="text-light footer-head">Usefull Links</h5> -->
+                        <ul class="list-unstyled footer-list mt-4">
+                            <li><a href="https://docs.nocobase.com/" class="text-foot" target="_blank"><i class="uil uil-angle-right-b me-1"></i> Docs</a></li>
+                            <li><a href="https://github.com/nocobase/nocobase" class="text-foot" target="_blank"><i class="uil uil-angle-right-b me-1"></i> GitHub</a></li>
+                            <li><a href="https://gitee.com/nocobase/nocobase" class="text-foot" target="_blank"><i class="uil uil-angle-right-b me-1"></i> Gitee</a></li>
+                            <li><a href="https://demo.nocobase.com/new" target="_blank" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Demo</a></li>
+                        </ul>
+                    </div><!--end col-->
+
+                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <h5 class="text-light footer-head">Welcome to participate</h5>
+                        <p class="mt-4">If you need commercial version and commercial services, please feel free to contact us by email: hello@nocobase.com</p>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </footer><!--end footer-->
+        <footer class="footer footer-bar">
+            <div class="container text-center">
+                <div class="row align-items-center">
+                    <div class="col-sm-6">
+                        <div class="text-sm-start">
+                            <p class="mb-0">© 2020-<script>document.write(new Date().getFullYear())</script> NocoBase. All rights reserved.</p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </footer><!--end footer-->
+        <!-- Footer End -->
+
+        <!-- Back to top -->
+        <a href="#" onclick="topFunction()" id="back-to-top" class="btn btn-icon btn-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+        <!-- Back to top -->
+
+        
+
+        <!-- javascript -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- tobii js -->
+        <script src="js/tobii.min.js "></script>
+        <!-- Icons -->
+        <script src="js/feather.min.js"></script>
+        <!-- Main Js -->
+        <script src="js/plugins.init.js"></script><!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
+        <script src="js/app.js"></script><!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+    </body>
+</html>
