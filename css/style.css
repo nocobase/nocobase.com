@@ -5482,4 +5482,7 @@ a {
 .demo-entrance {
   margin: 60px 0;
 }
-
+.version-desc {
+  color: #888;
+  font-size: 12px;
+}
