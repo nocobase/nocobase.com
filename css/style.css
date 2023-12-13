@@ -2372,7 +2372,7 @@ p {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   right: -1px;
-  top: 30px;
+  top: 32px;
 }
 
 #topnav .navigation-menu .has-submenu:hover .menu-arrow {
@@ -2504,7 +2504,7 @@ p {
     top: 33px !important;
   }
   #topnav .navigation-menu > .has-submenu.active .menu-arrow {
-    top: 30px;
+    top: 32px;
   }
   #topnav .navigation-menu > li .submenu {
     position: absolute;
@@ -2532,8 +2532,8 @@ p {
     padding: 10px 20px;
     clear: both;
     white-space: nowrap;
-    font-size: 11px;
-    text-transform: uppercase;
+    font-size: 14px;
+    /* text-transform: uppercase; */
     letter-spacing: 0.04em;
     font-weight: 700;
     color: #3c4858 !important;
@@ -2694,7 +2694,7 @@ p {
     position: relative;
     padding: 7px 15px;
 /*     text-transform: uppercase; */
-    font-size: 11px;
+    font-size: 14px;
     letter-spacing: 0.04em;
     font-weight: 700;
     color: #3c4858 !important;
@@ -2719,7 +2719,7 @@ p {
     display: block;
     position: relative;
     padding: 10px 15px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-size: 12px;
     letter-spacing: 2px;
     color: #8492a6;
