@@ -1,3 +1,14 @@
+/* Template Name: Landrick - Saas & Software Landing Page Template
+   Author: Shreethemes
+   E-mail: support@shreethemes.in
+   Created: August 2019
+   Version: 4.7.0
+   File Description: Main JS file of the template
+
+   
+*/
+
+
 /*********************************/
 /*         INDEX                 */
 /*================================
@@ -7,8 +18,9 @@
  *     04.  Clickable Menu       *
  *     05.  Back to top          *
  *     06.  Feather icon         *
- *     06.  DD Menu              *
- *     06.  Active Sidebar Menu  *
+ *     07.  DD Menu              *
+ *     08.  Active Sidebar Menu  *
+ *     09.  Contact Js           *
  ================================*/
 
 
@@ -79,18 +91,29 @@ function activateMenu() {
 
         if (matchingMenuItem) {
             matchingMenuItem.classList.add('active');
+         
+         
             var immediateParent = getClosest(matchingMenuItem, 'li');
+      
             if (immediateParent) {
                 immediateParent.classList.add('active');
             }
+            
+            var parent = getClosest(immediateParent, '.child-menu-item');
+            if(parent){
+                parent.classList.add('active');
+            }
 
-            var parent = getClosest(matchingMenuItem, '.parent-menu-item');
+            var parent = getClosest(parent || immediateParent , '.parent-menu-item');
+        
             if (parent) {
                 parent.classList.add('active');
+
                 var parentMenuitem = parent.querySelector('.menu-item');
                 if (parentMenuitem) {
                     parentMenuitem.classList.add('active');
                 }
+
                 var parentOfParent = getClosest(parent, '.parent-parent-menu-item');
                 if (parentOfParent) {
                     parentOfParent.classList.add('active');
@@ -159,8 +182,6 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
-
-
 //ACtive Sidebar
 (function () {
     var current = location.pathname.substring(location.pathname.lastIndexOf('/') + 1);;
@@ -190,10 +211,78 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
 });
 
+//Popovers
+var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
+})
+
 //small menu
 try {
     var spy = new Gumshoe('#navmenu-nav a');
 }catch(err) {
+    
+}
+
+
+//Contact js
+try {
+    function validateForm() {
+        var name = document.forms["myForm"]["name"].value;
+        var email = document.forms["myForm"]["email"].value;
+        var subject = document.forms["myForm"]["subject"].value;
+        var comments = document.forms["myForm"]["comments"].value;
+        document.getElementById("error-msg").style.opacity = 0;
+        document.getElementById('error-msg').innerHTML = "";
+        if (name == "" || name == null) {
+            document.getElementById('error-msg').innerHTML = "<div class='alert alert-warning error_message'>*Please enter a Name*</div>";
+            fadeIn();
+            return false;
+        }
+        if (email == "" || email == null) {
+            document.getElementById('error-msg').innerHTML = "<div class='alert alert-warning error_message'>*Please enter a Email*</div>";
+            fadeIn();
+            return false;
+        }
+        if (subject == "" || subject == null) {
+            document.getElementById('error-msg').innerHTML = "<div class='alert alert-warning error_message'>*Please enter a Subject*</div>";
+            fadeIn();
+            return false;
+        }
+        if (comments == "" || comments == null) {
+            document.getElementById('error-msg').innerHTML = "<div class='alert alert-warning error_message'>*Please enter a Comments*</div>";
+            fadeIn();
+            return false;
+        }
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("simple-msg").innerHTML = this.responseText;
+                document.forms["myForm"]["name"].value = "";
+                document.forms["myForm"]["email"].value = "";
+                document.forms["myForm"]["subject"].value = "";
+                document.forms["myForm"]["comments"].value = "";
+            }
+        };
+        xhttp.open("POST", "php/contact.php", true);
+        xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhttp.send("name=" + name + "&email=" + email + "&subject=" + subject + "&comments=" + comments);
+        return false;
+      }
+    
+      function fadeIn() {
+        var fade = document.getElementById("error-msg");
+        var opacity = 0;
+        var intervalID = setInterval(function () {
+            if (opacity < 1) {
+                opacity = opacity + 0.5
+                fade.style.opacity = opacity;
+            } else {
+                clearInterval(intervalID);
+            }
+        }, 200);
+    }
+} catch (error) {
     
 }
 
@@ -255,22 +344,3 @@ $('.steps-title').click(function(){
         $('#button11').parent().fadeIn();
     }
 })
-
-// Language
-// if (!localStorage.getItem('locale')) {
-//     localStorage.setItem('locale', window.navigator.language.toLowerCase() || 'en');
-// }
-
-// if (window.location.search.startsWith('?locale=zh')) {
-//     localStorage.setItem('locale', 'zh-cn');
-// } else if (window.location.search.startsWith('?locale=en')) {
-//     localStorage.setItem('locale', 'en-us');
-// }
-
-// var language = localStorage.getItem('locale');
-
-// if (location.pathname !== '/cn/' && language.startsWith('zh')) {
-//     window.location = 'https://www.nocobase.com/cn/'
-// } else if (location.pathname !== '/' && !language.startsWith('zh')) {
-//     window.location = 'https://www.nocobase.com/'
-// }

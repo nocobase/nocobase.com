@@ -1,6 +1,5 @@
-
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" dir="ltr">
 
     <head>
         <meta charset="utf-8" />
@@ -9,22 +8,33 @@
         <meta name="description" content="NocoBase is a lightweight, extremely scalable open source no-code and low-code development platform. Instead of investing years of time and millions of dollars in research and development, deploy NocoBase in a few minutes and you'll have a private, controllable, and extremely scalable no-code development platform!" />
         <meta name="keywords" content="nocobase,low-code,no-code,self-hosted,open source,open-source,no-code development,low-code development,workflow management software,business process management,collaboration software,enterprise process management,enterprise management system,no-code system,no-code platform,free no-code development platform" />
         <!-- favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-        <link rel="manifest" href="images/favicon/site.webmanifest">
+        <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="./images/favicon/site.webmanifest">
         <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <!-- Icons -->
-        <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+        <link href="./css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
         <!-- Balloon css -->
-        <link href="css/balloon.min.css?v5" rel="stylesheet" type="text/css" />
+        <link href="./css/balloon.min.css?v3" rel="stylesheet" type="text/css" />
         <!-- Slider -->               
         <link rel="stylesheet" href="./css/tiny-slider.css"/> 
         <!-- Main Css -->
-        <link href="./css/style.css?v3" rel="stylesheet" type="text/css" id="theme-opt" />
-        <link href="./css/colors/default.css" rel="stylesheet" id="color-opt">
+        <link href="./css/style.css?v1" rel="stylesheet" type="text/css" id="theme-opt" />
+        <!-- <link href="./css/colors/default.css" rel="stylesheet" id="color-opt"> -->
+
+        <!-- <script type="text/javascript">
+            var language =
+                localStorage.getItem("locale") ||
+                window.navigator.language.toLowerCase() ||
+                "en";
+            localStorage.setItem("locale", language);
+            if (language.indexOf("zh-") !== -1) {
+                window.location = "https://cn.nocobase.com";
+            } 
+        </script> -->
 
         <!-- Begin Brevo Form -->
         <style>
@@ -68,7 +78,7 @@
         </script>
     </head>
 
-    <body class="en">
+    <body>
         <!-- Loader -->
         <!-- <div id="preloader">
             <div id="status">
@@ -80,15 +90,17 @@
         </div> -->
         <!-- Loader -->
         
-        <!-- Navbar STart -->
+        <!-- Navbar Start -->
         <header id="topnav" class="defaultscroll sticky">
             <div class="container">
                 <!-- Logo container-->
                 <a class="logo" href="https://www.nocobase.com">
-                    <img src="images/logo.png" height="24" class="logo-light-mode" alt="NocoBase lightweight, open-source low-code & no-code platform">
+                    <span class="logo-light-mode">
+                        <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/logo.png" class="logo-light-mode" height="24" alt="NocoBase Logo">
+                    </span>
                 </a>
-                <div class="lang">
-                    <a href="https://www.nocobase.com" class="text-reset">EN</a> | <a href="https://cn.nocobase.com" class="text-reset">中文</a>
+                <div class="demo">
+                    <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-outline-primary btn-sm">Live demo<i class="uil uil-angle-right-b"></i></a>
                 </div>
                 <!-- End Logo container-->
                 <div class="menu-extras">
@@ -104,45 +116,46 @@
                         <!-- End mobile menu toggle-->
                     </div>
                 </div>
-        
+
                 <div id="navigation">
                     <!-- Navigation Menu-->   
                     <ul class="navigation-menu">
+                        <li><a rel="nofollow" href="https://github.com/nocobase/nocobase" class="sub-menu-item" target="_blank">GitHub <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/nocobase/nocobase"></a></li>
+                        <li><a href="https://www.nocobase.com/plugins.html" class="sub-menu-item">Plugins</a></li>
+                        <li><a href="https://www.nocobase.com/commercial.html" class="sub-menu-item">Commercial</a></li>
                         <li class="has-submenu parent-menu-item">
-                            <a href="javascript:void(0)">Open-source</a><span class="menu-arrow"></span>
+                            <a href="javascript:void(0)">Resources</a><span class="menu-arrow"></span>
                             <ul class="submenu">
-                                <li><a rel="nofollow" href="https://github.com/nocobase/nocobase" class="sub-menu-item" target="_blank">GitHub</a></li>
-                                <li><a rel="nofollow" href="https://gitee.com/nocobase/nocobase" class="sub-menu-item" target="_blank">Gitee</a></li>
+                                <li><a href="https://docs.nocobase.com" class="sub-menu-item" target="_blank">Documentation</a></li>
+                                <li><a href="https://blog.nocobase.com" class="sub-menu-item" target="_blank">Blog</a></li>
+                                <li><a href="https://www.nocobase.com/community.html" class="sub-menu-item">Community</a></li>
+                                <li><a href="https://www.nocobase.com/contact.html" class="sub-menu-item">Contact us</a></li>
+                                <li><a href="https://docs.nocobase.com/welcome/release/roadmap" class="sub-menu-item" target="_blank">Roadmap</a></li>
+                                <li><a href="https://docs.nocobase.com/welcome/release/v0190-changelog" class="sub-menu-item" target="_blank">Release note</a></li>
                             </ul>
                         </li>
-                        <li><a href="https://demo.nocobase.com/new" target="_blank" class="sub-menu-item">Demo</a></li>
-                        <li><a href="https://blog.nocobase.com" class="sub-menu-item" target="_blank">Blog</a></li>
-                        <li><a href="https://docs.nocobase.com" class="sub-menu-item" target="_blank">Docs</a></li>
-                        <!-- <li><a href="https://www.nocobase.com/commercial.html" class="sub-menu-item">Commercial</a></li> -->
                     </ul><!--end navigation menu-->
-                    <div class="lang d-none">
-                        <a href="https://www.nocobase.com" class="text-reset">EN</a> | <a href="https://cn.nocobase.com" class="text-reset">中文</a>
-                    </div>
                 </div><!--end navigation-->
             </div><!--end container-->
         </header><!--end header-->
         <!-- Navbar End -->
-
+        
         <!-- Hero Start -->
-        <section class="bg-home d-flex align-items-center" style="height: auto;" id="home">
+        <section class="bg-half-260 bg-light d-table w-100">
+            <!-- <div class="bg-overlay"></div> -->
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-12 text-center mt-0 mt-md-5 pt-0 pt-md-5">
-                        <div class="title-heading home-heading">
-                            <h1 class="heading fw-bold mb-3">Your private<br>no-code platform</h1>
-                            <p class="para-desc mx-auto text-muted">Instead of investing years of time and millions of dollars in research and development, deploy NocoBase in a few minutes and you'll have a private, controllable, and extremely scalable no-code development platform!</p>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="title-heading text-center mt-4">
+                            <h1 class="display-4 fw-bold mb-3">Your private<br>no-code platform</h1>
+                            <p class="para-desc mx-auto text-muted">
+                                Total control, infinite scalability, empower your team to swiftly adapt to changes and significantly reduce costs. Skip years of development and millions in investment<br>- just deploy NocoBase in minutes.
+                            </p>
                             <div class="mt-4 pt-2">
-                                <a href="#how-it-works" class="btn btn-primary me-2">See how it works<i class="uil uil-arrow-down"></i></a>
-                                <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-outline-primary">Online demo<i class="uil uil-angle-right-b"></i></a>
+                                <a href="#section-for-you" class="btn btn-primary">Is it for you? <i class="uil uil-arrow-down"></i></a>
+                                <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-outline-primary">Experience online<i class="uil uil-angle-right-b"></i></a>
                             </div>
                         </div>
-
-                        
                     </div><!--end col-->
                 </div><!--end row-->
             </div><!--end container--> 
@@ -151,7 +164,7 @@
 
         <!-- Shape Start -->
         <div class="position-relative">
-            <div class="shape overflow-hidden text-light">
+            <div class="shape overflow-hidden text-color-white">
                 <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
                 </svg>
@@ -159,21 +172,322 @@
         </div>
         <!--Shape End-->
 
-        <!-- Start -->
-        <section class="section bg-light section-demo">
+        <!-- For you Start -->
+        <section class="section pb-0" id="section-for-you">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title mb-4 pb-2">
+                            <h2 class="title mb-4">Who NocoBase is for</h2>
+                            <p class="text-muted para-desc mx-auto mb-0">
+                                Your development team is facing these serious <span class="text-primary fw-bold">challenges</span> as they deliver various business systems for either internal or client use.
+                            </p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="d-flex features feature-primary pt-4 pb-4">
+                            <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
+                                <i class="uil uil-silent-squint text-primary text-warning"></i>
+                            </div>
+                            <div class="flex-1">
+                                <p class="para mb-0">Frequent changes in business needs</p>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="d-flex features feature-primary pt-4 pb-4">
+                            <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
+                                <i class="uil uil-silent-squint text-primary text-warning"></i>
+                            </div>
+                            <div class="flex-1">
+                                <p class="para mb-0">Tight and urgent delivery deadlines</p>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="d-flex features feature-primary pt-4 pb-4">
+                            <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
+                                <i class="uil uil-silent-squint text-primary text-warning"></i>
+                            </div>
+                            <div class="flex-1">
+                                <p class="para mb-0">Slow and lengthy development processes</p>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="d-flex features feature-primary pt-4 pb-4">
+                            <div class="icon text-center rounded-circle text-primary me-3 h5 mb-0">
+                                <i class="uil uil-silent-squint text-primary text-warning"></i>
+                            </div>
+                            <div class="flex-1">
+                                <p class="para mb-0">High personnel costs</p>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title mt-5 mb-4 pb-2">
+                            <p class="text-muted para-desc mx-auto mb-0">
+                                Your team has realized the need to abandon traditional development methods, and introducing a no-code development approach could be a good option. However, after research or experimentation, your team has <span class="text-primary fw-bold">numerous concerns</span> regarding the no-code platform.
+                            </p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-7 col-md-6 order-2 order-md-1 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <ul class="list-unstyled">
+                            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>Limited no-code capabilities, primarily for forms or tables</li>
+                            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>Clumsy and inflexible, leaving users helpless when faced with unmet requirements</li>
+                            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>Inability to view underlying source code, making security difficult to guarantee</li>
+                            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>System instability, coupled with challenges in tracking and troubleshooting</li>
+                            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>Difficult to integrate seamlessly with existing systems</li>
+                            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-sad-dizzy align-middle text-warning"></i></span>Being held hostage by user or application-based pricing models, resulting in purchased products not truly belonging to yourselves</li>
+                        </ul>                        
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title mt-4 mb-4 pb-2">
+                            <p class="text-muted para-desc mx-auto mb-0">
+                                No need to worry! Give NocoBase a try. <br>
+                                NocoBase is the <span class="text-primary fw-bold">tailored infrastructure</span> designed specifically for your development team!
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-2 text-center">
+                            <a href="#section-how" class="btn btn-primary">How? <i class="uil uil-arrow-down"></i></a>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- For you End -->
+
+        <!-- How Start -->
+        <section class="section pb-0" id="section-how">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title mb-4 pb-2">
+                            <h2 class="title mb-4">How NocoBase gets it done</h2>
+                            <p class="text-muted para-desc mx-auto mb-0">
+                                "No code" is very helpful for rapid development of business systems, but it is not possible to fulfill all the needs. The design principle of NocoBase is:
+                            </p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-7 p-4 bg-light rounded shadow text-center">
+                        <p class="mb-0">
+                            <span class="text-primary fw-bold" style="font-size: 20px;">80%</span> of the requirements are implemented through no-code, <br><span class="text-primary fw-bold" style="font-size: 20px;">20%</span> are handled by professional development.
+                        </p>
+                    </div>
+                </div><!--end row-->
+                
+                <div class="row align-items-top mt-100">
+                    <div class="col-lg-5 col-md-5">
+                        <div class="section-title">
+                            <h4 class="mb-4"><span class="text-primary">Data model-driven</span>, equipped with professional development capabilities</h4>
+                            <p class="text-muted">Compared to form and table-driven approaches, data model-driven development offers uncapped development capabilities.</p>
+                            <ul class="list-unstyled text-muted">
+                                <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>NocoBase provides user-friendly, visual modeling tool</li>
+                                <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>By defining uiSchema at the model layer, it achieves one-way data-driven from the underlying database to the upper UI while also decoupling data and UI</li>
+                                <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Multiple blocks and actions can be created for the same table and record in any quantity and form</li>
+                            </ul>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-7">
+                        <div class="card rounded border-0 shadow ms-lg-5">
+                            <div class="card-body feature-card-img">
+                                <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/model.png" alt="">
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row align-items-top mt-100">
+                    <div class="col-lg-5 col-md-5">
+                        <div class="section-title">
+                            <h4 class="mb-4"><span class="text-primary">What you see is what you get</span>, incredibly easy to use</h4>
+                            <p class="text-muted">NocoBase can develop complex and distinctive business systems, yet its usage is remarkably simple.</p>
+                            <ul class="list-unstyled text-muted">
+                                <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>One-click switch between usage mode and configuration mode</li>
+                                <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Pages serve as a canvas where various blocks and actions are placed to compose suitable interfaces, much like Notion</li>
+                                <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>The UI configuration mode is designed for ordinary users, not programmers</li>
+                            </ul>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-7 col-md-7">
+                        <div class="card rounded border-0 shadow ms-lg-5">
+                            <div class="card-body feature-card-img">
+                                <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/wysiwyg.gif" alt="">
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row align-items-top mt-100">
+                    <div class="col-lg-5 col-md-5">
+                        <div class="section-title">
+                            <h4 class="mb-4">Everything is a <span class="text-primary">plugin</span>, built for extended development</h4>
+                            <p class="text-muted">NocoBase is a no-code rather than a low-code platform. We don't want to write scripts on the interface because they are not reusable or testable. However, NocoBase is built to scale: </p>
+                            <ul class="list-unstyled text-muted">
+                                <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Adopts a microkernel architecture where all functionalities are plugins, much like Wordpress</li>
+                                <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Plugins are ready to use upon installation</li>
+                                <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Whether they are pages, blocks, actions, APIs, or data sources, new plugins can be developed to meet new requirements</li>
+                                
+                            </ul>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-7 col-md-7">
+                        <div class="card rounded border-0 shadow ms-lg-5">
+                            <div class="card-body feature-card-img">
+                                <img src="https://nocobase-docs.oss-cn-beijing.aliyuncs.com/20240224221236.png" alt="">
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row align-items-top mt-100">
+                    <div class="col-lg-6 col-md-6 order-2 order-md-1 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <div class="section-title">
+                            <h4 class="mb-4"><span class="text-primary">Integrate</span>  with third-party systems</h4>
+                            <p class="text-muted">NocoBase offers multiple ways to integrate with third-party systems:</p>
+                            <ul class="list-unstyled text-muted">
+                                <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Using third-party databases as data sources</li>
+                                <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Utilizing APIs from other systems as data sources</li>
+                                <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Single Sign-On (SSO) for seamless authentication</li>
+                                <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Foreign Data Wrapper (FDW) for direct access to external data tables</li>
+                                <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Embedding NocoBase pages directly into third-party systems, enabling seamless data interaction and integration</li>
+                                <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Integration between multiple NocoBase applications, enabling the creation of multi-application environments, including parent-child application relationships</li>
+                            </ul>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-6 col-md-6 order-2 order-md-1 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <div class="section-title">
+                            <h4 class="mb-4">Logging & <span class="text-primary">Monitoring</span></h4>
+                            <p class="text-muted">NocoBase is not a black box; it provides detailed logging and monitoring alert infrastructure.</p>
+                            <ul class="list-unstyled text-muted">
+                                <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>The logging plugin offers interface request logs and system operation logs, supporting configurations such as log levels, rolling policies, size, and print formats</li>
+                                <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>A series of telemetry plugins integrate facilities like OpenTelemetry and Prometheus, enabling developers to monitor any metric</li>
+                            </ul>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row align-items-top mt-100">
+                    <div class="col-lg-6 col-md-6 order-2 order-md-1 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <div class="section-title">
+                            <h4 class="mb-4"><span class="text-primary">Open source</span>, using mainstream technology stacks</h4>
+                            <p class="text-muted">NocoBase's core and foundational plugins are entirely open-source, ensuring absolute transparency and controllability for users.</p>
+                            <ul class="list-unstyled text-muted">
+                                <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Written in TypeScript</li>
+                                <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Utilizes mainstream technology stacks such as Node.js, React, Koa, and more</li>
+                                <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Defines only standard interfaces, avoiding private DSLs</li>
+                                <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>Extremely simple and lightweight, capable of running on a single low-spec server and scalable with just one person managing the development</li>
+                            </ul>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-6 col-md-6 order-2 order-md-1 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <div class="section-title">
+                            <h4 class="mb-4"><span class="text-primary">Free</span>, or one-time payment for lifetime usage</h4>
+                            <p class="text-muted">NocoBase is freely available for open-source use, with commercial license and plugins offered on top of the open-source version. Commercial license and plugins are purchased once and remain valid for a lifetime.</p>
+                            <ul class="list-unstyled text-muted">
+                                <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>No subscription required</li>
+                                <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>No consideration for the number of users</li>
+                                <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>No consideration for the number of applications</li>
+                                <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-smile-beam align-middle"></i></span>No consideration for the amount of data</li>
+                            </ul>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="mt-4 pt-2 text-center">
+                            <a href="#section-right" class="btn btn-primary">What's not? <i class="uil uil-arrow-down"></i></a>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- For you End -->
+
+        <!-- Right way Start -->
+        <section class="section pb-0" id="section-right">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title mb-4 pb-2">
+                            <h2 class="title mb-4">The right way to use NocoBase</h2>
+                            <p class="text-muted para-desc mx-auto mb-0">
+                                No-code is not omnipotent, and neither is NocoBase.
+                            </p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <ul class="list-unstyled text-muted">
+                            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-silent-squint align-middle text-warning"></i></span>NocoBase is not a low-code platform, scripting directly in the interface is not encouraged</li>
+                            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-silent-squint align-middle text-warning"></i></span>NocoBase is not a code generator</li>
+                            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-silent-squint align-middle text-warning"></i></span>NocoBase is not for teams with no technical background at all</li>
+                            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-silent-squint align-middle text-warning"></i></span>NocoBase is not a SaaS, no subscription or pay-as-you-go offerings</li>
+                        </ul>
+                    </div><!--end col-->
+                    
+                    <div class="col-md-6 col-12">
+                        <ul class="list-unstyled text-muted">
+                            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-grin align-middle"></i></span>Technical teams use NocoBase as infrastructure to dramatically improve delivery speed and efficiency</li>
+                            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-grin align-middle"></i></span>Technical teams can extend the capabilities of NocoBase with extension plugins, and non-developers can build on top of it without code</li>
+                            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-grin align-middle"></i></span>Use NocoBase to develop business systems and internal tools ranging from simple to complex</li>
+                            <li class="mb-1 concerns-li"><span class="text-primary h5 me-2 concerns-span"><i class="uil uil-grin align-middle"></i></span>Deploy NocoBase on your servers, use it, and take full control</li>
+                        </ul>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="mt-4 pt-2 text-center">
+                            <a href="#section-try" class="btn btn-primary">Have a try <i class="uil uil-arrow-down"></i></a>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End -->
+
+        <!-- Try Start -->
+        <section class="section pb-0" id="section-try">
             <div id="how-it-works"></div>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 text-center">
                         <div id="steps-guide">
                             <div class="section-title">
-                                <h2 class="title mb-4">3 steps to create <span class="text-primary typewrite" data-period="1500" data-type='[ "an order", "a membership", "a property", "a ticket" ]'> <span class="wrap"></span> </span> management system</span></h2>
+                                <h2 class="title mb-4">Try it out: 3 steps to create a CRM</h2>
                             </div>
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="card features feature-clean work-process bg-transparent process-arrow border-0 text-center">
                                         <div class="card-body steps-title guide1" id="guide1">
-                                            <h6 class="text-dark"><span class="h2 fw-bold step">01. </span>Data tables and fields</h6>
+                                            <h6 class="text-dark"><span class="h2 fw-bold step">01. </span>Collections and fields</h6>
                                         </div>
                                     </div>
                                 </div><!--end col-->
@@ -487,7 +801,7 @@
 
                                 <div id="step1" class="demo_step demo_step_start">
                                     <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/home-steps/1.png" alt="NocoBase lightweight no-code platform">
-                                    <div class="button button1 demo_tooltip" id="button1" aria-label="Click, 3 steps to create a management system" data-balloon-length="medium" data-balloon-pos="up">
+                                    <div class="button button1 demo_tooltip" id="button1" aria-label="Click, 3 steps to create a CRM" data-balloon-length="medium" data-balloon-pos="up">
                                         <svg width="80" height="80" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fa541c" aria-label="audio-loading">
                                             <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
                                                 <circle cx="22" cy="22" r="6" stroke-opacity="0"><animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"></animate><animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"></animate></circle>
@@ -500,232 +814,69 @@
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
-            </div><!--end container-->
-        </section>
 
-        <!-- Trusted Start -->
-        <section class="section">
-            <div class="container mt-100">
                 <div class="row justify-content-center">
-                    <div class="col-12">
-                        <div class="section-title text-center">
-                            <h2 class="title mb-4">Open source & <span class="text-primary">trusted</span></h2>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-                <div class="row position-relative" id="counter" style="z-index: 1;">
-                    <div class="col-md-3 col-6 mt-4 pt-2">
-                        <div class="counter-box text-center">
-                            <i data-feather="award" class="fea icon-md text-primary me-2 mt-1"></i>
-                            <h4 class="mb-0 mt-4"><span class="counter-value" data-target="5.2">0.5</span>K</h4>
-                            <h6 class="counter-head text-muted">GitHub Stars</h6>
-                        </div><!--end counter box-->
-                    </div>
-
-                    <div class="col-md-3 col-6 mt-4 pt-2">
-                        <div class="counter-box text-center">
-                            <i data-feather="users" class="fea icon-md text-primary me-2 mt-1"></i>
-                            <h4 class="mb-0 mt-4"><span class="counter-value" data-target="50">1</span></h4>
-                            <h6 class="counter-head text-muted">Contributors</h6>
-                        </div><!--end counter box-->
-                    </div>
-
-                    <div class="col-md-3 col-6 mt-4 pt-2">
-                        <div class="counter-box text-center">
-                            <i data-feather="clock" class="fea icon-md text-primary me-2 mt-1"></i>
-                            <h4 class="mb-0 mt-4"><span class="counter-value" data-target="2020">2020</span></h4>
-                            <h6 class="counter-head text-muted">First commit</h6>
-                        </div><!--end counter box-->
-                    </div>
-
-                    <div class="col-md-3 col-6 mt-4 pt-2">
-                        <div class="counter-box text-center">
-                            <i data-feather="trending-up" class="fea icon-md text-primary me-2 mt-1"></i>
-                            <h4 class="mb-0 mt-4"><span class="counter-value" data-target="15000">14900</span>+</h4>
-                            <h6 class="counter-head text-muted">Commits</h6>
-                        </div><!--end counter box-->
-                    </div>
-                </div><!--end row-->
-            </div><!--end container-->
-        </section>
-        <!-- Trusted End -->
-        
-        <!-- Features Start -->
-        <section class="section">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12">
-                        <div class="section-title text-center mb-4 pb-4">
-                            <h2 class="title mb-4"><span class="text-primary">Distinctive</span> features</h2>
-                            <p class="text-muted para-desc mb-0 mx-auto">No-code development of NocoBase is flexible, friendly, <br>and has the power of near-native development.<br>At the same time, NocoBase also has a plugin architecture that is extremely easy to extend.</p>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-
-                <div class="row align-items-center">
-                    <div class="col-lg-5 col-md-6 order-2 order-md-1 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                        <div class="section-title me-lg-5">
-                            <h5 class="mb-4">Model-driven<br>Separate "user interface" from "data structure"</h5>
-                            <p class="text-muted">NocoBase adopts the design idea of separating the user interface from the data structure, which allows you to create an arbitrary number of blocks (data views) of any type for the data, and define different actions, styles and texts in each block. This balances the simplicity of no-code operation with the flexibility of native development.</p>
-                        </div>
-                    </div><!--end col-->
-
-                    <div class="col-lg-7 col-md-6 order-1 order-md-2">
-                        <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/model.png" class="img-fluid" alt="NocoBase lightweight no-code platform">
-                    </div><!--end col-->
-                </div><!--end row-->
-
-                <div class="row align-items-center mt-100 mt-60">
-                    <div class="col-lg-7 col-md-6">
-                        <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/wysiwyg.gif" class="img-fluid" alt="NocoBase lightweight, open-source low-code & no-code platform">
-                    </div><!--end col-->
-
-                    <div class="col-lg-5 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                        <div class="section-title ms-lg-5">
-                            <h5 class="mb-4">What you see is what you get</h5>
-                            <p class="text-muted">NocoBase enables the development of complex and distinctive business systems, but this does not mean that complex and specialized operations are required. With a single click, configuration options are displayed on the usage interface, and administrators with system configuration privileges can directly configure the user interface in a WYSIWYG manner.</p>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-
-                <div class="row align-items-center mt-100 mt-60">
-                    <div class="col-lg-5 col-md-6 order-2 order-md-1 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                        <div class="section-title me-lg-5">
-                            <h5 class="mb-4">Functions as plugins</h5>
-                            <p class="text-muted">NocoBase adopts plugin architecture, all new functions can be realized by developing and installing plugins, and expanding the functions is as easy as installing an APP on your phone.</p>
-                        </div>
-                    </div><!--end col-->
-
-                    <div class="col-lg-7 col-md-6 order-1 order-md-2">
-                        <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/plugins.png" class="img-fluid" alt="NocoBase lightweight, open-source low-code & no-code platform">
-                    </div><!--end col-->
-                </div><!--end row-->
-            </div><!--end container-->
-        </section>
-        <!-- Features End -->
-        
-        <!-- Why Start -->
-        <section class="section">
-            <div class="container mt-60">
-                <div class="row justify-content-center">
-                    <div class="col-12">
-                        <div class="section-title text-center mb-4 pb-4">
-                            <h2 class="title mb-4"><span class="text-primary">Why</span> NocoBase</h2>
-                            <p class="text-muted para-desc mb-0 mx-auto">We are committed to helping companies upgrade their R&D model to make digitalization faster, easier and cheaper.</p>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-
-                <div class="row">
-                    <div class="col-md-6 col-12">
-                        <div class="d-flex">
-                            <i data-feather="award" class="fea icon-ex-md text-primary me-2 mt-1"></i>
-                            <div class="flex-1">
-                                <h5 class="mt-0">Open source, autonomous and controllable</h5>
-                                <p class="answer text-muted mb-0">NocoBase is open source under the Apache-2.0 & AGPL-3.0 licenses, and can be used free of charge as long as you follow the licenses. Advanced features are provided through the commercial version, which also provides full source code and is privately deployed to keep data private and secure.</p>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-                    
-                    <div class="col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                        <div class="d-flex">
-                            <i data-feather="award" class="fea icon-ex-md text-primary me-2 mt-1"></i>
-                            <div class="flex-1">
-                                <h5 class="mt-0">Strong no-code capability</h5>
-                                <p class="answer text-muted mb-0">NocoBase has three core concepts: collection, block, and action. By defining the data collections, to abstract the business; through the block to present the data; through the action to send the user's instructions to the server to complete the data interaction or change.</p>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-
-                <div class="row">
-                    <div class="col-md-6 col-12 mt-4 pt-4">
-                        <div class="d-flex">
-                            <i data-feather="award" class="fea icon-ex-md text-primary me-2 mt-1"></i>
-                            <div class="flex-1">
-                                <h5 class="mt-0">High scalability</h5>
-                                <p class="answer text-muted mb-0">In the actual business, the ideal situation is to use no-code to meet 80% of the needs, the rest usually need to extend the development. NocoBase adopts the microkernel architecture, with a sound plugin system, all kinds of functions are extended in the form of plugins. NocoBase is based on Node.js and uses mainstream frameworks and technologies, including Koa, Sequelize, React and so on, which makes it extremely easy to expand.</p>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-                    
-                    <div class="col-md-6 col-12 mt-4 pt-4">
-                        <div class="d-flex">
-                            <i data-feather="award" class="fea icon-ex-md text-primary me-2 mt-1"></i>
-                            <div class="flex-1">
-                                <h5 class="mt-0">Integrate with existing systems</h5>
-                                <p class="answer text-muted mb-0">Organizations usually have various systems and databases already in place, and NocoBase supports using third-party databases or APIs as data sources, as well as embedding NocoBase into third-party systems or embedding third-party systems into NocoBase.</p>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-
-                <div class="row">
-                    <div class="col-md-6 col-12 mt-4 pt-4">
-                        <div class="d-flex">
-                            <i data-feather="award" class="fea icon-ex-md text-primary me-2 mt-1"></i>
-                            <div class="flex-1">
-                                <h5 class="mt-0">Extremely simple and lightweight</h5>
-                                <p class="answer text-muted mb-0">NocoBase uses JavaScript/TypeScript technology stack, one person can complete the front-end and back-end development. It has low server requirements and can be deployed on a single low-configuration server.</p>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-                    
-                    <div class="col-md-6 col-12 mt-4 pt-4">
-                        <div class="d-flex">
-                            <i data-feather="award" class="fea icon-ex-md text-primary me-2 mt-1"></i>
-                            <div class="flex-1">
-                                <h5 class="mt-0">Pay once, use forever</h5>
-                                <p class="answer text-muted mb-0">On top of the open source version, we offer commercial licenses, commercial services, and commercial plugins. Pay once and get a lifetime license, as well as the full source code of commercial plugins</p>
-                            </div>
+                    <div class="col-12 text-center">
+                        <div class="mt-4 pt-2 text-center">
+                            <a href="#section-feedback" class="btn btn-primary">Happy users <i class="uil uil-arrow-down"></i></a>
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
             </div><!--end container-->
-        </section>
-        <!-- Why End -->
+        </section><!--end section-->
+        <!-- End -->
 
         <!-- Feedback Start -->
-        <section class="section">
+        <section class="section pb-0" id="section-feedback">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 text-center">
                         <div class="section-title">
-                            <h2 class="title mb-4">What <span class="text-primary">Users</span> Say</h2>
+                            <h2 class="title mb-4">It's important to hear what users say</h2>
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
 
                 <div class="row justify-content-center">
-                    <div class="col-lg-9 mt-4 pt-2 text-center">
-                        <div class="tiny-single-item">
-                            
-                            
+                    <div class="col-lg-9 mt-4 pt-2">
+                        <div class="tiny-single-item text-center">
                             <div class="tiny-slide client-testi text-center">
-                                <p class="text-muted h6 fst-italic">" I cannot emphasize enough the great experience I've had with NocoBase as a low-code platform. It stands out as exceptionally user-friendly, making my development process both smooth and efficient. What impressed me most was how easy it was to work on development of the user experience once the data model was in place. This streamlined approach allowed me to develop a full-fledged system, designed to be used by several hundred organizations, in just a matter of weeks. NocoBase has effectively shattered the common misconception that powerful systems require months or even years of work. I highly recommend it for any organization looking to fast-track their development cycle without sacrificing quality. "</p>
+                                <p class="text-muted fst-italic">As a company dedicated to the legal technology field, we face challenges due to the breadth of services and the diversity of demands. In order to effectively reduce development costs and improve efficiency, we once considered developing an internal no-code/low-code system. However, during exploration, we discovered NocoBase. Its architectural design is not only flexible but also powerful, perfectly meeting our dual needs for rapid development and deep customization.</p>
+                                <p class="text-muted fst-italic">Since NocoBase came into our sight, we have started experimenting with it in several business projects. Its ease of use and scalability quickly proved its value, making our development work more efficient and agile. With the continuous iteration of NocoBase versions and the continuous enhancement of features, our confidence in it is growing day by day.</p>
+                                <p class="text-muted fst-italic">We greatly appreciate the innovation and responsiveness of the NocoBase team. They not only provide an excellent low-code solution but also ensure that users can keep pace with technological developments through continuous optimization and updates. We are very satisfied with our experience with NocoBase and look forward to seeing more exciting progress from them in the future.</p>
+                                <a rel="nofollow" href="https://www.bestone.com/" target="_blank"><img src="https://nocobase-docs.oss-cn-beijing.aliyuncs.com/bestone.jpg" class="mt-4 mb-4" width="160" alt=""></a>
+                                <h6 class="text-primary"> Zhang Zhipeng <small class="text-muted">CTO</small></h6>
+                            </div>
+                            <div class="tiny-slide client-testi text-center">
+                                <p class="text-muted fst-italic">I cannot emphasize enough the great experience we've had with NocoBase as a no-code/low-code platform. It stands out as exceptionally user-friendly, making our development process both smooth and efficient. What impressed me most was how easy it was to work on development of the user experience once the data model was in place. This streamlined approach allowed us to develop a full-fledged system, designed to be used by several hundred organizations, in just a matter of weeks. </p>
+                                <p class="text-muted fst-italic">NocoBase has effectively shattered the common misconception that powerful systems require months or even years of work. I highly recommend it for any organization looking to fast-track their development cycle without sacrificing quality.</p>
                                 <a rel="nofollow" href="https://sambruk.se/" target="_blank"><img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/Sambruk.png" class="mt-4 mb-4" width="160" alt=""></a>
                                 <h6 class="text-primary"> Thomas Wennersten <small class="text-muted">CTO</small></h6>
                             </div>
-
-                            <!-- <div class="tiny-slide client-testi text-center">
-                                <p class="text-muted h6 fst-italic">
-                                    " "
-                                </p>
-                                <a href="https://www.mi.com/" target="_blank"><img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/Xiaomi.png" class="mt-4 mb-4" width="160" alt=""></a>
-                                <h6 class="text-primary"> Dong Tao <small class="text-muted">Senior engineer</small></h6>
-                            </div>
-
                             <div class="tiny-slide client-testi text-center">
-                                <p class="text-muted h6 fst-italic">"  "</p>
-                                <a href="http://www.thfund.com.cn/" target="_blank"><img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/tianhong.png" class="mt-4 mb-4" width="120" alt=""></a>
-                                <h6 class="text-primary"> Zhao Changhu <small class="text-muted">Senior engineer</small></h6>
+                                <p class="text-muted fst-italic">The core purpose of the digital transformation in traditional industries is to reduce costs and increase efficiency, enhance corporate competitiveness, and expand market share. However, implementation often faces three major challenges: difficulty in business integration, technical support, and cost control. No-code/low-code platforms, with their wide range of applicable scenarios, ease of use, and controllable iteration costs, have become the best choice.</p>
+                                <p class="text-muted fst-italic">After trying dozens of commercial and open-source low-code platforms, our company finally chose NocoBase as our business support platform. Employees from the marketing and archives departments, who have no IT background, were able to develop and set up three systems - CRM, RMS (Record Management System), and MES (Manufacturing Execution System) - by themselves after just about a week of self-learning, and then began trial operations. Later, by utilizing NocoBase's rich plugin functionality, we integrated WMS, ECS (Environmental Control System), and AI-assisted office systems, reducing the cost of digital transformation from millions over six months to hundreds of thousands within a month. Moreover, because business personnel were involved in the system construction, the response time to customer and employee needs could be shortened to just tens of minutes.</p>
+                                <p class="text-muted fst-italic">NocoBase's advanced design concept, round-the-clock technical support, open-source private deployment solution, and reasonable business model will make our company more calm and confident in facing future challenges.</p>
+                                <a rel="nofollow" href="https://cdxcrt.cn/" target="_blank"><img src="https://nocobase-docs.oss-cn-beijing.aliyuncs.com/nylogo.png" class="mt-4 mb-4" width="160" alt=""></a>
+                                <h6 class="text-primary"> Sun Xiaofeng <small class="text-muted">CEO</small></h6>
                             </div>
-
                             <div class="tiny-slide client-testi text-center">
-                                <p class="text-muted h6 fst-italic">"  "</p>
-                                <a href="https://www.cppu.edu.cn/" target="_blank"><img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/cppu.png" class="mt-4 mb-4" width="200" alt=""></a>
-                                <h6 class="text-primary"> Liu Ran <small class="text-muted">Senior engineer</small></h6>
-                            </div> -->
+                                <p class="text-muted fst-italic">As the core of data management, API services, and workflows, NocoBase significantly lowers the development difficulty, allowing our developers to focus more on the implementation of business logic, thereby greatly improving development efficiency. </p>
+                                <p class="text-muted fst-italic">NocoBase possesses excellent integration capabilities, enabling seamless interfacing with various third-party services and systems to achieve data sharing and functional integration. This means we do not need to build all functionalities from scratch but can instead make full use of existing services and resources to quickly integrate various functions and services into our applications. This integration capability not only reduces development time and costs but also enriches and diversifies the application's functionalities, meeting the diverse needs of users. </p>
+                                <p class="text-muted fst-italic">In this rapidly evolving digital age, NocoBase is undoubtedly a powerful weapon for us to face challenges and achieve innovation. We are thankful for the NocoBase team's efforts.</p>
+                                <a rel="nofollow" href="https://www.chinaunicom.com/" target="_blank"><img src="https://nocobase-docs.oss-cn-beijing.aliyuncs.com/liantong.png" class="mt-4 mb-4" width="160" alt=""></a>
+                                <h6 class="text-primary"> Xinjiang Unicom's Scientific Innovation Laboratory </h6>
+                            </div>
+                            <div class="tiny-slide client-testi text-center">
+                                <p class="text-muted fst-italic">The block/action system of NocoBase has attracted us. Open-source, fast, and scalable, it provides an excellent solution for us to quickly build business systems. Moreover, the project team is strong, proactive, and highly promising!</p>
+                                <a rel="nofollow" href="http://www.ceairgroup.com/" target="_blank"><img src="https://nocobase-docs.oss-cn-beijing.aliyuncs.com/donghang.jpg" class="mt-4 mb-4" width="160" alt=""></a>
+                                <h6 class="text-primary"> 东航商业保理有限公司 </h6>
+                            </div>
+                            <div class="tiny-slide client-testi text-center">
+                                <p class="text-muted fst-italic">Among the no-code/low-code platforms I have used, NocoBase is the most unique. It is more in line with the logic of traditional software development, starting from data relationships and gradually building upper level applications. It is very easy to learn and master, and it effectively solves the problem of a large amount of time and cost required for building traditional systems. </p>
+                                <h5 class="text-muted">Yunhe Wooden Toy Industry Platform</h5>
+                                <h6 class="text-primary"> Carlos Liu <small class="text-muted">CEO</small></h6>
+                            </div>
                         </div><!--end owl carousel-->
                     </div><!--end col-->
                 </div><!--end row-->
@@ -734,20 +885,15 @@
         <!-- Feedback End -->
 
         <!-- Get Start -->
-        <section class="section">
+        <section class="section" id="section-get">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 text-center">
-                        <div class="section-title">
-                            <h2 class="title mb-4">Get NocoBase</h2>
-                            <p class="text-muted para-desc mx-auto">You can get the source code for the basic version of NocoBase from <a href="https://github.com/nocobase/nocobase" target="_blank">GitHub</a> or <a href="https://gitee.com/nocobase/nocobase" target="_blank">Gitee</a>.<br>Please report bugs via <a href="https://github.com/nocobase/nocobase/issues" target="_blank">GitHub Issues</a>, or start a discussion on <a href="https://github.com/nocobase/nocobase/discussions" target="_blank">GitHub Discussions</a>.</p>
-                            <!--<p class="text-muted para-desc mx-auto mb-0">If you need advanced features or services, check out the <a href="/pricing-cn.html" target="_blank">commercial version</a> page for details.</p>-->
-                        
-                            <div class="mt-4">
-                                <a rel="nofollow" href="https://github.com/nocobase/nocobase" class="btn btn-primary mt-2 me-2" target="_blank">GitHub</a>
-                                <a href="https://demo-cn.nocobase.com/new" target="_blank" class="btn btn-outline-primary mt-2 ">Live Demo</a>
-                            </div>
-                           
+                        <h2 class="title mb-4">Ready for NocoBase?</h2>
+                        <p class="text-muted para-desc mx-auto mb-0">Deploy a personalized live demo in just 1 minute, or deploy NocoBase locally, it's equally simple.</p>
+                        <div class="mt-4">
+                            <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-primary mt-2 mb-4">Live Demo <i class="uil uil-arrow-right"></i></a>
+                        <a href="https://docs.nocobase.com/welcome/getting-started/installation" target="_blank" class="btn btn-outline-primary mt-2 mb-4">Deploy locally <i class="uil uil-arrow-right"></i></a>
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
@@ -756,138 +902,161 @@
         <!-- Get End -->
 
 
+        <!-- Shape Start -->
+        <div class="position-relative">
+            <div class="shape overflow-hidden text-footer">
+                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+                </svg>
+            </div>
+        </div>
+        <!--Shape End-->
+
+        
         <!-- Footer Start -->
-        <footer class="footer">
+        <footer class="footer">    
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
-                        <a href="https://www.nocobase.com" class="logo-footer">
-                            <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/logo-white.png" height="24" alt="">
-                        </a>
-                        <p class="mt-4">Self-hosted and extremely scalable open source no-code and low-code development platform to make digitalization faster, easier and cheaper.</p>
-                        <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4">
-                            <li class="list-inline-item"><a rel="nofollow" href="https://github.com/nocobase/nocobase" class="rounded" target="_blank"><i data-feather="github" class="fea icon-sm fea-social"></i></a></li>
-                            <li class="list-inline-item"><a rel="nofollow" href="mailto:hello@nocobase.com" class="rounded" target="_blank"><i data-feather="mail" class="fea icon-sm fea-social"></i></a></li>
-                        </ul><!--end icon-->
-                    </div><!--end col-->
-                    
-                    <div class="col-lg-1 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                    </div><!--end col-->
+                    <div class="col-12">
+                        <div class="footer-py-60">
+                            <div class="row">
+                                <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                                    <a href="https://www.nocobase.com" class="logo-footer">
+                                        <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/logo-white.png" height="24" alt="">
+                                    </a>
+                                    <p class="mt-4">Self-hosted and extremely scalable open-source no-code development platform to make digitalization faster, easier and cheaper.</p>
+                                    <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4">
+                                        <li class="list-inline-item"><a rel="nofollow" href="https://github.com/nocobase/nocobase" class="rounded" target="_blank"><i data-feather="github" class="fea icon-sm fea-social"></i></a></li>
+                                        <li class="list-inline-item"><a rel="nofollow" href="https://twitter.com/NocoBase" class="rounded" target="_blank"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
+                                        <li class="list-inline-item"><a rel="nofollow" href="mailto:hello@nocobase.com" class="rounded" target="_blank"><i data-feather="mail" class="fea icon-sm fea-social"></i></a></li>
+                                    </ul><!--end icon-->
+                                </div><!--end col-->
 
-                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                        <h5 class="text-light footer-head">Contact</h5>
-                        <p class="mt-4">Email：<a href="mailto:hello@nocobase.com" class="rounded" target="_blank">hello@nocobase.com</a><br>You can also add our Wechat and wechat group.</p>
-                        <div style="float: left;">
-                            公众号: <br>
-                            <img width="100" height="100" src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/gongzhonghao.jpg">
-                        </div>
-                        <div style="float: right;">
-                            Wechat: <br>
-                            <img width="100" height="100" src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/wechat.png">
-                        </div>
-                    </div><!--end col-->
+                                <div class="col-lg-1 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                </div><!--end col-->
+                                
+                                <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                    <h5 class="footer-head">Links</h5>
+                                    <ul class="list-unstyled footer-list mt-4">
+                                        <li><a href="https://github.com/nocobase/nocobase" class="text-foot" target="_blank"><i class="uil uil-angle-right-b me-1"></i> GitHub</a></li>
+                                        <li><a href="https://www.nocobase.com/plugins.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Plugins</a></li>
+                                        <li><a href="https://www.nocobase.com/commercial.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Commercial</a></li>
+                                        <li><a href="https://www.nocobase.com/contact.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Contact</a></li>
+                                    </ul>
+                                </div><!--end col-->
 
-                    <div class="col-lg-1 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                    </div><!--end col-->
-
-                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                        <h5 class="text-light footer-head">Newsletter</h5>
-                        <p class="mt-4">Get information about happenings in NocoBase like new releases, blog posts, and more.</p>
-                        <!-- Begin Brevo Form -->
-                        <div class="sib-form" style="text-align: left;background-color: transparent;padding: 0%!important;">
-                        <div id="sib-form-container" class="sib-form-container">
-                            <div id="error-message" class="sib-form-message-panel" style="font-size:14px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:4px; border-color:#ff4949;max-width:350px;">
-                            <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
-                                <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
-                                <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z" />
-                                </svg>
-                                <span class="sib-form-message-panel__inner-text">Your subscription could not be saved. Please try again.</span>
-                            </div>
-                            </div>
-                            <div></div>
-                            <div id="success-message" class="sib-form-message-panel" style="font-size:14px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#085229; background-color:#e7faf0; border-radius:3px; border-color:#13ce66;max-width:350px;">
-                            <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
-                                <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
-                                <path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z" />
-                                </svg>
-                                <span class="sib-form-message-panel__inner-text">Your subscription has been successful.</span>
-                            </div>
-                            </div>
-                            <div></div>
-                            <div id="sib-container" class="sib-container--medium sib-container--vertical" style="text-align:left; background-color:transparent; max-width:350px; border-width:0px; border-color:#C0CCD9; border-style:solid; direction:ltr; padding: 0%!important;">
-                            <form id="sib-form" method="POST" action="https://70ae42bd.sibforms.com/serve/MUIFAEd3DVxFOGa5DRCsKXolgmbGIuA6La-SaRF30Pvu976wtAbIiNWDF-XufTLkeB8NgbWJXGNYgfHVYha61WM3k2l8n7k43748fTbXwnIWRKz7svAnBeJqiZga0FU6-yj4QUcLzkdE_SlH1Ru0Zkb1f7x8Ohs8Ymiavdn4OlEB1SW26PN8RFuP5uCcnGPw9N_fNvrwtvBl1yDg" data-type="subscription">
-                                <div style="padding: 8px 0;">
-                                <div class="sib-input sib-form-block" style="padding: 0%!important;">
-                                    <div class="form__entry entry_block">
-                                    <div class="form__label-row ">
-
-                                        <div class="entry__field">
-                                        <input class="input " type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Your email:" data-required="true" required />
+                                <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                    <h5 class="footer-head">Resources</h5>
+                                    <ul class="list-unstyled footer-list mt-4">
+                                        <li><a href="https://docs.nocobase.com" target="_blank" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Documentation</a></li>
+                                        <li><a href="https://blog.nocobase.com" target="_blank" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Blog</a></li>
+                                        <li><a href="https://www.nocobase.com/community.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Community</a></li>
+                                        <li><a href="https://docs.nocobase.com/welcome/release/roadmap" target="_blank" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Roadmap</a></li>
+                                        <li><a href="https://docs.nocobase.com/welcome/release/v0190-changelog" target="_blank" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Release notes</a></li>
+                                    </ul>
+                                </div><!--end col-->
+            
+                                <div class="col-lg-3 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                    <h5 class="text-light footer-head">Newsletter</h5>
+                                    <p class="mt-4">Get information about happenings in NocoBase like new releases, blog posts, and more.</p>
+                                    <!-- Begin Brevo Form -->
+                                    <div class="sib-form" style="text-align: left;background-color: transparent;padding: 0%!important;">
+                                    <div id="sib-form-container" class="sib-form-container">
+                                        <div id="error-message" class="sib-form-message-panel" style="font-size:14px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:4px; border-color:#ff4949;max-width:350px;">
+                                        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                                            <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+                                            <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z" />
+                                            </svg>
+                                            <span class="sib-form-message-panel__inner-text">Your subscription could not be saved. Please try again.</span>
+                                        </div>
+                                        </div>
+                                        <div></div>
+                                        <div id="success-message" class="sib-form-message-panel" style="font-size:14px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#085229; background-color:#e7faf0; border-radius:3px; border-color:#13ce66;max-width:350px;">
+                                        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                                            <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+                                            <path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z" />
+                                            </svg>
+                                            <span class="sib-form-message-panel__inner-text">Your subscription has been successful.</span>
+                                        </div>
+                                        </div>
+                                        <div></div>
+                                        <div id="sib-container" class="sib-container--medium sib-container--vertical" style="text-align:left; background-color:transparent; max-width:350px; border-width:0px; border-color:#C0CCD9; border-style:solid; direction:ltr; padding: 0%!important;">
+                                        <form id="sib-form" method="POST" action="https://70ae42bd.sibforms.com/serve/MUIFAEd3DVxFOGa5DRCsKXolgmbGIuA6La-SaRF30Pvu976wtAbIiNWDF-XufTLkeB8NgbWJXGNYgfHVYha61WM3k2l8n7k43748fTbXwnIWRKz7svAnBeJqiZga0FU6-yj4QUcLzkdE_SlH1Ru0Zkb1f7x8Ohs8Ymiavdn4OlEB1SW26PN8RFuP5uCcnGPw9N_fNvrwtvBl1yDg" data-type="subscription">
+                                            <div style="padding: 8px 0;">
+                                            <div class="sib-input sib-form-block" style="padding: 0%!important;">
+                                                <div class="form__entry entry_block">
+                                                <div class="form__label-row ">
+            
+                                                    <div class="entry__field">
+                                                    <input class="input " type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Your email:" data-required="true" required />
+                                                    </div>
+                                                </div>
+            
+                                                <label class="entry__error entry__error--primary" style="font-size:14px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:4px; border-color:#ff4949;">
+                                                </label>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <div style="padding: 8px 0;">
+                                            <div class="sib-form-block" style="text-align: left;padding: 0%!important;">
+                                                <button class="sib-form-block__button sib-form-block__button-with-loader" form="sib-form" type="submit">
+                                                <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
+                                                    <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
+                                                </svg>
+                                                Subscribe
+                                                </button>
+                                            </div>
+                                            </div>
+            
+                                            <input type="text" name="email_address_check" value="" class="input--hidden">
+                                            <input type="hidden" name="locale" value="en">
+                                        </form>
                                         </div>
                                     </div>
-
-                                    <label class="entry__error entry__error--primary" style="font-size:14px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:4px; border-color:#ff4949;">
-                                    </label>
                                     </div>
-                                </div>
-                                </div>
-                                <div style="padding: 8px 0;">
-                                <div class="sib-form-block" style="text-align: left;padding: 0%!important;">
-                                    <button class="sib-form-block__button sib-form-block__button-with-loader" style="font-size:14px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#ffffff; background-color:#2f55d4; border-radius:4px; border-width:0px;" form="sib-form" type="submit">
-                                    <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
-                                        <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
-                                    </svg>
-                                    Subscribe
-                                    </button>
-                                </div>
-                                </div>
-
-                                <input type="text" name="email_address_check" value="" class="input--hidden">
-                                <input type="hidden" name="locale" value="en">
-                            </form>
+                                    <!--  END Brevo Form -->
+                                </div><!--end col-->
                             </div>
                         </div>
-                        </div>
-                        <!--  END Brevo Form -->
-                    </div><!--end col-->
+                    </div>
                 </div><!--end row-->
             </div><!--end container-->
-        </footer><!--end footer-->
-        <footer class="footer footer-bar">
-            <div class="container text-center">
-                <div class="row align-items-center">
-                    <div class="col-sm-6">
-                        <div class="text-sm-start">
-                            <p class="mb-0">© 2020-<script>document.write(new Date().getFullYear())</script> NocoBase. All rights reserved.</p>
-                        </div>
-                    </div><!--end col-->
 
-                    <div class="col-sm-6">
-                        <div class="text-sm-end">
-                            <p class="mb-0"><a rel="nofollow" href="https://beian.miit.gov.cn/" target="_blank" class="text-reset">京ICP备2020046072号-1</a></p>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-            </div><!--end container-->
+            <div class="footer-py-30 footer-bar">
+                <div class="container text-center">
+                    <div class="row align-items-center">
+                        <div class="col-sm-6">
+                            <div class="text-sm-start">
+                                <p class="mb-0">© 2020-<script>document.write(new Date().getFullYear())</script> NocoBase. All rights reserved.</p>
+                            </div>
+                        </div><!--end col-->
+
+                        <div class="col-sm-6">
+                            <div class="text-sm-end">
+                                <!-- <p class="mb-0"><a rel="nofollow" href="https://beian.miit.gov.cn/" target="_blank" class="text-reset">京ICP备2020046072号-1</a></p> -->
+                                <p class="mb-0"><a href="https://www.nocobase.com" class="text-reset">EN</a> | <a href="https://cn.nocobase.com" class="text-reset">中文</a></p>
+                            </div>
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div><!--end container-->
+            </div>
         </footer><!--end footer-->
         <!-- Footer End -->
 
         <!-- Back to top -->
-        <a href="#" onclick="topFunction()" id="back-to-top" class="btn btn-icon btn-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+        <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top fs-5"><i data-feather="arrow-up" class="fea icon-sm icons align-middle"></i></a>
         <!-- Back to top -->
 
-        
-
-        <!-- javascript -->
-        <script src="./js/bootstrap.bundle.min.js"></script>
+        <!-- Javascript -->
+        <!-- JAVASCRIPT -->
+        <script src="js/bootstrap.bundle.min.js"></script>
         <!-- SLIDER -->
-        <script src="./js/tiny-slider.js "></script>
-        <!-- Icons -->
-        <script src="./js/feather.min.js"></script>
+        <script src="js/tiny-slider.js"></script>
         <!-- Main Js -->
-        <script src="./js/plugins.init.js?v3"></script><!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
-        <script src="./js/jquery-3.6.0.min.js"></script>
-        <script src="./js/app.js?v3"></script><!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+        <script src="js/feather.min.js"></script>
+        <script src="js/plugins.init.js"></script><!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/app.js"></script><!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
         <!-- Begin Brevo Form -->
         <script>
             window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';

@@ -1,0 +1,1347 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>插件 - NocoBase</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="NocoBase 是一个轻量级、极易扩展的开源无代码和低代码开发平台。无需开发，花几分钟时间部署 NocoBase，马上拥有一个私有、可控、极易扩展的无代码开发平台，帮助企业轻松实现多元业务场景，让数字化更快、更简单、更便宜。" />
+        <meta name="keywords" content="nocobase,低代码,无代码,零代码,私有部署,开源,no-code,low-code,open-source,无代码开发,低代码开发,工作流管理软件,业务流程管理,协作软件,企业流程管理,企业管理系统,无代码系统,无代码平台,无代码搭建,免费无代码开发平台" />
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="./images/favicon/site.webmanifest">
+        <!-- Bootstrap -->
+        <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- Icons -->
+        <link href="./css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+        <!-- Balloon css -->
+        <link href="./css/balloon.min.css?v3" rel="stylesheet" type="text/css" />
+        <!-- Slider -->               
+        <link rel="stylesheet" href="./css/tiny-slider.css"/> 
+        <!-- Main Css -->
+        <link href="./css/style.css?v1" rel="stylesheet" type="text/css" id="theme-opt" />
+        <!-- <link href="./css/colors/default.css" rel="stylesheet" id="color-opt"> -->
+
+        <!-- <script type="text/javascript">
+            var language =
+                localStorage.getItem("locale") ||
+                window.navigator.language.toLowerCase() ||
+                "en";
+            localStorage.setItem("locale", language);
+            if (language.indexOf("zh-") !== -1) {
+                window.location = "https://cn.nocobase.com";
+            } 
+        </script> -->
+
+        <!-- Begin Brevo Form -->
+        <style>
+            #sib-container input:-ms-input-placeholder {
+            text-align: left;
+            color: #c0ccda;
+            }
+        
+            #sib-container input::placeholder {
+            text-align: left;
+            color: #c0ccda;
+            }
+        
+            #sib-container textarea::placeholder {
+            text-align: left;
+            color: #c0ccda;
+            }
+        </style>
+        <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+        <!--  END Brevo Form -->
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-237XXSVYHE"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-237XXSVYHE');
+        </script>
+        
+        <!-- Baidu Analytics -->
+        <script>
+            var _hmt = _hmt || [];
+            (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?73c0a021efd1eab59d0ad8628750283e";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    </head>
+
+    <body>
+        <!-- Loader -->
+        <!-- <div id="preloader">
+            <div id="status">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Loader -->
+        
+        <!-- Navbar Start -->
+        <header id="topnav" class="defaultscroll sticky">
+            <div class="container">
+                <!-- Logo container-->
+                <a class="logo" href="https://cn.nocobase.com">
+                    <span class="logo-light-mode">
+                        <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/logo.png" class="logo-light-mode" height="24" alt="NocoBase Logo">
+                    </span>
+                </a>
+                <div class="demo">
+                    <a href="https://demo-cn.nocobase.com/new" target="_blank" class="btn btn-outline-primary btn-sm">在线 demo<i class="uil uil-angle-right-b"></i></a>
+                </div>
+                <!-- End Logo container-->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </div>
+                </div>
+
+                <div id="navigation">
+                    <!-- Navigation Menu-->   
+                    <ul class="navigation-menu">
+                        <li><a rel="nofollow" href="https://github.com/nocobase/nocobase" class="sub-menu-item" target="_blank">GitHub <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/nocobase/nocobase"></a></li>
+                        <li><a rel="nofollow" href="https://gitee.com/nocobase/nocobase" class="sub-menu-item" target="_blank">Gitee</a></li>
+                        <li class="active"><a href="https://cn.nocobase.com/plugins-cn.html" class="sub-menu-item">插件</a></li>
+                        <li><a href="https://cn.nocobase.com/commercial-cn.html" class="sub-menu-item">商业授权</a></li>
+                        <li class="has-submenu parent-menu-item">
+                            <a href="javascript:void(0)">资源</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="https://docs-cn.nocobase.com" class="sub-menu-item" target="_blank">文档</a></li>
+                                <li><a href="https://blog-cn.nocobase.com" class="sub-menu-item" target="_blank">博客</a></li>
+                                <li><a href="https://cn.nocobase.com/community-cn.html" class="sub-menu-item">社区</a></li>
+                                <li><a href="https://cn.nocobase.com/contact-cn.html" class="sub-menu-item">联系我们</a></li>
+                                <li><a href="https://docs-cn.nocobase.com/welcome/release/roadmap" class="sub-menu-item" target="_blank">路线图</a></li>
+                                <li><a href="https://docs-cn.nocobase.com/welcome/release/v0190-changelog" class="sub-menu-item" target="_blank">更新记录</a></li>
+                            </ul>
+                        </li>
+                    </ul><!--end navigation menu-->
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </header><!--end header-->
+        <!-- Navbar End -->
+        
+        <!-- Hero Start -->
+        <section class="bg-half-170 bg-light d-table w-100">
+            <div class="container">
+                <div class="row mt-5 justify-content-center">
+                    <div class="col-lg-12 text-center">
+                        <div class="pages-heading">
+                            <h2 class="title mb-0"> 插件 </h2>
+                            <p class="para-desc mx-auto text-muted">
+                                一切皆插件，使用插件扩展 NocoBase 的能力。欢迎分享你的插件，无论它是开源的还是商业的。<br>请联系我们沟通详细信息。
+                            </p>
+                            <a href="https://cn.nocobase.com/contact-cn.html" target="_blank" class="btn btn-outline-primary">分享插件<i class="uil uil-angle-right-b"></i></a>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="position-breadcrumb">
+                    <nav aria-label="breadcrumb" class="d-inline-block">
+                        <ul class="plugins-cat breadcrumb rounded shadow mb-0 px-4 py-2">
+                            <li class="breadcrumb-item active"><a href="https://cn.nocobase.com/plugins-cn.html">全部</a></li>
+                            <li class="breadcrumb-item"><a href="https://cn.nocobase.com/plugins-commercial-cn.html">商业插件</a></li>
+                        </ul>
+                    </nav>
+                </div>
+        </section><!--end section-->
+        <!-- Hero End -->
+
+        <!-- Shape Start -->
+        <div class="position-relative">
+            <div class="shape overflow-hidden text-color-white">
+                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+                </svg>
+            </div>
+        </div>
+        <!--Shape End-->
+
+        <!-- Section Start -->
+        <section class="section">
+            <div class="container">
+                <h4 class="text-muted">Data model tools</h4>
+                
+                <!--start row-->
+                <div class="row pb-4">
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">数据源管理</h6>
+                                    <p class="text-muted mb-2">管理数据源，包括内置的 Main 数据库，外部的数据库、API。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">可视化数据表管理</h6>
+                                    <p class="text-muted mb-2">简单的 ER 图工具。目前只支持主数据库。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div>
+                <!--end row-->
+
+                <h4 class="mt-4 text-muted">Data sources</h4>
+
+                <!--start row-->
+                <div class="row pb-4">
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">数据源：Main 数据库</h6>
+                                    <p class="text-muted mb-2">NocoBase 主数据库，支持 MySQL、PostgreSQL、SQLite 等关系型数据库。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span> <!-- <a href="" target="_blank" class="plugin-docs">Docs <i class="uil uil-external-link-alt"></i></a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title"></a>数据源: MySQL</h6>
+                                    <p class="text-muted mb-2">使用外部的 MySQL 数据库作为数据源。</p>
+                                    <span class="badge bg-soft-warning plugin-type"> Commercial </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">数据源: MariaDB</h6>
+                                    <p class="text-muted mb-2">使用外部的 MariaDB 数据库作为数据源。</p>
+                                    <span class="badge bg-soft-warning plugin-type "> Commercial </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div>
+                <!-- end row-->
+
+                <!--start row-->
+                <div class="row pb-4">
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">数据源: PostgreSQL</h6>
+                                    <p class="text-muted mb-2">使用外部的 PostgreSQL数据库作为数据源。</p>
+                                    <span class="badge bg-soft-warning plugin-type" style="font-weight: normal;"> Commercial </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <h4 class="mt-4 text-muted">Collections</h4>
+                <p class="text-muted mb-2">只支持主数据库</p>
+
+                <!--start row-->
+                <div class="row pb-4 mb-4">
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">数据表：数据库视图</h6>
+                                    <p class="text-muted mb-2">使用数据库的视图来创建 collection。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">数据表：SQL</h6>
+                                    <p class="text-muted mb-2">无需创建视图，快速的将 SQL 查询结果，结构化的展示出来，常用于复杂的关联查询、统计等场景。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">数据表：连接外部数据（FDW）</h6>
+                                    <p class="text-muted mb-2">基于数据库的 foreign data wrapper（FDW） 实现的连接远程数据表，目前支持 MySQL 和 PostgreSQL 数据库。</p>
+                                    <span class="badge bg-soft-warning plugin-type" style="font-weight: normal;"> Commercial </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div>
+                <!--end row-->
+                
+                <!--start row-->
+                <div class="row pb-4 mb-4">
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">数据表：表达式</h6>
+                                    <p class="text-muted mb-2">用于存储表达式，在工作流中使用，以便针对不同的数据调用不同的表达式。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">日历</h6>
+                                    <p class="text-muted mb-2">提供日历表和区块，用于管理日期数据，通常用于事件、约会、任务等与日期/时间相关的信息。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">数据表：树</h6>
+                                    <p class="text-muted mb-2">树结构表，目前只支持邻接表结构，未来会逐步支持闭包表、嵌套集和路径枚举。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div>
+                <!--end row-->
+
+                <!--start row-->
+                <div class="row pb-4 mb-4">
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">文件管理器</h6>
+                                    <p class="text-muted mb-2">支持配置文件存储服务，内置包括本地、OSS、S3，可扩展。并提供了文件表模板和附件字段。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div>
+                <!--end row-->
+
+                <h4 class="mt-4 text-muted">Collection fields</h4>
+                <p class="text-muted mb-2">暂时只支持主数据库</p>
+
+                <!--start row-->
+                <div class="row pb-4 mb-4">
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">数据表字段：公式</h6>
+                                    <p class="text-muted mb-2">根据配置的规则自动生成编码，支持日期、数字、文本的组合。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">数据表字段：自动编码</h6>
+                                    <p class="text-muted mb-2">Automatically generate codes based on configured rules, supporting combinations of dates, numbers, and text.</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">数据表字段：快照</h6>
+                                    <p class="text-muted mb-2">在添加数据时，为它的关系数据创建快照，并保存在当前的数据中。关系数据更新时，快照不会更新。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div>
+                <!--end row-->
+
+                <!--start row-->
+                <div class="row pb-4 mb-4">
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">文件管理器</h6>
+                                    <p class="text-muted mb-2">提供文件存储服务，并提供了文件 collection 模板和附件字段。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">中国行政区划</h6>
+                                    <p class="text-muted mb-2">提供中国行政区划数据和字段类型。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div>
+                <!--end row-->
+
+                <h4 class="mt-4 text-muted">Blocks</h4>
+
+                <!--start row-->
+                <div class="row pb-4 mb-4">
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">数据可视化</h6>
+                                    <p class="text-muted mb-2">提供数据可视化功能，包含图表区块和图表筛选区块，支持折线图、面积图、柱状图等十几种图表，你也可以扩展更多图表类型。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">日历</h6>
+                                    <p class="text-muted mb-2">提供日历数据表模板和区块，用于管理日期数据，通常用于事件、约会、任务等与日期/时间相关的信息。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">区块：甘特图</h6>
+                                    <p class="text-muted mb-2">提供甘特图区块。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div>
+                <!--end row-->
+
+                <!--start row-->
+                <div class="row pb-4 mb-4">
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title"> 区块：看板</h6>
+                                    <p class="text-muted mb-2">提供看板区块。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">区块：地图</h6>
+                                    <p class="text-muted mb-2">地图区块，支持高德地图和 Google 地图，你也可以扩展更多地图类型。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">区块：iframe</h6>
+                                    <p class="text-muted mb-2">在页面上创建和管理iframe，用于嵌入和展示外部网页或内容。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div>
+                <!--end row-->
+
+                <h4 class="mt-4 text-muted">Actions</h4>
+
+                <!--start row-->
+                <div class="row pb-4 mb-4">
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">操作：批量编辑</h6>
+                                    <p class="text-muted mb-2">对全部数据或选中的数据进行批量编辑。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">操作：批量更新</h6>
+                                    <p class="text-muted mb-2">对全部数据或选中的数据进行批量更新。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">操作：自定义请求</h6>
+                                    <p class="text-muted mb-2">向任意 HTTP 服务发送请求，支持将上下文数据发送给目标服务。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div>
+                <!--end row-->
+
+                <!--start row-->
+                <div class="row pb-4 mb-4">
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">操作：复制数据</h6>
+                                    <p class="text-muted mb-2">复制一条数据，可以复制到表单中编辑后再提交，也可以直接复制并生成一条新数据。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">操作：导出记录</h6>
+                                    <p class="text-muted mb-2">导出筛选后的数据到 excel 中，可以配置导出哪些字段。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">操作：导入记录</h6>
+                                    <p class="text-muted mb-2">使用 excel 模板导入数据，可以配置导入哪些字段，自动生成模板。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div>
+                <!--end row-->
+
+                <!--start row-->
+                <div class="row pb-4 mb-4">
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">操作：打印</h6>
+                                    <p class="text-muted mb-2">调用浏览器的打印功能实现单条数据的打印。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div>
+                <!--end row-->
+
+                <h4 class="mt-4 text-muted">Users & permissions</h4>
+
+                <!--start row-->
+                <div class="row pb-4 mb-4">
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">权限控制</h6>
+                                    <p class="text-muted mb-2">基于角色、资源和操作的权限控制，可以精确控制界面配置权限、数据操作权限、菜单访问权限、插件权限。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">用户</h6>
+                                    <p class="text-muted mb-2">提供了基础的用户模型，以及创建人和最后更新人字段。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">部门</h6>
+                                    <p class="text-muted mb-2">以部门来组织用户，设定上下级关系，绑定角色控制权限，并支持作为变量用于工作流和表达式。</p>
+                                    <span class="badge bg-soft-warning plugin-type" style="font-weight: normal;"> Commercial </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div>
+                <!--end row-->
+
+                <h4 class="mt-4 text-muted">Authentication</h4>
+
+                <!--start row-->
+                <div class="row pb-4 mb-4">
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">用户认证</h6>
+                                    <p class="text-muted mb-2">用户认证管理，包括基础的密码认证、短信认证、SSO 协议的认证等，可扩展。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">认证：CAS</h6>
+                                    <p class="text-muted mb-2">通过 CAS 协议认证身份。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">认证：OIDC</h6>
+                                    <p class="text-muted mb-2">通过 OIDC (OpenID Connect) 协议认证身份。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div>
+                <!--end row-->
+
+                <!--start row-->
+                <div class="row pb-4 mb-4">
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">认证：SAML 2.0</h6>
+                                    <p class="text-muted mb-2">通过 SAML 2.0 认证身份。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">Auth: SMS</h6>
+                                    <p class="text-muted mb-2">通过短信验证码验证身份。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">Auth: API keys</h6>
+                                    <p class="text-muted mb-2">允许用户使用 API 密钥访问应用的 HTTP API。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div>
+                <!--end row-->
+
+                <h4 class="mt-4 text-muted">Workflow</h4>
+
+                <!--start row-->
+                <div class="row pb-4 mb-4">
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">工作流</h6>
+                                    <p class="text-muted mb-2">一个强大的 BPM 工具，为业务自动化提供基础支持，并且可任意扩展更多的触发器和节点。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">工作流：聚合查询节点</h6>
+                                    <p class="text-muted mb-2">可用于在工作流中对数据库进行聚合查询，如：统计数量、求和、平均值等。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">工作流：自定义变量</h6>
+                                    <p class="text-muted mb-2">用于在工作流中创建自定义变量或对其赋值，来保存流程中的临时数据。</p>
+                                    <span class="badge bg-soft-warning plugin-type" style="font-weight: normal;"> Commercial </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div>
+                <!--end row-->
+
+                <!--start row-->
+                <div class="row pb-4 mb-4">
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">工作流：延时节点</h6>
+                                    <p class="text-muted mb-2">可用于工作流并行分支中等待其他分支执行完成。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">工作流：动态表达式计算节点</h6>
+                                    <p class="text-muted mb-2">对于不同条件的数据，调用不同的表达式进行计算，表达式来自于表达式 collection。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">工作流：表单触发器</h6>
+                                    <p class="text-muted mb-2">绑定到表单按钮上，在提交时触发对应的工作流事件</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div>
+                <!--end row-->
+
+                <!--start row-->
+                <div class="row pb-4 mb-4">
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">工作流：HTTP 请求节点</h6>
+                                    <p class="text-muted mb-2">可用于在工作流中向任意 HTTP 服务发送请求，进行数据交互。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">工作流：循环节点</h6>
+                                    <p class="text-muted mb-2">用于对数组中的每个值进行重复的子流程处理，也可用于固定次数的重复子流程处理。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">工作流：人工节点</h6>
+                                    <p class="text-muted mb-2">用于人工控制决策、人工填写数据等场景。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div>
+                <!--end row-->
+
+                <!--start row-->
+                <div class="row pb-4 mb-4">
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">工作流：分支节点</h6>
+                                    <p class="text-muted mb-2">为工作流提供分支流程，各分支并行执行。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">工作流：SQL 节点</h6>
+                                    <p class="text-muted mb-2">在工作流中对数据库执行任意 SQL 语句。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">工作流：请求拦截器</h6>
+                                    <p class="text-muted mb-2">用于对用户提交操作请求进行业务验证或逻辑检查，根据检查的结果通过或拦截提交的请求。</p>
+                                    <span class="badge bg-soft-warning plugin-type" style="font-weight: normal;"> Commercial </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div>
+                <!--end row-->
+
+                <!--start row-->
+                <div class="row pb-4 mb-4">
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">工作流：响应拦截器</h6>
+                                    <p class="text-muted mb-2">用于在服务端响应返回给用户之前，对响应内容进行捕获和处理，以便进行数据加工或根据业务需求进行后续操作等。</p>
+                                    <span class="badge bg-soft-warning plugin-type" style="font-weight: normal;"> Commercial </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">工作流：响应消息</h6>
+                                    <p class="text-muted mb-2">用于在表单事件和请求拦截工作流中组装并向客户端显示响应消息。</p>
+                                    <span class="badge bg-soft-warning plugin-type" style="font-weight: normal;"> Commercial </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">工作流：JSON 解析节点</h6>
+                                    <p class="text-muted mb-2">用于查询或解析复杂 JSON 对象的值（例如 HTTP 请求节点和 SQL 节点的结果）。</p>
+                                    <span class="badge bg-soft-warning plugin-type" style="font-weight: normal;"> Commercial </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div>
+                <!--end row-->
+
+                <!--start row-->
+                <div class="row pb-4 mb-4">
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">工作流：审批</h6>
+                                    <p class="text-muted mb-2">提供审批类型的工作流，可以在审批工作流中配置审批节点，以完成审批相关业务。</p>
+                                    <span class="badge bg-soft-warning plugin-type" style="font-weight: normal;"> Commercial </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div>
+                <!--end row-->
+
+                <h4 class="mt-4 text-muted">System management</h4>
+
+                <!--start row-->
+                <div class="row pb-4 mb-4">
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">应用的备份与还原</h6>
+                                    <p class="text-muted mb-2">备份和还原应用，可用于应用的复制、迁移、升级等场景。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">系统设置</h6>
+                                    <p class="text-muted mb-2">用于调整系统的标题、LOGO、语言 等。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">主题编辑器</h6>
+                                    <p class="text-muted mb-2">自定义 UI 的颜色、尺寸等，并将结果保存为主题，可在多个主题间切换。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div>
+                <!--end row-->
+
+                <!--start row-->
+                <div class="row pb-4 mb-4">
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">本地化</h6>
+                                    <p class="text-muted mb-2">支持管理应用程序的多语言资源。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div>
+                <!--end row-->
+
+                <h4 class="mt-4 text-muted">Logging and monitoring</h4>
+
+                <!--start row-->
+                <div class="row pb-4 mb-4">
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">审计日志（废弃）</h6>
+                                    <p class="text-muted mb-2">该插件已废弃，请勿使用。将有新的审计日志插件。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">审计日志</h6>
+                                    <p class="text-muted mb-2">记录所有操作的日志，并提供日志区块，可以查阅每个数据表或每行记录的日志。</p>
+                                    <span class="badge bg-soft-warning plugin-type" style="font-weight: normal;"> Commercial </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">日志</h6>
+                                    <p class="text-muted mb-2">服务端日志，主要包括接口请求日志和系统运行日志，并支持打包和下载日志文件。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div>
+                <!--end row-->
+
+                <!--start row-->
+                <div class="row pb-4 mb-4">
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">遥测: Prometheus</h6>
+                                    <p class="text-muted mb-2">在 NocoBase 的遥测模块集成 Prometheus。</p>
+                                    <span class="badge bg-soft-warning plugin-type" style="font-weight: normal;"> Commercial </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div>
+                <!--end row-->
+
+                <h4 class="mt-4 text-muted">Integration</h4>
+
+                <!--start row-->
+                <div class="row pb-4 mb-4">
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">嵌入 NocoBase</h6>
+                                    <p class="text-muted mb-2">将 NocoBase 嵌入外部系统或页面中，使其成为该系统或页面的一部分。</p>
+                                    <span class="badge bg-soft-warning plugin-type" style="font-weight: normal;"> Commercial </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">嵌入外部系统</h6>
+                                    <p class="text-muted mb-2">将外部系统或页面嵌入到 NocoBase 中，使其成为 NocoBase 的一部分。</p>
+                                    <span class="badge bg-soft-warning plugin-type" style="font-weight: normal;"> Commercial </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div>
+                <!--end row-->
+
+                <h4 class="mt-4 text-muted">Others</h4>
+
+                <!--start row-->
+                <div class="row pb-4 mb-4">
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">API 文档</h6>
+                                    <p class="text-muted mb-2">NocoBase HTTP API 的 OpenAPI 文档生成器。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">错误处理器</h6>
+                                    <p class="text-muted mb-2">处理应用程序中的错误和异常。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">移动端</h6>
+                                    <p class="text-muted mb-2">提供移动端页面配置的能力。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div>
+                <!--end row-->
+
+                <!--start row-->
+                <div class="row pb-4 mb-4">
+                    <div class="col-lg-4 col-md-6 col-12 pt-2">
+                        <div class="card rounded shadow border-0 plugin-card">
+                            <div class="card-body">
+                                <div class="mt-2">
+                                    <h6 class="card-title">UI schema storage</h6>
+                                    <p class="text-muted mb-2">提供中心化的 UI schema 存储服务。</p>
+                                    <span class="badge bg-soft-primary plugin-type"> Open source </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div>
+                <!--end row-->
+
+            </div><!--end container-->
+        </section><!--end section-->
+
+        <!-- Shape Start -->
+        <div class="position-relative">
+            <div class="shape overflow-hidden text-footer">
+                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+                </svg>
+            </div>
+        </div>
+        <!--Shape End-->
+
+        
+        <!-- Footer Start -->
+        <footer class="footer">    
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer-py-60">
+                            <div class="row">
+                                <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                                    <a href="https://www.nocobase.com" class="logo-footer">
+                                        <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/logo-white.png" height="24" alt="">
+                                    </a>
+                                    <p class="mt-4">私有部署和极易扩展的开源无代码和低代码开发平台，让数字化更快、更简单、更便宜。</p>
+                                    <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4">
+                                        <li class="list-inline-item"><a rel="nofollow" href="https://github.com/nocobase/nocobase" class="rounded" target="_blank"><i data-feather="github" class="fea icon-sm fea-social"></i></a></li>
+                                        <li class="list-inline-item"><a rel="nofollow" href="https://twitter.com/NocoBase" class="rounded" target="_blank"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
+                                        <li class="list-inline-item"><a rel="nofollow" href="mailto:hello@nocobase.com" class="rounded" target="_blank"><i data-feather="mail" class="fea icon-sm fea-social"></i></a></li>
+                                    </ul><!--end icon-->
+                                </div><!--end col-->
+
+                                <div class="col-lg-1 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                </div><!--end col-->
+                                
+                                <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                    <h5 class="footer-head">Links</h6>
+                                    <ul class="list-unstyled footer-list mt-4">
+                                        <li><a rel="nofollow" href="https://github.com/nocobase/nocobase" class="text-foot" target="_blank"><i class="uil uil-angle-right-b me-1"></i> GitHub</a></li>
+                                        <li><a rel="nofollow" href="https://gitee.com/nocobase/nocobase" class="text-foot" target="_blank"><i class="uil uil-angle-right-b me-1"></i> Gitee</a></li>
+                                        <li><a href="https://cn.nocobase.com/plugins-cn.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 插件</a></li>
+                                        <li><a href="https://cn.nocobase.com/commercial-cn.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 商业授权</a></li>
+                                        <li><a href="https://cn.nocobase.com/contact-cn.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 联系我们</a></li>
+                                    </ul>
+                                </div><!--end col-->
+
+                                <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                    <h5 class="footer-head">Resources</h6>
+                                    <ul class="list-unstyled footer-list mt-4">
+                                        <li><a href="https://docs-cn.nocobase.com" target="_blank" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 文档</a></li>
+                                        <li><a href="https://blog-cn.nocobase.com" target="_blank" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 博客</a></li>
+                                        <li><a href="https://cn.nocobase.com/community-cn.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 社区</a></li>
+                                        <li><a href="https://docs-cn.nocobase.com/welcome/release/roadmap" target="_blank" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 路线图</a></li>
+                                        <li><a href="https://docs-cn.nocobase.com/welcome/release/v0190-changelog" target="_blank" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 更新记录</a></li>
+                                    </ul>
+                                </div><!--end col-->
+            
+                                <div class="col-lg-3 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                    <h5 class="text-light footer-head">Newsletter</h6>
+                                    <p class="mt-4">获取有关 NocoBase 的最新相关信息，例如新版本、博客文章等。</p>
+                                    <!-- Begin Brevo Form -->
+                                    <div class="sib-form" style="text-align: left;background-color: transparent;padding: 0%!important;">
+                                    <div id="sib-form-container" class="sib-form-container">
+                                        <div id="error-message" class="sib-form-message-panel" style="font-size:14px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:4px; border-color:#ff4949;max-width:350px;">
+                                        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                                            <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+                                            <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z" />
+                                            </svg>
+                                            <span class="sib-form-message-panel__inner-text">Your subscription could not be saved. Please try again.</span>
+                                        </div>
+                                        </div>
+                                        <div></div>
+                                        <div id="success-message" class="sib-form-message-panel" style="font-size:14px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#085229; background-color:#e7faf0; border-radius:3px; border-color:#13ce66;max-width:350px;">
+                                        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                                            <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+                                            <path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z" />
+                                            </svg>
+                                            <span class="sib-form-message-panel__inner-text">Your subscription has been successful.</span>
+                                        </div>
+                                        </div>
+                                        <div></div>
+                                        <div id="sib-container" class="sib-container--medium sib-container--vertical" style="text-align:left; background-color:transparent; max-width:350px; border-width:0px; border-color:#C0CCD9; border-style:solid; direction:ltr; padding: 0%!important;">
+                                        <form id="sib-form" method="POST" action="https://70ae42bd.sibforms.com/serve/MUIFAEd3DVxFOGa5DRCsKXolgmbGIuA6La-SaRF30Pvu976wtAbIiNWDF-XufTLkeB8NgbWJXGNYgfHVYha61WM3k2l8n7k43748fTbXwnIWRKz7svAnBeJqiZga0FU6-yj4QUcLzkdE_SlH1Ru0Zkb1f7x8Ohs8Ymiavdn4OlEB1SW26PN8RFuP5uCcnGPw9N_fNvrwtvBl1yDg" data-type="subscription">
+                                            <div style="padding: 8px 0;">
+                                            <div class="sib-input sib-form-block" style="padding: 0%!important;">
+                                                <div class="form__entry entry_block">
+                                                <div class="form__label-row ">
+            
+                                                    <div class="entry__field">
+                                                    <input class="input " type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Your email:" data-required="true" required />
+                                                    </div>
+                                                </div>
+            
+                                                <label class="entry__error entry__error--primary" style="font-size:14px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:4px; border-color:#ff4949;">
+                                                </label>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <div style="padding: 8px 0;">
+                                            <div class="sib-form-block" style="text-align: left;padding: 0%!important;">
+                                                <button class="sib-form-block__button sib-form-block__button-with-loader" form="sib-form" type="submit">
+                                                <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
+                                                    <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
+                                                </svg>
+                                                Subscribe
+                                                </button>
+                                            </div>
+                                            </div>
+            
+                                            <input type="text" name="email_address_check" value="" class="input--hidden">
+                                            <input type="hidden" name="locale" value="en">
+                                        </form>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <!--  END Brevo Form -->
+                                </div><!--end col-->
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end row-->
+            </div><!--end container-->
+
+            <div class="footer-py-30 footer-bar">
+                <div class="container text-center">
+                    <div class="row align-items-center">
+                        <div class="col-sm-6">
+                            <div class="text-sm-start">
+                                <p class="mb-0">© 2020-<script>document.write(new Date().getFullYear())</script> NocoBase. All rights reserved.</p>
+                            </div>
+                        </div><!--end col-->
+
+                        <div class="col-sm-6">
+                            <div class="text-sm-end">
+                                <!-- <p class="mb-0"><a rel="nofollow" href="https://beian.miit.gov.cn/" target="_blank" class="text-reset">京ICP备2020046072号-1</a></p> -->
+                                <p class="mb-0"><a rel="nofollow" href="https://beian.miit.gov.cn/" target="_blank" class="text-reset">京ICP备2020046072号-1</a>  &nbsp;&nbsp; <a href="https://www.nocobase.com" class="text-reset">EN</a> | <a href="https://cn.nocobase.com" class="text-reset">中文</a></p>
+                            </div>
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div><!--end container-->
+            </div>
+        </footer><!--end footer-->
+        <!-- Footer End -->
+
+        <!-- Back to top -->
+        <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top fs-5"><i data-feather="arrow-up" class="fea icon-sm icons align-middle"></i></a>
+        <!-- Back to top -->
+
+        <!-- Javascript -->
+        <!-- JAVASCRIPT -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- SLIDER -->
+        <script src="js/tiny-slider.js"></script>
+        <!-- Main Js -->
+        <script src="js/feather.min.js"></script>
+        <script src="js/plugins.init.js"></script><!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/app.js"></script><!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+        <!-- Begin Brevo Form -->
+        <script>
+            window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
+            window.LOCALE = 'en';
+            window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid.";
+          
+            window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank. ";
+          
+            window.GENERIC_INVALID_MESSAGE = "The information provided is invalid.";
+                    
+            window.translation = {
+              common: {
+                selectedList: '{quantity} list selected',
+                selectedLists: '{quantity} lists selected'
+              }
+            };
+          
+            var AUTOHIDE = Boolean(0);
+        </script>
+        <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+        <!--  END Brevo Form -->
+    </body>
+</html>

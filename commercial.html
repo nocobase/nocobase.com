@@ -1,30 +1,40 @@
-
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" dir="ltr">
 
     <head>
         <meta charset="utf-8" />
-        <title>Commercial Version - NocoBase</title>
+        <title>Commercial licenses & plugins - NocoBase</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="NocoBase is a lightweight, extremely scalable open source no-code and low-code development platform. Instead of investing years of time and millions of dollars in research and development, deploy NocoBase in a few minutes and you'll have a private, controllable, and extremely scalable no-code development platform!" />
         <meta name="keywords" content="nocobase,low-code,no-code,self-hosted,open source,open-source,no-code development,low-code development,workflow management software,business process management,collaboration software,enterprise process management,enterprise management system,no-code system,no-code platform,free no-code development platform" />
         <!-- favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-        <link rel="manifest" href="images/favicon/site.webmanifest">
+        <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="./images/favicon/site.webmanifest">
         <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <!-- Icons -->
-        <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+        <link href="./css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
         <!-- Balloon css -->
-        <link href="css/balloon.min.css?v3" rel="stylesheet" type="text/css" />
+        <link href="./css/balloon.min.css?v3" rel="stylesheet" type="text/css" />
         <!-- Slider -->               
         <link rel="stylesheet" href="./css/tiny-slider.css"/> 
         <!-- Main Css -->
-        <link href="./css/style.css?v5" rel="stylesheet" type="text/css" id="theme-opt" />
-        <link href="./css/colors/default.css" rel="stylesheet" id="color-opt">
+        <link href="./css/style.css?v1" rel="stylesheet" type="text/css" id="theme-opt" />
+        <!-- <link href="./css/colors/default.css" rel="stylesheet" id="color-opt"> -->
+
+        <!-- <script type="text/javascript">
+            var language =
+                localStorage.getItem("locale") ||
+                window.navigator.language.toLowerCase() ||
+                "en";
+            localStorage.setItem("locale", language);
+            if (language.indexOf("zh-") !== -1) {
+                window.location = "https://cn.nocobase.com";
+            } 
+        </script> -->
 
         <!-- Begin Brevo Form -->
         <style>
@@ -49,26 +59,26 @@
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-237XXSVYHE"></script>
         <script>
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-              gtag('config', 'G-237XXSVYHE');
+            gtag('config', 'G-237XXSVYHE');
         </script>
         
         <!-- Baidu Analytics -->
         <script>
             var _hmt = _hmt || [];
             (function() {
-              var hm = document.createElement("script");
-              hm.src = "https://hm.baidu.com/hm.js?acfb678ac7bbc9df89e1aa4327e47907";
-              var s = document.getElementsByTagName("script")[0]; 
-              s.parentNode.insertBefore(hm, s);
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?acfb678ac7bbc9df89e1aa4327e47907";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
             })();
         </script>
     </head>
 
-    <body class="en">
+    <body>
         <!-- Loader -->
         <!-- <div id="preloader">
             <div id="status">
@@ -80,15 +90,17 @@
         </div> -->
         <!-- Loader -->
         
-        <!-- Navbar STart -->
+        <!-- Navbar Start -->
         <header id="topnav" class="defaultscroll sticky">
             <div class="container">
                 <!-- Logo container-->
                 <a class="logo" href="https://www.nocobase.com">
-                    <img src="images/logo.png" height="24" class="logo-light-mode" alt="NocoBase lightweight, open-source low-code & no-code platform">
+                    <span class="logo-light-mode">
+                        <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/logo.png" class="logo-light-mode" height="24" alt="NocoBase Logo">
+                    </span>
                 </a>
-                <div class="lang">
-                    <a href="https://www.nocobase.com" class="text-reset">EN</a> | <a href="https://cn.nocobase.com" class="text-reset">中文</a>
+                <div class="demo">
+                    <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-outline-primary btn-sm">Live demo<i class="uil uil-angle-right-b"></i></a>
                 </div>
                 <!-- End Logo container-->
                 <div class="menu-extras">
@@ -104,50 +116,49 @@
                         <!-- End mobile menu toggle-->
                     </div>
                 </div>
-        
+
                 <div id="navigation">
                     <!-- Navigation Menu-->   
                     <ul class="navigation-menu">
+                        <li><a rel="nofollow" href="https://github.com/nocobase/nocobase" class="sub-menu-item" target="_blank">GitHub <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/nocobase/nocobase"></a></li>
+                        <li><a href="https://www.nocobase.com/plugins.html" class="sub-menu-item">Plugins</a></li>
+                        <li class="active"><a href="https://www.nocobase.com/commercial.html" class="sub-menu-item">Commercial</a></li>
                         <li class="has-submenu parent-menu-item">
-                            <a href="javascript:void(0)">Open-source</a><span class="menu-arrow"></span>
+                            <a href="javascript:void(0)">Resources</a><span class="menu-arrow"></span>
                             <ul class="submenu">
-                                <li><a rel="nofollow" href="https://github.com/nocobase/nocobase" class="sub-menu-item" target="_blank">GitHub</a></li>
-                                <li><a rel="nofollow" href="https://gitee.com/nocobase/nocobase" class="sub-menu-item" target="_blank">Gitee</a></li>
+                                <li><a href="https://docs.nocobase.com" class="sub-menu-item" target="_blank">Documentation</a></li>
+                                <li><a href="https://blog.nocobase.com" class="sub-menu-item" target="_blank">Blog</a></li>
+                                <li><a href="https://www.nocobase.com/community.html" class="sub-menu-item">Community</a></li>
+                                <li><a href="https://www.nocobase.com/contact.html" class="sub-menu-item">Contact us</a></li>
+                                <li><a href="https://docs.nocobase.com/welcome/release/roadmap" class="sub-menu-item" target="_blank">Roadmap</a></li>
+                                <li><a href="https://docs.nocobase.com/welcome/release/v0190-changelog" class="sub-menu-item" target="_blank">Release note</a></li>
                             </ul>
                         </li>
-                        <li><a href="https://demo.nocobase.com/new" target="_blank" class="sub-menu-item">Demo</a></li>
-                        <li><a href="https://blog.nocobase.com" class="sub-menu-item" target="_blank">Blog</a></li>
-                        <li><a href="https://docs.nocobase.com" class="sub-menu-item" target="_blank">Docs</a></li>
-                        <!-- <li class="active"><a href="https://www.nocobase.com/commercial.html" class="sub-menu-item">Commercial</a></li> -->
                     </ul><!--end navigation menu-->
-                    <div class="lang d-none">
-                        <a href="https://www.nocobase.com" class="text-reset">EN</a> | <a href="https://cn.nocobase.com" class="text-reset">中文</a>
-                    </div>
                 </div><!--end navigation-->
             </div><!--end container-->
         </header><!--end header-->
         <!-- Navbar End -->
-
+        
         <!-- Hero Start -->
-        <section class="bg-half bg-light d-table w-100">
+        <section class="bg-half-170 bg-light d-table w-100">
             <div class="container">
-                <div class="row justify-content-center">
+                <div class="row mt-5 justify-content-center">
                     <div class="col-lg-12 text-center">
-                        <div class="page-next-level">
-                            <h2 class="title"> Commercial version </h2>
+                        <div class="pages-heading">
+                            <h2 class="title"> Commercial licenses & plugins </h2>
                             <p class="para-desc mx-auto text-muted">
-                                In order to satisfy the advanced needs of our users and to generate revenue for the healthy development of NocoBase, we offer a commercial version based on the open source version. Please note that this is not a separate product from the open source version, it is thanks to the pluginized architecture of NocoBase that the advanced features of the commercial version are all provided as plugins. This means that the open source version will always be our cornerstone and you can use it with confidence.
+                                The commercial licenses and commercial plugins are based on the open-source version, rather than being standalone products. Thanks to NocoBase's plugin architecture, advanced features can be extended through plugins. This means the open-source version will always serve as the foundation, ensuring you can use it with confidence.
                             </p>
                         </div>
-                    </div>  <!--end col-->
+                    </div><!--end col-->
                 </div><!--end row-->
-            </div> <!--end container-->
         </section><!--end section-->
         <!-- Hero End -->
 
         <!-- Shape Start -->
         <div class="position-relative">
-            <div class="shape overflow-hidden text-white">
+            <div class="shape overflow-hidden text-color-white">
                 <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
                 </svg>
@@ -155,44 +166,175 @@
         </div>
         <!--Shape End-->
 
-        <!-- Details Start -->
-        <section class="section">
+        <!-- Licenses Start -->
+        <section class="section pb-0">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-12 mt-4 pt-2 text-center">
-                        <p>
-                            The commercial version is divided into three parts: <b>Licenses, Services, and Plugins</b>, and you can choose any part on demand.
-                        </p>
-                    </div>
-
-                    <h4 class="mt-4 pt-2 text-center">Licenses</h4>
+                    <h3 class="mt-4 pt-2 text-center">Licenses</h3>
+                    <p class="para-desc text-center mx-auto text-muted">Each license has the same code and functionality, differing in usage restrictions and technical support.</p>
                     <div class="col-12">
                         <div class="component-wrapper">
                             <div class="p-4">
                                 <div class="table-responsive bg-white">
-                                    <table class="table mb-0 table-center">
-                                        <thead class="table-light">
+                                    <table class="table mb-0 table-center commercial-table">
+                                        <thead class="">
                                             <tr>
-                                            <th scope="col" class="border-bottom col-sm-3">Licenses</th>
-                                            <th scope="col" class="border-bottom">Description</th>
-                                            <th scope="col" class="border-bottom col-sm-4">Usage</th>
+                                            <th scope="col" class="col-sm-3"></th>
+                                            <th scope="col" class="col-sm-2"><h5 class="text-primary mb-0">Open source</h5></th>
+                                            <th scope="col" class="col-sm-2"><h5 class="text-primary mb-0">Business</h5></th>
+                                            <th scope="col" class="col-sm-2"><h5 class="text-primary mb-0">Enterprise</h5></th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Internal-Use Commercial License</td>
-                                                <td>Not bound by the AGPL, you can use NocoBase in non-AGPL environments; <br>you can extend your development based on NocoBase without open-sourcing your own source code</td>
-                                                <td>NocoBase as an in-house infrastructure</td>
+                                                <td class="compare-item text-muted">Price</td>
+                                                <td class="fw-bold fst-italic">Free</td>
+                                                <td class="fw-bold fst-italic">Contact us</td>
+                                                <td class="fw-bold fst-italic">Contact us</td>
                                             </tr>
                                             <tr>
-                                                <td>Distribution Commercial License</td>
-                                                <td>Not bound by the AGPL, you can use NocoBase in non-AGPL environments; <br>you can extend your development based on NocoBase without open-sourcing your own source code; <br>you can sell products developed based on NocoBase to others (but not NocoBase itself)</td>
-                                                <td>Provide commercial services to others based on NocoBase</td>
+                                                <th class="compare-item">Lisense</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
                                             </tr>
                                             <tr>
-                                                <td>Agent License</td>
-                                                <td>Sell NocoBase directly as a NocoBase reseller or integrate NocoBase into your products to sell</td>
-                                                <td>Sell NocoBase as an agent</td>
+                                                <td class="compare-item text-muted">License type</td>
+                                                <td>AGPL 3.0</td>
+                                                <td>Business</td>
+                                                <td>Enterprise</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="compare-item text-muted">Perpetual license</td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="compare-item text-muted">Licensed version</td>
+                                                <td>All</td>
+                                                <td>A root version <a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Such as from 1.0 to 1.x all get licensed, but not from 1.x to 2.x"><i data-feather="help-circle" class="fea icon-ex-md me-2 mt-1"></i></a></td>
+                                                <td>A root version <a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Such as from 1.0 to 1.x all get licensed, but not from 1.x to 2.x"><i data-feather="help-circle" class="fea icon-ex-md me-2 mt-1"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="compare-item">Lisense scope</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="compare-item text-muted">NocoBase core</td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="compare-item text-muted">Open-source plugins</td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="compare-item">Usage restrictions</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="compare-item text-muted">Unlimited users</td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="compare-item text-muted">Unlimited applications</td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="compare-item text-muted">Unlimited records</td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="compare-item text-muted">Keep your code not open source</td>
+                                                <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i><a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Your own code and plugins have to be open source under AGPL 3.0 license."><i data-feather="help-circle" class="fea icon-ex-md me-2 mt-1"></i></a></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="compare-item text-muted">Remove copyright and version info</td>
+                                                <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i><a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="The copyright and version information about NocoBase on the interface cannot be altered or removed."><i data-feather="help-circle" class="fea icon-ex-md me-2 mt-1"></i></a></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="compare-item">Supports</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="compare-item text-muted">Community support</td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="compare-item text-muted">Exclusive IM channel support</td>
+                                                <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="compare-item text-muted">Exclusive and timely bug fixing</td>
+                                                <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="compare-item text-muted">Exclusive usage consultation</td>
+                                                <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="compare-item text-muted">Live training & support</td>
+                                                <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                                                <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="compare-item text-muted">Exclusive consulting on development</td>
+                                                <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                                                <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="compare-item text-muted">Priority scheduling for new features</td>
+                                                <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                                                <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="compare-item text-muted">Custom plugins</td>
+                                                <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                                                <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="compare-item text-muted">Custom or volume license</td>
+                                                <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                                                <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="compare-item text-muted">First response time</td>
+                                                <td></td>
+                                                <td>12 hours</td>
+                                                <td>4 hours</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -200,264 +342,534 @@
                             </div>
                         </div>
                     </div>
-
-                    <h4 class="mt-4 pt-2 text-center">Services</h4>
-                    <p class="para-desc mx-auto text-muted text-center">
-                        If you need the NocoBase team to provide you with one-on-one consulting services to respond to your questions at any time, you can choose one of our service packages.
-                    </p>
-                    <div class="col-12">
-                        <div class="component-wrapper">
-                            <div class="p-4">
-                                <div class="table-responsive bg-white">
-                                    <table class="table mb-0 table-center">
-                                        <thead class="table-light">
-                                            <tr>
-                                            <th scope="col" class="border-bottom col-sm-3">Average weekly service hours</th>
-                                            <th scope="col" class="border-bottom">Continuous service time</th>
-                                            <th scope="col" class="border-bottom col-sm-4">Scope of service</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>1 hour</td>
-                                                <td>12 months</td>
-                                                <td rowspan="2">Consulting services for NocoBase kernel design, plugin development, best practices, not including direct development work</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2 hours</td>
-                                                <td>12 months</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <h4 class="mt-4 pt-2 text-center">Plugins</h4>
-                    <p class="para-desc mx-auto text-muted text-center">
-                        The following commercial plugins are available to greatly enhance the capabilities of NocoBase based on the open source version. NocoBase team and user developers are continually enriching the number of plugins available. You can choose as desired.
-                    </p>
-                    <div class="col-12">
-                        <div class="component-wrapper">
-                            <div class="p-4">
-                                <div class="table-responsive bg-white">
-                                    <table class="table mb-0 table-center">
-                                        <thead class="table-light">
-                                            <tr>
-                                            <th scope="col" class="border-bottom col-sm-3">Plugin</th>
-                                            <th scope="col" class="border-bottom">Description</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Multiple databases as data source</td>
-                                                <td>Connect to third-party databases and use multiple database instances as data sources for NocoBase</td>
-                                            </tr>
-                                            <tr>
-                                                <td>API as data source</td>
-                                                <td>Using the API as data source for NocoBase</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Connect to external data tables</td>
-                                                <td>Connect to external data tables via federated/fdw</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Interceptor (workflow)</td>
-                                                <td>Before triggering an action, perform logical checks or data preprocessing, and return the appropriate prompts</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Approval (workflow)</td>
-                                                <td>Workflow approval node, support multi-person approval mode, support for return, withdrawal and other common operations</td>
-                                            </tr>
-                                            <tr>
-                                                <td>JSON-query (workflow)</td>
-                                                <td>Reading and processing data from JSON objects for further use</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Custom variables (workflow)</td>
-                                                <td>Custom variables can be declared in workflows for process-wide use</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Organizational structure</td>
-                                                <td>Synchronize or manage organizational structures</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Telemetry - Prometheus</td>
-                                                <td>Allows to export telemetry (trace & metric) data to Prometheus</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Audit log</td>
-                                                <td>Provide global and per-record operation logs</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Embedding into third-party systems</td>
-                                                <td>Embedding NocoBase into third-party systems</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Third-party system embedding</td>
-                                                <td>Embedding third-party systems into NocoBase</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+                
                 </div>
             </div>
         </section>
-        <!-- Details end -->
+        <!-- Licenses end -->
 
-        <!-- Contact Us Start -->
-        <section class="section">
+        <!-- Plugins start -->
+        <section class="section pb-0">
+            <div class="container">
+                <div class="row align-items-center">
+                    <h3 class="mt-0 pt-0 text-center">Commercial plugins</h3>
+                    <p class="para-desc text-center mx-auto text-muted">Commercial plugins offer more features. You can choose any plugins you need from the commercial plugins and combine them into plugin packages.</p>
+                    <p class="para-desc text-center mx-auto text-muted"><a href="">View all commercial plugins</a></p>
+                    <div class="col-12">
+                        <div class="component-wrapper">
+                            <div class="p-4">
+                                <div class="table-responsive bg-white">
+                                    <table class="table mb-0 table-center commercial-table">
+                                        <thead>
+                                            <tr>
+                                            <th scope="col" class="col-sm-3"></th>
+                                            <th scope="col" class="col-sm-1"><h5 class="text-primary mb-0">P5</h5></th>
+                                            <th scope="col" class="col-sm-1"><h5 class="text-primary mb-0">P10</h5></th>
+                                            <th scope="col" class="col-sm-1"><h5 class="text-primary mb-0">P20</h5></th>
+                                            <th scope="col" class="col-sm-1"><h5 class="text-primary mb-0">P5+</h5></th>
+                                            <th scope="col" class="col-sm-1"><h5 class="text-primary mb-0">P10+</h5></th>
+                                            <th scope="col" class="col-sm-1"><h5 class="text-primary mb-0">P20+</h5></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="compare-item text-muted">Price</td>
+                                                <td colspan="6" class="fw-bold fst-italic text-center">Contact us &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="compare-item text-muted">Number of plugins</td>
+                                                <td>5</td>
+                                                <td>10</td>
+                                                <td>20</td>
+                                                <td>5</td>
+                                                <td>10</td>
+                                                <td>20</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="compare-item">License</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="compare-item text-muted">Perpetual license</td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="compare-item text-muted">Licensed version</td>
+                                                <td colspan="6" class="align-top text-center">
+                                                    A root version  <a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Such as from 1.0 to 1.x all get licensed, but not from 1.x to 2.x"><i data-feather="help-circle" class="fea icon-ex-md me-2 mt-1"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="compare-item">Deliverables</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="compare-item text-muted">Plugin installation packages</td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="compare-item text-muted">Plugin source code</td>
+                                                <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                                                <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                                                <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="compare-item">Supports</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="compare-item text-muted">Community support</td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="compare-item text-muted">Exclusive IM channel support</td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="compare-item text-muted">Exclusive and timely bug fixing</td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="compare-item text-muted">Exclusive usage inquiries</td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="compare-item text-muted">Exclusive consulting on development</td>
+                                                <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                                                <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                                                <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="compare-item text-muted">Priority scheduling for new features</td>
+                                                <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                                                <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                                                <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                                <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="compare-item text-muted">First response time</td>
+                                                <td>12 hours</td>
+                                                <td>12 hours</td>
+                                                <td>12 hours</td>
+                                                <td>4 hours</td>
+                                                <td>4 hours</td>
+                                                <td>4 hours</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Plugins end -->
+
+        <!-- FAQ start -->
+        <section class="section pb-0">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-12 text-center">
-                        <div class="section-title">
-                            <h2 class="title mb-4">Get a quote</h2>
-                            <p class="text-muted para-desc mx-auto">Please contact us by email for more details:<br><a href="mailto:hello@nocobase.com">hello@nocobase.com</a></p>
+                    <div class="col-12">
+                        <div class="section-title text-center mb-4 pb-2">
+                            <h4 class="mb-4">Frequently asked questions</h4>
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
-            </div><!--end container-->
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item rounded">
+                                <h2 class="accordion-header" id="heading1">
+                                    <button class="accordion-button border-0 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"
+                                        aria-expanded="true" aria-controls="collapse1">
+                                        Are there functional differences between the commercial license and the open-source license?
+                                    </button>
+                                </h2>
+                                <div id="collapse1" class="accordion-collapse border-0 collapse show" aria-labelledby="heading1"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body text-muted">
+                                        <p class="answer text-muted mb-0">No, there aren't. The code corresponding to the commercial license is identical to that of the open-source license. NocoBase is dual-licensed under AGPL-3.0 and commercial licenses, allowing you to choose the license type according to your needs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item rounded mt-2">
+                                <h2 class="accordion-header" id="heading2">
+                                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2"
+                                        aria-expanded="false" aria-controls="collapse2">
+                                        Do I need to purchase a commercial license to use it in a commercial environment?
+                                    </button>
+                                </h2>
+                                <div id="collapse2" class="accordion-collapse border-0 collapse" aria-labelledby="heading2"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body text-muted">
+                                        <p class="answer text-muted mb-0">No. The core of NocoBase and open-source plugins are licensed under the AGPL 3.0 license. As long as you comply with the license and retain the copyright information and version information of NocoBase on the interface, you can use it for free.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item rounded mt-2">
+                                <h2 class="accordion-header" id="heading3">
+                                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                        When do I need to purchase a commercial license?
+                                    </button>
+                                </h2>
+                                <div id="collapse3" class="accordion-collapse border-0 collapse" aria-labelledby="heading3"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body text-muted">
+                                        <p class="answer text-muted mb-0 pb-2">You need to purchase a commercial license if you have any of the following requirements:</p>
+                                        <ul class="text-muted">
+                                            <li>You have modified the code of NocoBase or extended your own plugins, but you do not want to open source these outputs under the AGPL license.</li>
+                                            <li>You integrate NocoBase into your product, but you do not want to open source your own product under the AGPL license.</li>
+                                            <li>You want to modify or remove the NocoBase copyright information and version information on the interface.</li>
+                                            <li>You want to obtain advanced technical support from the NocoBase team.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item rounded mt-2">
+                                <h2 class="accordion-header" id="heading4">
+                                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                        Can I purchase commercial plugins without buying a commercial license?
+                                    </button>
+                                </h2>
+                                <div id="collapse4" class="accordion-collapse border-0 collapse" aria-labelledby="heading4"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body text-muted">
+                                        <p class="answer text-muted mb-0 pb-2">Of course. Commercial plugins and commercial licenses are independent of each other. Commercial plugins provide advanced features and do not open source. They can be installed on either an open-source or commercial licensed NocoBase.</p>
+                                        <p class="answer text-muted mb-0 pb-2">You have the options to:</p>
+                                        <ul class="text-muted">
+                                            <li>Only purchase a commercial license to obtain commercial authorization while simultaneously using the same functionalities as the open-source version.</li>
+                                            <li>Only purchase commercial plugins to add more features to the open-source version.</li>
+                                            <li>Purchase both a commercial license and commercial plugins simultaneously.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item rounded mt-2">
+                                <h2 class="accordion-header" id="heading5">
+                                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                        How to understand "Perpetual license"?
+                                    </button>
+                                </h2>
+                                <div id="collapse5" class="accordion-collapse border-0 collapse" aria-labelledby="heading5"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body text-muted">
+                                        <p class="answer text-muted mb-0">There is no expiration date, and no annual payment is required. Once you purchase a commercial license or commercial plugin, you will receive permanent license for the current root version, which can be used permanently.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item rounded mt-2">
+                                <h2 class="accordion-header" id="heading6">
+                                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                        What is a "root version"?
+                                    </button>
+                                </h2>
+                                <div id="collapse6" class="accordion-collapse border-0 collapse" aria-labelledby="heading6"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body text-muted">
+                                        <p class="answer text-muted mb-0">The license scope of commercial licenses and commercial plugins is for a root version, such as from 1.0 to 1.x all get licensed. When you need to upgrade across root versions, such as from 1.x to 2.x, you can purchase at a 50% discount.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item rounded mt-2">
+                                <h2 class="accordion-header" id="heading7">
+                                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                        What is a "plugin package"?
+                                    </button>
+                                </h2>
+                                <div id="collapse7" class="accordion-collapse border-0 collapse" aria-labelledby="heading7"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body text-muted">
+                                        <p class="answer text-muted mb-0">NocoBase commercial plugins are licensed in bulk as plugin packages and do not currently support individual plugin licenses. There are three types of plugin packages: P5, P10, and P20, containing 5, 10, and 20 plugins respectively. You can choose any combination of plugins from the commercial plugins to form a plugin package.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item rounded mt-2">
+                                <h2 class="accordion-header" id="heading8">
+                                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                                        Can commercial plugins be tried out?
+                                    </button>
+                                </h2>
+                                <div id="collapse8" class="accordion-collapse border-0 collapse" aria-labelledby="heading8"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body text-muted">
+                                        <p class="answer text-muted mb-0">Certainly. Our online demo environment includes all commercial plugins. Each demo is a dedicated standalone application for you to explore. If you need to install and test locally, you can also contact us.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item rounded mt-2">
+                                <h2 class="accordion-header" id="heading9">
+                                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                                        What is the duration of the advanced support for commercial licenses and commercial plugins?
+                                    </button>
+                                </h2>
+                                <div id="collapse9" class="accordion-collapse border-0 collapse" aria-labelledby="heading9"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body text-muted">
+                                        <p class="answer text-muted mb-0">12 months or until the next root version release, whichever comes later. We believe that during this period, your team can fully master the use of this version.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item rounded mt-2">
+                                <h2 class="accordion-header" id="heading10">
+                                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                                        Can I upload my own plugins?
+                                    </button>
+                                </h2>
+                                <div id="collapse10" class="accordion-collapse border-0 collapse" aria-labelledby="heading10"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body text-muted">
+                                        <p class="answer text-muted mb-0">Absolutely welcome. Whether it's sharing your open-source plugins with NocoBase users or selling commercial plugins to generate revenue, feel free to <a href="ttps://www.nocobase.com/contact.html">contact us</a> anytime.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div>
         </section>
-        <!-- Contact Us End -->
+        <!-- FAQ end -->
 
+        <!-- Contact start -->
+        <section class="section">
+            <div class="container">
+                <div class="row align-items-center text-center">
+                    <h3>How to purchase</h3>
+                    <p>Self-service purchase is not available at the moment. Please contact us and let us know your requirements.</p>
+                    <div class="mt-4 pt-2 text-center">
+                        <a href="https://www.nocobase.com/contact.html" class="btn btn-primary">Contact us <i class="uil uil-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact end -->
 
+        <!-- Shape Start -->
+        <div class="position-relative">
+            <div class="shape overflow-hidden text-footer">
+                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+                </svg>
+            </div>
+        </div>
+        <!--Shape End-->
+
+        
         <!-- Footer Start -->
-        <footer class="footer">
+        <footer class="footer">    
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
-                        <a href="https://www.nocobase.com" class="logo-footer">
-                            <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/logo-white.png" height="24" alt="">
-                        </a>
-                        <p class="mt-4">Self-hosted and extremely scalable open source no-code and low-code development platform to make digitalization faster, easier and cheaper.</p>
-                        <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4">
-                            <li class="list-inline-item"><a rel="nofollow" href="https://github.com/nocobase/nocobase" class="rounded" target="_blank"><i data-feather="github" class="fea icon-sm fea-social"></i></a></li>
-                            <li class="list-inline-item"><a rel="nofollow" href="mailto:hello@nocobase.com" class="rounded" target="_blank"><i data-feather="mail" class="fea icon-sm fea-social"></i></a></li>
-                        </ul><!--end icon-->
-                    </div><!--end col-->
-                    
-                    <div class="col-lg-1 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                    </div><!--end col-->
+                    <div class="col-12">
+                        <div class="footer-py-60">
+                            <div class="row">
+                                <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                                    <a href="https://www.nocobase.com" class="logo-footer">
+                                        <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/logo-white.png" height="24" alt="">
+                                    </a>
+                                    <p class="mt-4">Self-hosted and extremely scalable open-source no-code development platform to make digitalization faster, easier and cheaper.</p>
+                                    <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4">
+                                        <li class="list-inline-item"><a rel="nofollow" href="https://github.com/nocobase/nocobase" class="rounded" target="_blank"><i data-feather="github" class="fea icon-sm fea-social"></i></a></li>
+                                        <li class="list-inline-item"><a rel="nofollow" href="https://twitter.com/NocoBase" class="rounded" target="_blank"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
+                                        <li class="list-inline-item"><a rel="nofollow" href="mailto:hello@nocobase.com" class="rounded" target="_blank"><i data-feather="mail" class="fea icon-sm fea-social"></i></a></li>
+                                    </ul><!--end icon-->
+                                </div><!--end col-->
 
-                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                        <h5 class="text-light footer-head">Contact</h5>
-                        <p class="mt-4">Email：<a href="mailto:hello@nocobase.com" class="rounded" target="_blank">hello@nocobase.com</a><br>You can also add our Wechat and wechat group.</p>
-                        <div style="float: left;">
-                            公众号: <br>
-                            <img width="100" height="100" src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/gongzhonghao.jpg">
-                        </div>
-                        <div style="float: right;">
-                            Wechat: <br>
-                            <img width="100" height="100" src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/wechat.png">
-                        </div>
-                    </div><!--end col-->
+                                <div class="col-lg-1 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                </div><!--end col-->
+                                
+                                <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                    <h5 class="footer-head">Links</h5>
+                                    <ul class="list-unstyled footer-list mt-4">
+                                        <li><a href="https://github.com/nocobase/nocobase" class="text-foot" target="_blank"><i class="uil uil-angle-right-b me-1"></i> GitHub</a></li>
+                                        <li><a href="https://www.nocobase.com/plugins.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Plugins</a></li>
+                                        <li><a href="https://www.nocobase.com/commercial.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Commercial</a></li>
+                                        <li><a href="https://www.nocobase.com/contact.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Contact</a></li>
+                                    </ul>
+                                </div><!--end col-->
 
-                    <div class="col-lg-1 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                    </div><!--end col-->
-
-                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                        <h5 class="text-light footer-head">Newsletter</h5>
-                        <p class="mt-4">Get information about happenings in NocoBase like new releases, blog posts, and more.</p>
-                        <!-- Begin Brevo Form -->
-                        <div class="sib-form" style="text-align: left;background-color: transparent;padding: 0%!important;">
-                        <div id="sib-form-container" class="sib-form-container">
-                            <div id="error-message" class="sib-form-message-panel" style="font-size:14px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:4px; border-color:#ff4949;max-width:350px;">
-                            <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
-                                <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
-                                <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z" />
-                                </svg>
-                                <span class="sib-form-message-panel__inner-text">Your subscription could not be saved. Please try again.</span>
-                            </div>
-                            </div>
-                            <div></div>
-                            <div id="success-message" class="sib-form-message-panel" style="font-size:14px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#085229; background-color:#e7faf0; border-radius:3px; border-color:#13ce66;max-width:350px;">
-                            <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
-                                <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
-                                <path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z" />
-                                </svg>
-                                <span class="sib-form-message-panel__inner-text">Your subscription has been successful.</span>
-                            </div>
-                            </div>
-                            <div></div>
-                            <div id="sib-container" class="sib-container--medium sib-container--vertical" style="text-align:left; background-color:transparent; max-width:350px; border-width:0px; border-color:#C0CCD9; border-style:solid; direction:ltr; padding: 0%!important;">
-                            <form id="sib-form" method="POST" action="https://70ae42bd.sibforms.com/serve/MUIFAEd3DVxFOGa5DRCsKXolgmbGIuA6La-SaRF30Pvu976wtAbIiNWDF-XufTLkeB8NgbWJXGNYgfHVYha61WM3k2l8n7k43748fTbXwnIWRKz7svAnBeJqiZga0FU6-yj4QUcLzkdE_SlH1Ru0Zkb1f7x8Ohs8Ymiavdn4OlEB1SW26PN8RFuP5uCcnGPw9N_fNvrwtvBl1yDg" data-type="subscription">
-                                <div style="padding: 8px 0;">
-                                <div class="sib-input sib-form-block" style="padding: 0%!important;">
-                                    <div class="form__entry entry_block">
-                                    <div class="form__label-row ">
-
-                                        <div class="entry__field">
-                                        <input class="input " type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Your email:" data-required="true" required />
+                                <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                    <h5 class="footer-head">Resources</h5>
+                                    <ul class="list-unstyled footer-list mt-4">
+                                        <li><a href="https://docs.nocobase.com" target="_blank" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Documentation</a></li>
+                                        <li><a href="https://blog.nocobase.com" target="_blank" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Blog</a></li>
+                                        <li><a href="https://www.nocobase.com/community.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Community</a></li>
+                                        <li><a href="https://docs.nocobase.com/welcome/release/roadmap" target="_blank" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Roadmap</a></li>
+                                        <li><a href="https://docs.nocobase.com/welcome/release/v0190-changelog" target="_blank" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Release notes</a></li>
+                                    </ul>
+                                </div><!--end col-->
+            
+                                <div class="col-lg-3 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                    <h5 class="text-light footer-head">Newsletter</h5>
+                                    <p class="mt-4">Get information about happenings in NocoBase like new releases, blog posts, and more.</p>
+                                    <!-- Begin Brevo Form -->
+                                    <div class="sib-form" style="text-align: left;background-color: transparent;padding: 0%!important;">
+                                    <div id="sib-form-container" class="sib-form-container">
+                                        <div id="error-message" class="sib-form-message-panel" style="font-size:14px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:4px; border-color:#ff4949;max-width:350px;">
+                                        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                                            <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+                                            <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z" />
+                                            </svg>
+                                            <span class="sib-form-message-panel__inner-text">Your subscription could not be saved. Please try again.</span>
+                                        </div>
+                                        </div>
+                                        <div></div>
+                                        <div id="success-message" class="sib-form-message-panel" style="font-size:14px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#085229; background-color:#e7faf0; border-radius:3px; border-color:#13ce66;max-width:350px;">
+                                        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                                            <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+                                            <path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z" />
+                                            </svg>
+                                            <span class="sib-form-message-panel__inner-text">Your subscription has been successful.</span>
+                                        </div>
+                                        </div>
+                                        <div></div>
+                                        <div id="sib-container" class="sib-container--medium sib-container--vertical" style="text-align:left; background-color:transparent; max-width:350px; border-width:0px; border-color:#C0CCD9; border-style:solid; direction:ltr; padding: 0%!important;">
+                                        <form id="sib-form" method="POST" action="https://70ae42bd.sibforms.com/serve/MUIFAEd3DVxFOGa5DRCsKXolgmbGIuA6La-SaRF30Pvu976wtAbIiNWDF-XufTLkeB8NgbWJXGNYgfHVYha61WM3k2l8n7k43748fTbXwnIWRKz7svAnBeJqiZga0FU6-yj4QUcLzkdE_SlH1Ru0Zkb1f7x8Ohs8Ymiavdn4OlEB1SW26PN8RFuP5uCcnGPw9N_fNvrwtvBl1yDg" data-type="subscription">
+                                            <div style="padding: 8px 0;">
+                                            <div class="sib-input sib-form-block" style="padding: 0%!important;">
+                                                <div class="form__entry entry_block">
+                                                <div class="form__label-row ">
+            
+                                                    <div class="entry__field">
+                                                    <input class="input " type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Your email:" data-required="true" required />
+                                                    </div>
+                                                </div>
+            
+                                                <label class="entry__error entry__error--primary" style="font-size:14px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:4px; border-color:#ff4949;">
+                                                </label>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <div style="padding: 8px 0;">
+                                            <div class="sib-form-block" style="text-align: left;padding: 0%!important;">
+                                                <button class="sib-form-block__button sib-form-block__button-with-loader" form="sib-form" type="submit">
+                                                <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
+                                                    <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
+                                                </svg>
+                                                Subscribe
+                                                </button>
+                                            </div>
+                                            </div>
+            
+                                            <input type="text" name="email_address_check" value="" class="input--hidden">
+                                            <input type="hidden" name="locale" value="en">
+                                        </form>
                                         </div>
                                     </div>
-
-                                    <label class="entry__error entry__error--primary" style="font-size:14px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:4px; border-color:#ff4949;">
-                                    </label>
                                     </div>
-                                </div>
-                                </div>
-                                <div style="padding: 8px 0;">
-                                <div class="sib-form-block" style="text-align: left;padding: 0%!important;">
-                                    <button class="sib-form-block__button sib-form-block__button-with-loader" style="font-size:14px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#ffffff; background-color:#2f55d4; border-radius:4px; border-width:0px;" form="sib-form" type="submit">
-                                    <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
-                                        <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
-                                    </svg>
-                                    Subscribe
-                                    </button>
-                                </div>
-                                </div>
-
-                                <input type="text" name="email_address_check" value="" class="input--hidden">
-                                <input type="hidden" name="locale" value="en">
-                            </form>
+                                    <!--  END Brevo Form -->
+                                </div><!--end col-->
                             </div>
                         </div>
-                        </div>
-                        <!--  END Brevo Form -->
-                    </div><!--end col-->
+                    </div>
                 </div><!--end row-->
             </div><!--end container-->
-        </footer><!--end footer-->
-        <footer class="footer footer-bar">
-            <div class="container text-center">
-                <div class="row align-items-center">
-                    <div class="col-sm-6">
-                        <div class="text-sm-start">
-                            <p class="mb-0">© 2020-<script>document.write(new Date().getFullYear())</script> NocoBase. All rights reserved.</p>
-                        </div>
-                    </div><!--end col-->
 
-                    <div class="col-sm-6">
-                        <div class="text-sm-end">
-                            <p class="mb-0"><a rel="nofollow" href="https://beian.miit.gov.cn/" target="_blank" class="text-reset">京ICP备2020046072号-1</a></p>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-            </div><!--end container-->
+            <div class="footer-py-30 footer-bar">
+                <div class="container text-center">
+                    <div class="row align-items-center">
+                        <div class="col-sm-6">
+                            <div class="text-sm-start">
+                                <p class="mb-0">© 2020-<script>document.write(new Date().getFullYear())</script> NocoBase. All rights reserved.</p>
+                            </div>
+                        </div><!--end col-->
+
+                        <div class="col-sm-6">
+                            <div class="text-sm-end">
+                                <!-- <p class="mb-0"><a rel="nofollow" href="https://beian.miit.gov.cn/" target="_blank" class="text-reset">京ICP备2020046072号-1</a></p> -->
+                                <p class="mb-0"><a href="https://www.nocobase.com" class="text-reset">EN</a> | <a href="https://cn.nocobase.com" class="text-reset">中文</a></p>
+                            </div>
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div><!--end container-->
+            </div>
         </footer><!--end footer-->
         <!-- Footer End -->
 
         <!-- Back to top -->
-        <a href="#" onclick="topFunction()" id="back-to-top" class="btn btn-icon btn-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+        <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top fs-5"><i data-feather="arrow-up" class="fea icon-sm icons align-middle"></i></a>
         <!-- Back to top -->
 
-        
-
-        <!-- javascript -->
-        <script src="./js/bootstrap.bundle.min.js"></script>
+        <!-- Javascript -->
+        <!-- JAVASCRIPT -->
+        <script src="js/bootstrap.bundle.min.js"></script>
         <!-- SLIDER -->
-        <script src="./js/tiny-slider.js "></script>
-        <!-- Icons -->
-        <script src="./js/feather.min.js"></script>
+        <script src="js/tiny-slider.js"></script>
         <!-- Main Js -->
-        <script src="./js/plugins.init.js?v3"></script><!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
-        <script src="./js/jquery-3.6.0.min.js"></script>
-        <script src="./js/app.js?v3"></script><!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+        <script src="js/feather.min.js"></script>
+        <script src="js/plugins.init.js"></script><!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/app.js"></script><!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
         <!-- Begin Brevo Form -->
         <script>
             window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
