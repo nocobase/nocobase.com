@@ -6699,9 +6699,6 @@ body[data-layout-mode=dark] .mode-light {
 .plugin-card .plugin-docs {
   font-size: 12px;
 }
-.plugins-list-cn .card-title {
-  font-weight: 500!important;
-}
 .commercial-table th, .commercial-table td {
   padding: 16px!important;
 }
