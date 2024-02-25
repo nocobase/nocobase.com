@@ -72,7 +72,7 @@
 
 body {
   /* font-family: "nunito", sans-serif; */
-  font-family: "nunito", Helvetica, Tahoma, Arial, "华文细黑", "Microsoft YaHei", "微软雅黑", sans-serif;
+  font-family: "nunito", Helvetica, Tahoma, Arial, "Microsoft YaHei", "微软雅黑", sans-serif;
 
   overflow-x: hidden !important;
   font-size: 1rem;
@@ -81,7 +81,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: var(--bs-font-sans-serif);
+  /* font-family: var(--bs-font-sans-serif); */
   line-height: 1.4;
   font-weight: 600;
 }
@@ -6698,6 +6698,9 @@ body[data-layout-mode=dark] .mode-light {
 }
 .plugin-card .plugin-docs {
   font-size: 12px;
+}
+.plugins-list-cn .card-title {
+  font-weight: 500!important;
 }
 .commercial-table th, .commercial-table td {
   padding: 16px!important;
