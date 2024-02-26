@@ -6652,6 +6652,9 @@ body[data-layout-mode=dark] .mode-light {
 
 
 /* Custom */
+.logo {
+  margin-right: 0!important;
+}
 .concerns-li {
   padding-left: 28px;
 }
@@ -6735,7 +6738,7 @@ body[data-layout-mode=dark] .mode-light {
   float: right;
   line-height: 68px;
   text-align: right;
-  padding-left: 20px;
+  padding-left: 40px;
 }
 .home-heading {
     margin: 15vh 0 25vh;
