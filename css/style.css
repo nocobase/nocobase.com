@@ -6740,9 +6740,11 @@ body[data-layout-mode=dark] .mode-light {
 .home-heading {
     margin: 15vh 0 25vh;
 }
-/*.cn .home-heading {
-    margin: 25vh 0 35vh;
-}*/
+@media (max-width: 768px) {
+  .section {
+    padding: 100px 0 60px;
+  }
+}
 .section-demo {
   padding: 0;
 }
