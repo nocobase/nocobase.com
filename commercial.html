@@ -25,16 +25,16 @@
         <link href="./css/style.css?v1.3" rel="stylesheet" type="text/css" id="theme-opt" />
         <!-- <link href="./css/colors/default.css" rel="stylesheet" id="color-opt"> -->
 
-        <!-- <script type="text/javascript">
-            var language =
-                localStorage.getItem("locale") ||
-                window.navigator.language.toLowerCase() ||
-                "en";
-            localStorage.setItem("locale", language);
-            if (language.indexOf("zh-") !== -1) {
-                window.location = "https://cn.nocobase.com";
+        <script type="text/javascript">
+            var preferredLang = localStorage.getItem('preferredLang');
+        
+            if (!preferredLang) {
+                var userLang = navigator.language || navigator.userLanguage;
+                if (userLang.startsWith('zh')) {
+                    window.location.href = 'https://cn.nocobase.com/commercial-cn.html';
+                }
             } 
-        </script> -->
+        </script>
 
         <!-- Begin Brevo Form -->
         <style>
@@ -855,10 +855,6 @@
             </div>
         </footer><!--end footer-->
         <!-- Footer End -->
-
-        <!-- Back to top -->
-        <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top fs-5"><i data-feather="arrow-up" class="fea icon-sm icons align-middle"></i></a>
-        <!-- Back to top -->
 
         <!-- Javascript -->
         <!-- JAVASCRIPT -->

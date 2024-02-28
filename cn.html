@@ -25,17 +25,6 @@
         <link href="./css/style.css?v1.3" rel="stylesheet" type="text/css" id="theme-opt" />
         <!-- <link href="./css/colors/default.css" rel="stylesheet" id="color-opt"> -->
 
-        <!-- <script type="text/javascript">
-            var language =
-                localStorage.getItem("locale") ||
-                window.navigator.language.toLowerCase() ||
-                "en";
-            localStorage.setItem("locale", language);
-            if (language.indexOf("zh-") !== -1) {
-                window.location = "https://cn.nocobase.com";
-            } 
-        </script> -->
-
         <!-- Begin Brevo Form -->
         <style>
             #sib-container input:-ms-input-placeholder {
@@ -1038,8 +1027,7 @@
 
                         <div class="col-sm-6">
                             <div class="text-sm-end">
-                                <!-- <p class="mb-0"><a rel="nofollow" href="https://beian.miit.gov.cn/" target="_blank" class="text-reset">京ICP备2020046072号-1</a></p> -->
-                                <p class="mb-0"><a rel="nofollow" href="https://beian.miit.gov.cn/" target="_blank" class="text-reset">京ICP备2020046072号-1</a>  &nbsp;&nbsp; <a href="https://www.nocobase.com" class="text-reset">EN</a> | <a href="https://cn.nocobase.com" class="text-reset">中文</a></p>
+                                <p class="mb-0"><a rel="nofollow" href="https://beian.miit.gov.cn/" target="_blank" class="text-reset">京ICP备2020046072号-1</a>  &nbsp;&nbsp;&nbsp; <a href="javascript:void(0);" onclick="setLanguage('en')" class="text-reset">EN</a> | <a href="https://cn.nocobase.com" class="text-reset">中文</a></p>
                             </div>
                         </div><!--end col-->
                     </div><!--end row-->
@@ -1047,10 +1035,6 @@
             </div>
         </footer><!--end footer-->
         <!-- Footer End -->
-
-        <!-- Back to top -->
-        <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top fs-5"><i data-feather="arrow-up" class="fea icon-sm icons align-middle"></i></a>
-        <!-- Back to top -->
 
         <!-- Javascript -->
         <!-- JAVASCRIPT -->
@@ -1083,5 +1067,16 @@
         </script>
         <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
         <!--  END Brevo Form -->
+        <!-- Begin language -->
+        <script type="text/javascript">
+            function setLanguage(lang) {
+                localStorage.setItem('preferredLang', lang);
+            
+                if (lang === 'en') {
+                    window.location.href = 'https://www.nocobase.com/';
+                } 
+            }
+        </script>
+        <!-- End language -->
     </body>
 </html>
