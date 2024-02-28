@@ -46,7 +46,7 @@
 
             if (preferredLang) {
                 // 根据偏好执行跳转
-                if (preferredLang === 'zh' && !isEnglishSite) {
+                if (preferredLang === 'zh' && isEnglishSite) {
                     window.location.href = 'https://cn.nocobase.com/community-cn.html';
                 } else if (preferredLang === 'en' && !isEnglishSite) {
                     window.location.href = isEnglishSite ? window.location.href : 'https://www.nocobase.com';
@@ -54,7 +54,7 @@
             } else {
                 // 如果没有设置语言偏好，根据浏览器语言进行一次性跳转
                 var userLang = navigator.language || navigator.userLanguage;
-                if (userLang.startsWith('zh') && !isEnglishSite) {
+                if (userLang.startsWith('zh') && isEnglishSite) {
                     setLanguagePreference('zh'); // 设置语言偏好并跳转
                     window.location.href = 'https://cn.nocobase.com/community-cn.html';
                 } else if (!userLang.startsWith('zh') && !isEnglishSite) {
