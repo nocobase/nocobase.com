@@ -1,173 +1,173 @@
 <!doctype html>
 <html lang="en" dir="ltr">
 
-<head>
-    <meta charset="utf-8" />
-    <title>Community - NocoBase</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="NocoBase is a lightweight, extremely scalable open source no-code and low-code development platform. Instead of investing years of time and millions of dollars in research and development, deploy NocoBase in a few minutes and you'll have a private, controllable, and extremely scalable no-code development platform!" />
-    <meta name="keywords" content="nocobase,low-code,no-code,self-hosted,open source,open-source,no-code development,low-code development,workflow management software,business process management,collaboration software,enterprise process management,enterprise management system,no-code system,no-code platform,free no-code development platform" />
-    <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./images/favicon/site.webmanifest">
-    <!-- Bootstrap -->
-    <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <!-- Icons -->
-    <link href="./css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
-    <!-- Balloon css -->
-    <!-- <link href="./css/balloon.min.css?v3" rel="stylesheet" type="text/css" /> -->
-    <!-- Slider -->               
-    <link rel="stylesheet" href="./css/tiny-slider.css"/> 
-    <!-- Main Css -->
-    <link href="./css/style.css?v1.3" rel="stylesheet" type="text/css" id="theme-opt" />
-    <!-- <link href="./css/colors/default.css" rel="stylesheet" id="color-opt"> -->
+    <head>
+        <meta charset="utf-8" />
+        <title>Community - NocoBase</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="NocoBase is a lightweight, extremely scalable open source no-code and low-code development platform. Instead of investing years of time and millions of dollars in research and development, deploy NocoBase in a few minutes and you'll have a private, controllable, and extremely scalable no-code development platform!" />
+        <meta name="keywords" content="nocobase,low-code,no-code,self-hosted,open source,open-source,no-code development,low-code development,workflow management software,business process management,collaboration software,enterprise process management,enterprise management system,no-code system,no-code platform,free no-code development platform" />
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="./images/favicon/site.webmanifest">
+        <!-- Bootstrap -->
+        <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- Icons -->
+        <link href="./css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+        <!-- Balloon css -->
+        <!-- <link href="./css/balloon.min.css?v3" rel="stylesheet" type="text/css" /> -->
+        <!-- Slider -->               
+        <link rel="stylesheet" href="./css/tiny-slider.css"/> 
+        <!-- Main Css -->
+        <link href="./css/style.css?v1.3" rel="stylesheet" type="text/css" id="theme-opt" />
+        <!-- <link href="./css/colors/default.css" rel="stylesheet" id="color-opt"> -->
 
-    <!-- Language -->
-    <script type="text/javascript">
-        function setLanguagePreference(lang) {
-            document.cookie = "preferredLang=" + lang + "; path=/; domain=.nocobase.com; max-age=31536000"; // 设置 Cookie 的有效期为 1 年
-        }
-
-        // 从 Cookie 读取语言偏好
-        function getLanguagePreference() {
-            var match = document.cookie.match(/(^|;) ?preferredLang=([^;]*)(;|$)/);
-            return match ? match[2] : null;
-        }
-
-        document.addEventListener('DOMContentLoaded', function() {
-            var preferredLang = getLanguagePreference();
-            var currentHost = window.location.host;
-
-            // 判断当前访问的是否为英文站点（包括带www和不带www的情况）
-            var isEnglishSite = currentHost === 'www.nocobase.com' || currentHost === 'nocobase.com';
-
-            if (preferredLang) {
-                // 根据偏好执行跳转
-                if (preferredLang === 'zh' && isEnglishSite) {
-                    window.location.href = 'https://cn.nocobase.com/community-cn.html';
-                } else if (preferredLang === 'en' && !isEnglishSite) {
-                    window.location.href = isEnglishSite ? window.location.href : 'https://www.nocobase.com';
-                }
-            } else {
-                // 如果没有设置语言偏好，根据浏览器语言进行一次性跳转
-                var userLang = navigator.language || navigator.userLanguage;
-                if (userLang.startsWith('zh') && isEnglishSite) {
-                    setLanguagePreference('zh'); // 设置语言偏好并跳转
-                    window.location.href = 'https://cn.nocobase.com/community-cn.html';
-                } else if (!userLang.startsWith('zh') && !isEnglishSite) {
-                    setLanguagePreference('en'); // 设置语言偏好并保持当前英文站点
-                    // 不执行跳转，因为已经在英文站点
-                }
+        <!-- Language -->
+        <script type="text/javascript">
+            function setLanguagePreference(lang) {
+                document.cookie = "preferredLang=" + lang + "; path=/; domain=.nocobase.com; max-age=31536000"; 
             }
-        });
-    </script>
 
-    <!-- Begin Brevo Form -->
-    <style>
-        #sib-container input:-ms-input-placeholder {
-        text-align: left;
-        color: #c0ccda;
-        }
-    
-        #sib-container input::placeholder {
-        text-align: left;
-        color: #c0ccda;
-        }
-    
-        #sib-container textarea::placeholder {
-        text-align: left;
-        color: #c0ccda;
-        }
-    </style>
-    <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
-    <!--  END Brevo Form -->
-    
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-237XXSVYHE"></script>
-    <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+            // 从 Cookie 读取语言偏好
+            function getLanguagePreference() {
+                var match = document.cookie.match(/(^|;) ?preferredLang=([^;]*)(;|$)/);
+                return match ? match[2] : null;
+            }
 
-          gtag('config', 'G-237XXSVYHE');
-    </script>
-    
-    <!-- Baidu Analytics -->
-    <script>
-        var _hmt = _hmt || [];
-        (function() {
-          var hm = document.createElement("script");
-          hm.src = "https://hm.baidu.com/hm.js?73c0a021efd1eab59d0ad8628750283e";
-          var s = document.getElementsByTagName("script")[0]; 
-          s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-</head>
+            document.addEventListener('DOMContentLoaded', function() {
+                var preferredLang = getLanguagePreference();
+                var currentHost = window.location.host;
 
-<body>
-    <!-- Loader -->
-    <!-- <div id="preloader">
-        <div id="status">
-            <div class="spinner">
-                <div class="double-bounce1"></div>
-                <div class="double-bounce2"></div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Loader -->
-    
-    <!-- Navbar Start -->
-    <header id="topnav" class="defaultscroll sticky">
-        <div class="container">
-            <!-- Logo container-->
-            <a class="logo" href="https://wwww.nocobase.com">
-                <span class="logo-light-mode">
-                    <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/logo.png" class="logo-light-mode" height="24" alt="NocoBase Logo">
-                </span>
-            </a>
-            <div class="demo">
-                <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-outline-primary btn-sm">Online demo<i class="uil uil-angle-right-b"></i></a>
-            </div>
-            <!-- End Logo container-->
-            <div class="menu-extras">
-                <div class="menu-item">
-                    <!-- Mobile menu toggle-->
-                    <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
-                        <div class="lines">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </a>
-                    <!-- End mobile menu toggle-->
+                // 判断当前访问的是否为英文站点（包括带www和不带www的情况）
+                var isEnglishSite = currentHost === 'www.nocobase.com' || currentHost === 'nocobase.com';
+
+                if (preferredLang) {
+                    // 根据偏好执行跳转
+                    if (preferredLang === 'zh' && isEnglishSite) {
+                        window.location.href = 'https://cn.nocobase.com/community-cn.html';
+                    } else if (preferredLang === 'en' && !isEnglishSite) {
+                        window.location.href = isEnglishSite ? window.location.href : 'https://www.nocobase.com';
+                    }
+                } else {
+                    // 如果没有设置语言偏好，根据浏览器语言进行一次性跳转
+                    var userLang = navigator.language || navigator.userLanguage;
+                    if (userLang.startsWith('zh') && isEnglishSite) {
+                        setLanguagePreference('zh'); // 设置语言偏好并跳转
+                        window.location.href = 'https://cn.nocobase.com/community-cn.html';
+                    } else if (!userLang.startsWith('zh') && !isEnglishSite) {
+                        setLanguagePreference('en'); // 设置语言偏好并保持当前英文站点
+                        // 不执行跳转，因为已经在英文站点
+                    }
+                }
+            });
+        </script>
+
+        <!-- Begin Brevo Form -->
+        <style>
+            #sib-container input:-ms-input-placeholder {
+            text-align: left;
+            color: #c0ccda;
+            }
+        
+            #sib-container input::placeholder {
+            text-align: left;
+            color: #c0ccda;
+            }
+        
+            #sib-container textarea::placeholder {
+            text-align: left;
+            color: #c0ccda;
+            }
+        </style>
+        <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+        <!--  END Brevo Form -->
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-237XXSVYHE"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-237XXSVYHE');
+        </script>
+        
+        <!-- Baidu Analytics -->
+        <script>
+            var _hmt = _hmt || [];
+            (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?73c0a021efd1eab59d0ad8628750283e";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    </head>
+
+    <body>
+        <!-- Loader -->
+        <!-- <div id="preloader">
+            <div id="status">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
                 </div>
             </div>
+        </div> -->
+        <!-- Loader -->
+        
+        <!-- Navbar Start -->
+        <header id="topnav" class="defaultscroll sticky">
+            <div class="container">
+                <!-- Logo container-->
+                <a class="logo" href="https://wwww.nocobase.com">
+                    <span class="logo-light-mode">
+                        <img src="https://nocobase-file.oss-cn-beijing.aliyuncs.com/logo.png" class="logo-light-mode" height="24" alt="NocoBase Logo">
+                    </span>
+                </a>
+                <div class="demo">
+                    <a href="https://demo.nocobase.com/new" target="_blank" class="btn btn-outline-primary btn-sm">Online demo<i class="uil uil-angle-right-b"></i></a>
+                </div>
+                <!-- End Logo container-->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </div>
+                </div>
 
-            <div id="navigation">
-                <!-- Navigation Menu-->   
-                <ul class="navigation-menu">
-                    <li><a rel="nofollow" href="https://github.com/nocobase/nocobase" class="sub-menu-item" target="_blank">GitHub <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/nocobase/nocobase"></a></li>
-                    <li><a href="https://www.nocobase.com/plugins.html" class="sub-menu-item">Plugins</a></li>
-                    <li><a href="https://www.nocobase.com/commercial.html" class="sub-menu-item">Commercial</a></li>
-                    <li class="has-submenu parent-menu-item active">
-                        <a href="javascript:void(0)">Resources</a><span class="menu-arrow"></span>
-                        <ul class="submenu">
-                            <li><a href="https://docs.nocobase.com" class="sub-menu-item" target="_blank">Documentation</a></li>
-                            <li><a href="https://blog.nocobase.com" class="sub-menu-item" target="_blank">Blog</a></li>
-                            <li class="active"><a href="https://www.nocobase.com/community.html" class="sub-menu-item">Community</a></li>
-                            <li><a href="https://www.nocobase.com/contact.html" class="sub-menu-item">Contact us</a></li>
-                            <li><a href="https://docs.nocobase.com/welcome/release/roadmap" class="sub-menu-item" target="_blank">Roadmap</a></li>
-                            <li><a href="https://docs.nocobase.com/welcome/release/v0190-changelog" class="sub-menu-item" target="_blank">Release note</a></li>
-                        </ul>
-                    </li>
-                </ul><!--end navigation menu-->
-            </div><!--end navigation-->
-        </div><!--end container-->
-    </header><!--end header-->
-    <!-- Navbar End -->
+                <div id="navigation">
+                    <!-- Navigation Menu-->   
+                    <ul class="navigation-menu">
+                        <li><a rel="nofollow" href="https://github.com/nocobase/nocobase" class="sub-menu-item" target="_blank">GitHub <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/nocobase/nocobase"></a></li>
+                        <li><a href="https://www.nocobase.com/plugins.html" class="sub-menu-item">Plugins</a></li>
+                        <li><a href="https://www.nocobase.com/commercial.html" class="sub-menu-item">Commercial</a></li>
+                        <li class="has-submenu parent-menu-item active">
+                            <a href="javascript:void(0)">Resources</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="https://docs.nocobase.com" class="sub-menu-item" target="_blank">Documentation</a></li>
+                                <li><a href="https://blog.nocobase.com" class="sub-menu-item" target="_blank">Blog</a></li>
+                                <li class="active"><a href="https://www.nocobase.com/community.html" class="sub-menu-item">Community</a></li>
+                                <li><a href="https://www.nocobase.com/contact.html" class="sub-menu-item">Contact us</a></li>
+                                <li><a href="https://docs.nocobase.com/welcome/release/roadmap" class="sub-menu-item" target="_blank">Roadmap</a></li>
+                                <li><a href="https://docs.nocobase.com/welcome/release/v0190-changelog" class="sub-menu-item" target="_blank">Release note</a></li>
+                            </ul>
+                        </li>
+                    </ul><!--end navigation menu-->
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </header><!--end header-->
+        <!-- Navbar End -->
         
         <!-- Hero Start -->
         <section class="bg-half-170 bg-light d-table w-100">
@@ -416,7 +416,7 @@
                 setLanguagePreference(lang);
                 
                 if (lang === 'en') {
-                    window.location.href = 'https://nocobase.com';
+                    window.location.href = 'https://www.nocobase.com';
                 } else if (lang === 'zh') {
                     window.location.href = 'https://cn.nocobase.com';
                 }

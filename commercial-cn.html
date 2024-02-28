@@ -28,31 +28,41 @@
         <!-- Language -->
         <script type="text/javascript">
             function setLanguagePreference(lang) {
-                document.cookie = "preferredLang=" + lang + 
-                                "; path=/; domain=.nocobase.com; max-age=31536000"; 
+                document.cookie = "preferredLang=" + lang + "; path=/; domain=.nocobase.com; max-age=31536000"; 
             }
 
+            // 从 Cookie 读取语言偏好
             function getLanguagePreference() {
                 var match = document.cookie.match(/(^|;) ?preferredLang=([^;]*)(;|$)/);
                 return match ? match[2] : null;
             }
 
-            // document.addEventListener('DOMContentLoaded', function() {
-            //     var lang = getLanguagePreference();
-            //     var currentHost = window.location.host;
+            document.addEventListener('DOMContentLoaded', function() {
+                var preferredLang = getLanguagePreference();
+                var currentHost = window.location.host;
 
-            //     if (!lang) {
-            //         var userLang = navigator.language || navigator.userLanguage;
-            //         if (userLang.startsWith('zh') && currentHost !== 'cn.nocobase.com') {
-            //             setLanguagePreference('zh'); 
-            //             window.location.href = 'https://cn.nocobase.com';
-            //         } 
-            //     } else if (lang === 'en' && currentHost !== 'nocobase.com') {
-            //         window.location.href = 'https://www.nocobase.com';
-            //     } else if (lang === 'zh' && currentHost !== 'cn.nocobase.com') {
-            //         window.location.href = 'https://cn.nocobase.com';
-            //     }
-            // });
+                // 判断当前访问的是否为英文站点（包括带www和不带www的情况）
+                var isEnglishSite = currentHost === 'www.nocobase.com' || currentHost === 'nocobase.com';
+
+                if (preferredLang) {
+                    // 根据偏好执行跳转
+                    if (preferredLang === 'zh' && isEnglishSite) {
+                        window.location.href = 'https://cn.nocobase.com/community-cn.html';
+                    } else if (preferredLang === 'en' && !isEnglishSite) {
+                        window.location.href = isEnglishSite ? window.location.href : 'https://www.nocobase.com';
+                    }
+                } else {
+                    // 如果没有设置语言偏好，根据浏览器语言进行一次性跳转
+                    var userLang = navigator.language || navigator.userLanguage;
+                    if (userLang.startsWith('zh') && isEnglishSite) {
+                        setLanguagePreference('zh'); // 设置语言偏好并跳转
+                        window.location.href = 'https://cn.nocobase.com/community-cn.html';
+                    } else if (!userLang.startsWith('zh') && !isEnglishSite) {
+                        setLanguagePreference('en'); // 设置语言偏好并保持当前英文站点
+                        // 不执行跳转，因为已经在英文站点
+                    }
+                }
+            });
         </script>
 
         <!-- Begin Brevo Form -->
@@ -918,7 +928,7 @@
                 setLanguagePreference(lang);
                 
                 if (lang === 'en') {
-                    window.location.href = 'https://nocobase.com';
+                    window.location.href = 'https://www.nocobase.com';
                 } else if (lang === 'zh') {
                     window.location.href = 'https://cn.nocobase.com';
                 }
