@@ -25,15 +25,35 @@
         <link href="./css/style.css?v1.3" rel="stylesheet" type="text/css" id="theme-opt" />
         <!-- <link href="./css/colors/default.css" rel="stylesheet" id="color-opt"> -->
 
+        <!-- Language -->
         <script type="text/javascript">
-            var preferredLang = localStorage.getItem('preferredLang');
-        
-            if (!preferredLang) {
-                var userLang = navigator.language || navigator.userLanguage;
-                if (userLang.startsWith('zh')) {
+            function setLanguagePreference(lang) {
+                document.cookie = "preferredLang=" + lang + 
+                                "; path=/; domain=.nocobase.com; max-age=31536000"; 
+            }
+
+            function getLanguagePreference() {
+                var match = document.cookie.match(/(^|;) ?preferredLang=([^;]*)(;|$)/);
+                return match ? match[2] : null;
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+                var lang = getLanguagePreference();
+                var currentHost = window.location.host;
+
+                if (lang === 'en' && currentHost !== 'nocobase.com') {
+                    window.location.href = 'https://nocobase.com';
+                } else if (lang === 'zh' && currentHost !== 'cn.nocobase.com') {
                     window.location.href = 'https://cn.nocobase.com';
                 }
-            } 
+
+                if (!lang) {
+                    var userLang = navigator.language || navigator.userLanguage;
+                    if (userLang.startsWith('zh') && currentHost !== 'cn.nocobase.com') {
+                        window.location.href = 'https://cn.nocobase.com';
+                    }
+                }
+            });
         </script>
         
         <!-- Begin Brevo Form -->
@@ -1032,7 +1052,7 @@
                         <div class="col-sm-6">
                             <div class="text-sm-end">
                                 <!-- <p class="mb-0"><a rel="nofollow" href="https://beian.miit.gov.cn/" target="_blank" class="text-reset">京ICP备2020046072号-1</a></p> -->
-                                <p class="mb-0"><a href="https://www.nocobase.com" class="text-reset">EN</a> | <a href="https://cn.nocobase.com" class="text-reset">中文</a></p>
+                                <p class="mb-0"><a href="javascript:void(0);" onclick="changeLanguage('en')" class="text-reset">EN</a> | <a href="javascript:void(0);" onclick="changeLanguage('zh')" class="text-reset">中文</a></p>
                             </div>
                         </div><!--end col-->
                     </div><!--end row-->
@@ -1072,5 +1092,18 @@
         </script>
         <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
         <!--  END Brevo Form -->
+        <!-- Begin language -->
+        <script type="text/javascript">
+            function changeLanguage(lang) {
+                setLanguagePreference(lang);
+                
+                if (lang === 'en') {
+                    window.location.href = 'https://nocobase.com';
+                } else if (lang === 'zh') {
+                    window.location.href = 'https://cn.nocobase.com';
+                }
+            }
+        </script>
+        <!-- End language -->
     </body>
 </html>
