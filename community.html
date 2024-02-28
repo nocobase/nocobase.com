@@ -28,31 +28,31 @@
     <!-- Language -->
     <script type="text/javascript">
         function setLanguagePreference(lang) {
-            document.cookie = "preferredLang=" + lang + 
-                            "; path=/; domain=.nocobase.com; max-age=31536000"; 
+            document.cookie = "preferredLang=" + lang + "; path=/; domain=.nocobase.com; max-age=31536000"; // 设置 Cookie 的有效期为 1 年
         }
 
+        // 从 Cookie 读取语言偏好
         function getLanguagePreference() {
             var match = document.cookie.match(/(^|;) ?preferredLang=([^;]*)(;|$)/);
             return match ? match[2] : null;
         }
 
-        // document.addEventListener('DOMContentLoaded', function() {
-        //         var lang = getLanguagePreference();
-        //         var currentHost = window.location.host;
+        document.addEventListener('DOMContentLoaded', function() {
+            var preferredLang = getLanguagePreference();
+            var userLang = navigator.language || navigator.userLanguage;
+            var currentHost = window.location.host;
 
-        //         if (!lang) {
-        //             var userLang = navigator.language || navigator.userLanguage;
-        //             if (userLang.startsWith('zh') && currentHost !== 'cn.nocobase.com') {
-        //                 setLanguagePreference('zh'); 
-        //                 window.location.href = 'https://cn.nocobase.com';
-        //             } 
-        //         } else if (lang === 'en' && currentHost !== 'nocobase.com') {
-        //             window.location.href = 'https://www.nocobase.com';
-        //         } else if (lang === 'zh' && currentHost !== 'cn.nocobase.com') {
-        //             window.location.href = 'https://cn.nocobase.com';
-        //         }
-        //     });
+            // 如果没有设置语言偏好，根据浏览器语言进行一次性跳转
+            if (!preferredLang) {
+                if (userLang.startsWith('zh') && currentHost !== 'cn.nocobase.com') {
+                    setLanguagePreference('zh'); // 设置语言偏好
+                    window.location.href = 'https://cn.nocobase.com';
+                } else if (!userLang.startsWith('zh') && currentHost !== 'nocobase.com') {
+                    setLanguagePreference('en'); // 设置语言偏好
+                    window.location.href = 'https://nocobase.com';
+                }
+            }
+        });
     </script>
 
     <!-- Begin Brevo Form -->
