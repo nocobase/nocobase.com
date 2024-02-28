@@ -41,17 +41,16 @@
                 var lang = getLanguagePreference();
                 var currentHost = window.location.host;
 
-                if (lang === 'en' && currentHost !== 'nocobase.com') {
-                    window.location.href = 'https://nocobase.com';
-                } else if (lang === 'zh' && currentHost !== 'cn.nocobase.com') {
-                    window.location.href = 'https://cn.nocobase.com';
-                }
-
                 if (!lang) {
                     var userLang = navigator.language || navigator.userLanguage;
                     if (userLang.startsWith('zh') && currentHost !== 'cn.nocobase.com') {
+                        setLanguagePreference('zh'); 
                         window.location.href = 'https://cn.nocobase.com';
-                    }
+                    } 
+                } else if (lang === 'en' && currentHost !== 'nocobase.com') {
+                    window.location.href = 'https://www.nocobase.com';
+                } else if (lang === 'zh' && currentHost !== 'cn.nocobase.com') {
+                    window.location.href = 'https://cn.nocobase.com';
                 }
             });
         </script>
