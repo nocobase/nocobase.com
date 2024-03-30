@@ -25,46 +25,6 @@
         <link href="./css/style.css?v1.3" rel="stylesheet" type="text/css" id="theme-opt" />
         <!-- <link href="./css/colors/default.css" rel="stylesheet" id="color-opt"> -->
 
-        <!-- Language -->
-        <script type="text/javascript">
-            function setLanguagePreference(lang) {
-                document.cookie = "preferredLang=" + lang + "; path=/; domain=.nocobase.com; max-age=31536000"; 
-            }
-
-            // 从 Cookie 读取语言偏好
-            function getLanguagePreference() {
-                var match = document.cookie.match(/(^|;) ?preferredLang=([^;]*)(;|$)/);
-                return match ? match[2] : null;
-            }
-
-            document.addEventListener('DOMContentLoaded', function() {
-                var preferredLang = getLanguagePreference();
-                var currentHost = window.location.host;
-
-                // 判断当前访问的是否为英文站点（包括带www和不带www的情况）
-                var isEnglishSite = currentHost === 'www.nocobase.com' || currentHost === 'nocobase.com';
-
-                if (preferredLang) {
-                    // 根据偏好执行跳转
-                    if (preferredLang === 'zh' && isEnglishSite) {
-                        window.location.href = 'https://cn.nocobase.com';
-                    } else if (preferredLang === 'en' && !isEnglishSite) {
-                        window.location.href = isEnglishSite ? window.location.href : 'https://www.nocobase.com';
-                    }
-                } else {
-                    // 如果没有设置语言偏好，根据浏览器语言进行一次性跳转
-                    var userLang = navigator.language || navigator.userLanguage;
-                    if (userLang.startsWith('zh') && isEnglishSite) {
-                        setLanguagePreference('zh'); // 设置语言偏好并跳转
-                        window.location.href = 'https://cn.nocobase.com';
-                    } else if (!userLang.startsWith('zh') && !isEnglishSite) {
-                        setLanguagePreference('en'); // 设置语言偏好并保持当前英文站点
-                        // 不执行跳转，因为已经在英文站点
-                    }
-                }
-            });
-        </script>
-
         <!-- Begin Brevo Form -->
         <style>
             #sib-container input:-ms-input-placeholder {
@@ -166,7 +126,8 @@
                                 <li><a href="https://cn.nocobase.com/community-cn.html" class="sub-menu-item">社区</a></li>
                                 <li><a href="https://cn.nocobase.com/contact-cn.html" class="sub-menu-item">联系我们</a></li>
                                 <li><a href="https://docs-cn.nocobase.com/welcome/release/roadmap" class="sub-menu-item" target="_blank">路线图</a></li>
-                                <li><a href="https://docs-cn.nocobase.com/welcome/release/v0190-changelog" class="sub-menu-item" target="_blank">更新记录</a></li>
+                                <li><a href="https://docs-cn.nocobase.com/welcome/release/v0200-changelog" class="sub-menu-item" target="_blank">更新记录</a></li>
+                                <li><a href="https://cn.nocobase.com/agreement-cn.html" class="sub-menu-item">许可协议</a></li>
                             </ul>
                         </li>
                     </ul><!--end navigation menu-->
@@ -592,7 +553,8 @@
                                         <li><a href="https://blog-cn.nocobase.com" target="_blank" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 博客</a></li>
                                         <li><a href="https://cn.nocobase.com/community-cn.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 社区</a></li>
                                         <li><a href="https://docs-cn.nocobase.com/welcome/release/roadmap" target="_blank" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 路线图</a></li>
-                                        <li><a href="https://docs-cn.nocobase.com/welcome/release/v0190-changelog" target="_blank" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 更新记录</a></li>
+                                        <li><a href="https://docs-cn.nocobase.com/welcome/release/v0200-changelog" target="_blank" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 更新记录</a></li>
+                                        <li><a href="https://cn.nocobase.com/agreement-cn.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> 许可协议</a></li>
                                     </ul>
                                 </div><!--end col-->
             

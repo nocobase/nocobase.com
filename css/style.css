@@ -6740,6 +6740,10 @@ body[data-layout-mode=dark] .mode-light {
   text-align: right;
   padding-left: 40px;
 }
+.license-body {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
 .home-heading {
     margin: 15vh 0 25vh;
 }
