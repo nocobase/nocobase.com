@@ -25,6 +25,24 @@
     <link href="./css/style.css?v1.3" rel="stylesheet" type="text/css" id="theme-opt" />
     <!-- <link href="./css/colors/default.css" rel="stylesheet" id="color-opt"> -->
 
+    <!-- Language -->
+    <script type="text/javascript">
+        function setLanguagePreference(lang) {
+            document.cookie = "preferredLang=" + lang + "; path=/; domain=.nocobase.com; max-age=31536000"; 
+        }
+
+        // 点击切换语言按钮
+        function changeLanguage(lang) {
+            setLanguagePreference(lang);
+            
+            if (lang === 'en') {
+                window.location.href = 'https://www.nocobase.com';
+            } else if (lang === 'zh') {
+                window.location.href = 'https://cn.nocobase.com';
+            }
+        }
+    </script>
+
     <!-- Begin Brevo Form -->
     <style>
         #sib-container input:-ms-input-placeholder {
@@ -891,7 +909,7 @@
                             <div class="card-body">
                                 <div class="mt-2">
                                     <h6 class="card-title">Workflow: Pre-action event</h6>
-                                    <p class="text-muted mb-2">riggered before the execution of a request initiated through an action button or API, such as before adding, updating, or deleting data. Suitable for data validation and logic judgment before action.</p>
+                                    <p class="text-muted mb-2">Triggered before the execution of a request initiated through an action button or API, such as before adding, updating, or deleting data. Suitable for data validation and logic judgment before action.</p>
                                     <span class="badge bg-soft-warning plugin-type" style="font-weight: normal;"> Commercial </span>
                                 </div>
                             </div>
@@ -1317,18 +1335,5 @@
         </script>
         <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
         <!--  END Brevo Form -->
-        <!-- Begin language -->
-        <script type="text/javascript">
-            function changeLanguage(lang) {
-                setLanguagePreference(lang);
-                
-                if (lang === 'en') {
-                    window.location.href = 'https://www.nocobase.com';
-                } else if (lang === 'zh') {
-                    window.location.href = 'https://cn.nocobase.com';
-                }
-            }
-        </script>
-        <!-- End language -->
     </body>
 </html>

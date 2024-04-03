@@ -25,6 +25,24 @@
         <link href="./css/style.css?v1.3" rel="stylesheet" type="text/css" id="theme-opt" />
         <!-- <link href="./css/colors/default.css" rel="stylesheet" id="color-opt"> -->
 
+        <!-- Language -->
+        <script type="text/javascript">
+            function setLanguagePreference(lang) {
+                document.cookie = "preferredLang=" + lang + "; path=/; domain=.nocobase.com; max-age=31536000"; 
+            }
+
+            // 点击切换语言按钮
+            function changeLanguage(lang) {
+                setLanguagePreference(lang);
+                
+                if (lang === 'en') {
+                    window.location.href = 'https://www.nocobase.com';
+                } else if (lang === 'zh') {
+                    window.location.href = 'https://cn.nocobase.com';
+                }
+            }
+        </script>
+
         <!-- Begin Brevo Form -->
         <style>
             #sib-container input:-ms-input-placeholder {
@@ -372,18 +390,5 @@
         </script>
         <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
         <!--  END Brevo Form -->
-        <!-- Begin language -->
-        <script type="text/javascript">
-            function changeLanguage(lang) {
-                setLanguagePreference(lang);
-                
-                if (lang === 'en') {
-                    window.location.href = 'https://www.nocobase.com';
-                } else if (lang === 'zh') {
-                    window.location.href = 'https://cn.nocobase.com';
-                }
-            }
-        </script>
-        <!-- End language -->
     </body>
 </html>

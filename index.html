@@ -37,6 +37,17 @@
                 return match ? match[2] : null;
             }
 
+            // 点击切换语言按钮
+            function changeLanguage(lang) {
+                setLanguagePreference(lang);
+                
+                if (lang === 'en') {
+                    window.location.href = 'https://www.nocobase.com';
+                } else if (lang === 'zh') {
+                    window.location.href = 'https://cn.nocobase.com';
+                }
+            }
+
             document.addEventListener('DOMContentLoaded', function() {
                 var preferredLang = getLanguagePreference();
                 var currentHost = window.location.host;
@@ -1103,18 +1114,5 @@
         </script>
         <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
         <!--  END Brevo Form -->
-        <!-- Begin language -->
-        <script type="text/javascript">
-            function changeLanguage(lang) {
-                setLanguagePreference(lang);
-                
-                if (lang === 'en') {
-                    window.location.href = 'https://www.nocobase.com';
-                } else if (lang === 'zh') {
-                    window.location.href = 'https://cn.nocobase.com';
-                }
-            }
-        </script>
-        <!-- End language -->
     </body>
 </html>
